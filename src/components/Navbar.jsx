@@ -8,7 +8,7 @@ import logo from '../assets/alamir1.jpg'; // replace with your actual logo path
 const navLinks = ['Home', 'About', 'Projects', 'Services', 'Contact'];
 
 export default function Navbar() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Logo and Name */}
         <div className="logo-section">
           <img src={logo} alt="Logo" className="logo" />
-          <span className="brand-name">YourName</span>
+          <span className="brand-name">|Alamirew Wagaw</span>
         </div>
 
         {/* Desktop Links */}
@@ -48,7 +48,7 @@ export default function Navbar() {
   {link}
 </a>
 ))}
-          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+        |  <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
             <FaGithub className="icon" />
           </a>
           <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">
