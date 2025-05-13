@@ -1,0 +1,35 @@
+import Lottie from 'lottie-react';
+import '../styles/about.css';
+import devDesk from "../assets/dev-desk.json";
+import cvFile from "../assets/Alamir_cv.pdf"; // Ensure your CV file is in the correct path
+
+export default function AboutSection() {
+  return (
+    <section className="about-section" id="about">
+      <div className="about-content">
+        <div className="about-text">
+          <h2>About Me</h2>
+          <p>
+            I’m <strong>Alamirew Wagaw</strong>, a passionate software engineer who builds beautiful,
+            fast, and accessible websites and applications. I specialize in full-stack development,
+            blending design with functionality to create high-performing digital experiences.
+          </p>
+          <p>
+            With several completed projects under my belt and strong problem-solving skills, I strive to deliver
+            impactful solutions for clients and employers.
+          </p>
+          
+          {/* CV Download Button */}
+          <div className="cv-download">
+            <a href={cvFile} download="Alamirew_Wagaw_Resume.pdf" className="download-btn">
+              Download My Resume
+            </a>
+          </div>
+        </div>
+        <div className="about-animation">
+          <Lottie animationData={devDesk} loop autoplay />
+        </div>
+      </div>
+    </section>
+  );
+}

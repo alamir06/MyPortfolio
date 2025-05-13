@@ -1,0 +1,125 @@
+
+
+/* Apply the colors to the contact section */
+.contact {
+  background-color: var(--bg-color-light);
+  padding: 60px 0 200px 0;
+  color: var(--text-color-light);
+}
+
+.contact img {
+  width: 92%;
+}
+
+.right {
+  display: flex;
+  gap: 2vw;
+}
+
+.contact h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--text-color-light);
+}
+
+.contact form input, .contact form textarea {
+  width: 100%;
+  background-color: var(--input-bg-light);
+  border:2px solid rgb(170, 80, 80) !important;
+  border-radius: 20px;
+  color: var(--text-color-light);
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact form input:focus, .contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+
+.contact form input::placeholder, .contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color-light);
+}
+
+.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+
+.contact form button {
+  font-weight: 700;
+  color: var(--button-color-light);
+  background-color: var(--button-bg-light);
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.contact form button span {
+  z-index: 1;
+  position: relative;
+}
+
+.contact form button:hover {
+  color: #fff;
+}
+
+.contact form button::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.contact form button:hover::before {
+  width: 100%;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .contact {
+    background-color: var(--bg-color-dark);
+  }
+
+  .contact h2 {
+    color: var(--text-color-dark);
+  }
+
+  .contact form input, .contact form textarea {
+    background-color: var(--input-bg-dark);
+    border: var(--input-border-dark);
+    color: var(--text-color-dark);
+  }
+
+  .contact form input::placeholder, .contact form textarea::placeholder {
+    color: var(--text-color-dark);
+  }
+
+  .contact form button {
+    color: var(--button-color-dark);
+    background-color: var(--button-bg-dark);
+  }
+
+  .contact form button:hover {
+    color: #fff;
+  }
+
+  .contact form button::before {
+    background: var(--primary-color-dark);
+  }
+}
