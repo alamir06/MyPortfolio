@@ -1,106 +1,99 @@
 /* Base styles - light mode */
 .about-section {
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f5f7fa, #e3edf7);
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa, #167ce1);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 .about-content {
   max-width: 1200px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
 }
 
 .about-text {
   flex: 1;
-  min-width: 280px;
-}
-.about-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 80px 0;
-}
-
-.about-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  background: rgba(39, 38, 38, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  color: #f0f0f0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 300px;
 }
 
-.about-text {
-  width: 50%;
-}
-
-.about-text h2 {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.about-text p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: #666;
+.about-text:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 .cv-download {
-  margin-top: 20px;
+  margin-top: 1.5rem;
 }
 
 .download-btn {
-  background-color: #091057;
-  color: #fff;
-  padding: 12px 30px;
-  font-size: 16px;
-  border-radius: 5px;
+  background: linear-gradient(to right, #091057, #3456d6);
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
   text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(9, 16, 87, 0.3);
 }
 
 .download-btn:hover {
-  background-color: #121212;
-}
-
-.about-animation {
-  width: 50%;
-}
-
-.about-animation .lottie {
-  max-width: 100%;
-}
-
-
-.about-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #2c3e50;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  color: #34495e;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  background: linear-gradient(to right, #121212, #444);
+  transform: translateY(-2px);
 }
 
 .about-animation {
   flex: 1;
   min-width: 280px;
   max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-animation .lottie {
+  max-width: 90%;
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  color: #e0ddff !important;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #e1e1e1;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
 }
 
 /* Dark mode overrides */
 body.dark-mode .about-section {
-  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+  background: linear-gradient(135deg, #0f0f0f, #2a2a2a);
+}
+
+body.dark-mode .about-text {
+  background: rgba(30, 30, 30, 0.8);
+  color: #eeeeee;
 }
 
 body.dark-mode .about-text h2 {

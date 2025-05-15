@@ -1,39 +1,55 @@
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import ProjectCard from '../card/ProjectCard';
 import '../styles/project.css';
-
-const projects = [
-  {
-    title: 'Project1',
-    description: 'This is a description for project 1.',
-    imgSrc: 'https://picsum.photos/200/300',
-  },
-  {
-    title: 'Project2',
-    description: 'This is a description for project 2.',
-    imgSrc: 'https://picsum.photos/200/300',
-  },
-  {
-    title: 'Project3',
-    description: 'This is a description for project 3.',
-    imgSrc: 'https://picsum.photos/200',
-  },
-];
+import { Projects } from '../Data/ProjectData';
+const tabs = ['Tab 1', 'Tab 2', 'Tab 3'];
 
 export default function ProjectsSection() {
+  const [activeTab, setActiveTab] = useState('Tab 1');
+  const filteredProjects = Projects.filter((p) => p.tab === activeTab);
+
   return (
     <section className="projects-section" id="projects">
-      <h2>My Projects</h2>
-      <div className="projects-container">
-        {projects.map((project, index) => (
+      <motion.h2
+        className="projects-title"
+        initial={{ y: 40, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <span className="gradient-text">What I've Done</span>
+      </motion.h2>
+
+      <div className="tabs">
+        {tabs.map((tab) => (
+          <button
+            key={tab}
+            className={`tab-button ${activeTab === tab ? 'active' : ''}`}
+            onClick={() => setActiveTab(tab)}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
+
+      <motion.div
+        className="projects-container"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        {filteredProjects.map((project, index) => (
           <ProjectCard
             key={index}
             id={index}
             title={project.title}
             description={project.description}
-            imgSrc={project.imgSrc}
+            imgSrc={project.imgUrl}
           />
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

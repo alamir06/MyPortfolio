@@ -2,11 +2,16 @@ import Lottie from 'lottie-react';
 import '../styles/about.css';
 import devDesk from "../assets/dev-desk.json";
 import cvFile from "../assets/Alamir_cv.pdf"; // Ensure your CV file is in the correct path
-
+import { motion } from 'framer-motion';
 export default function AboutSection() {
   return (
     <section className="about-section" id="about">
-      <div className="about-content">
+      <motion.div 
+       initial={{ y: 100, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: true }}
+      className="about-content">
         <div className="about-text">
           <h2>About Me</h2>
           <p>
@@ -29,7 +34,7 @@ export default function AboutSection() {
         <div className="about-animation">
           <Lottie animationData={devDesk} loop autoplay />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -1,3 +1,33 @@
+
+:root {
+  --bg-color: #f9fafb;
+  --text-color: #1f2937;
+  --circle1-color: #3b82f6;
+  --circle2-color: #ec4899;
+  --circle3-color: #10b981;
+  --hero-name-color: #111827;
+  --hero-title-color: #6366f1;
+  --cta-gradient-start: #6366f1;
+  --cta-gradient-end: #a855f7;
+  --cta-text-color: #fff;
+  --social-icon-color: #4b5563;
+  --social-hover-color: #6366f1;
+}
+
+.dark-mode {
+  --bg-color: #0f172a;
+  --text-color: #f3f4f6;
+  --circle1-color: #2563eb;
+  --circle2-color: #db2777;
+  --circle3-color: #059669;
+  --hero-name-color: #f9fafb;
+  --hero-title-color: #c3bffb;
+  --cta-gradient-start: #4f46e5;
+  --cta-gradient-end: #7c3aed;
+  --cta-text-color: #ffffff;
+  --social-icon-color: #e5e7eb;
+  --social-hover-color: #a5b4fc;
+}
 .services-section {
   padding: 4rem 2rem;
   background: var(--background);
@@ -38,10 +68,14 @@
 
 .service-card h3 {
   font-size: 1.5rem;
+  color: var(--hero-title-color);
   margin-bottom: 1rem;
+  font-weight: 900;
 }
 
 .service-card p {
-  font-size: 1rem;
-  color: var(--text-secondary);
+  font-size: 0.9rem;
+  color: #e1e1e1;
+  line-height: 2;
+  /* color: var(--text-secondary); */
 }

@@ -92,29 +92,35 @@ export default function Home() {
     </div>
 
         {/* Hero Content */}
-        <motion.div
-          className="hero-content"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <h1 className="hero-name">
-            Hi, I'm Alamirew Wagaw
-          </h1>
-          <h2 className="hero-title ">
-            Software Engineer
-          </h2>
-         <div className="process-flow">
-      {steps.map((step, index) => (
-        <div
-          key={index}
-          className={`step ${index < visibleIndex ? 'visible' : ''}`}
-        >
-          {step}
-          {index < steps.length - 1 && <span className="arrow">→</span>}
-        </div>
-      ))}
-    </div>
+       <div className="timeliness-wrapper"> 
+          <div className="vertical-linesss" />
+  <div className="timeliness">
+   
+    <motion.div
+      className="hero-content"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <h1 className="hero-name">
+        Hi, I'm Alamirew Wagaw
+      </h1>
+      <h2 className="hero-title">
+        Software Engineer
+      </h2>
+
+      <div className="process-flow">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className={`step ${index < visibleIndex ? 'visible' : ''}`}
+          >
+            {step}
+            {index < steps.length - 1 && <span className="arrow">→</span>}
+          </div>
+        ))}
+      </div>
+
 
           <a
             href="#projects"
@@ -124,7 +130,8 @@ export default function Home() {
             View My Work
           </a>
         </motion.div>
-
+        </div>
+</div>
         {/* Scroll Down Indicator */}
         <div className="scroll-indicator">
           {/* <a href='#footer'></a> */}<FaChevronDown />

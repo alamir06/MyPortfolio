@@ -1,28 +1,9 @@
 import { motion } from 'framer-motion';
 
 import '../styles/service.css'; // You'll create this next
-import webAnimation from '../assets/web.json';
-import mobileAnimation from '../assets/mobile.json';
-import consultingAnimation from '../assets/consulting.json';
 import { Player } from '@lottiefiles/react-lottie-player';
+import {ServiceData} from "../Data/ServiceData"
 
-const services = [
-  {
-    title: 'Web Development',
-    description: 'Building responsive and optimized web apps with modern technologies.',
-    animation: webAnimation,
-  },
-  {
-    title: 'Mobile Development',
-    description: 'Creating seamless cross-platform mobile experiences.',
-    animation: mobileAnimation,
-  },
-  {
-    title: 'Tech Consulting',
-    description: 'Offering expert guidance to shape your technology strategy.',
-    animation: consultingAnimation,
-  },
-];
 
 export default function Services() {
   return (
@@ -33,10 +14,10 @@ export default function Services() {
         transition={{ duration: 0.6 }}
         className="section-title"
       >
-        My Services
+       How Can I help You?
       </motion.h2>
       <div className="services-grid">
-        {services.map((service, index) => (
+        {ServiceData.map((service, index) => (
           <motion.div
             className="service-card"
             key={index}
