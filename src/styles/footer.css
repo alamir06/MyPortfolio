@@ -1,66 +1,75 @@
-.footer {
-  background-color: #091057;
-  color: #fff;
-  padding: 60px 0;
-  font-family: 'Arial', sans-serif;
+
+
+.footer-wrapper {
+   background: rgba(39, 38, 38, 0.7);
+  color: var(--footer-text);
+  padding: 4rem 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
+.footer {
+  max-width: 960px;
   margin: 0 auto;
 }
 
-.footer-left, .footer-right {
-  width: 48%;
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-bottom: 2rem;
 }
 
-.footer-left h2, .footer-right h2 {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+.footer-link a {
+  color: var(--hero-title-color);
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2vw;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.footer-left p, .footer-right p {
-  font-size: 16px;
-  margin-bottom: 15px;
-  color: #ddd;
+.footer-link a:hover,
+.footer-link a:focus {
+  color: #0070f3;;
+}
+
+.footer-divider {
+  border: 2px solid var(--hero-title-color);
+  margin: 2rem 0;
+  opacity: 0.3;
+  color: white;
+}
+
+.footer-description {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 0.95rem;
 }
 
 .footer-socials {
   display: flex;
-  gap: 15px;
-  margin-top: 20px;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-.footer-socials .social-icon {
-  /* background-color: #fff; */
-  color: #fff;
-  border-radius: 50%;
-  padding: 12px;
-  font-size: 20px;
-  transition: 0.3s ease;
+.footer-socials a {
+  color: var(--hero-title-color);
+  font-size: 1.4rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.footer-socials .social-icon:hover {
-  background-color: #121212;
-  color: #fff;
+.footer-socials a:hover,
+.footer-socials a:focus {
+  color: var(--hero-name-color);
+  transform: scale(1.1);
+  color: #0070f3;
 }
 
 .footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 14px;
-  color: #ddd;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
 
-.footer-bottom p {
-  margin: 0;
-}
-
-.footer .animate__animated.animate__fadeIn {
-  animation: fadeIn 1s ease-in-out;
-}

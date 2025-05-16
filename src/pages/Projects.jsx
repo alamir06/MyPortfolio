@@ -18,7 +18,7 @@ export default function ProjectsSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <span className="gradient-text">What I've Done</span>
+        <span className="gradient-text">What I've Done!</span>
       </motion.h2>
 
       <div className="tabs">

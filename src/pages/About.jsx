@@ -13,7 +13,7 @@ export default function AboutSection() {
   viewport={{ once: true }}
       className="about-content">
         <div className="about-text">
-          <h2>About Me</h2>
+          <h2>Who AM I!</h2>
           <p>
             I’m <strong>Alamirew Wagaw</strong>, a passionate software engineer who builds beautiful,
             fast, and accessible websites and applications. I specialize in full-stack development,

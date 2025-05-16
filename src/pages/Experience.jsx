@@ -1,33 +1,13 @@
 import { motion } from 'framer-motion';
 import '../styles/experience.css';
-
-const experiences = [
-  {
-    title: 'Frontend Developer',
-    org: 'TechNova Solutions',
-    date: '2022 - Present',
-    description: 'Developed modern web apps using React and TypeScript, implementing reusable components and responsive designs.',
-  },
-  {
-    title: 'Backend Developer Intern',
-    org: 'CloudServe Inc.',
-    date: '2021 - 2022',
-    description: 'Worked on Node.js microservices, database schemas in PostgreSQL, and API integrations with external services.',
-  },
-  {
-    title: 'BSc in Computer Science',
-    org: 'Modern Tech University',
-    date: '2018 - 2021',
-    description: 'Studied software engineering, data structures, and full-stack development. Participated in hackathons and tech events.',
-  },
-];
+import {Experiences} from '../Data/ExerienceData';
 
 export default function ExperienceSection() {
   return (
     <section className="experience-section" id="experience">
       <h2>Experience & Education</h2>
       <div className="timeline">
-        {experiences.map((exp, index) => (
+        {Experiences.map((exp, index) => (
           <motion.div
             key={index}
             className="timeline-item"

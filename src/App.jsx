@@ -18,8 +18,8 @@ function App() {
         <section id="home"><Home /></section>
         <section id="about"><AboutSection /></section>
          <section id="services"><Services /></section>
+          <section id="contact"><TechStackSection /></section>
         <section id="projects"><ProjectsSection /></section>
-         <section id="contact"><TechStackSection /></section>
          <section id="contact"><ExperienceSection /></section>
         <section id="contact"><Contact /></section>
          <section id="contact"><Footer /></section>

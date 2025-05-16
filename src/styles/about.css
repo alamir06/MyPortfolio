@@ -73,10 +73,12 @@
 }
 
 .about-text h2 {
-  font-size: 2.5rem;
+font-size: 4rem;    
+  font-weight: 800;    
+  line-height: 1.2;
   margin-bottom: 1rem;
-  font-weight: 800;
-  color: #e0ddff !important;
+  color: var(--hero-title-color) !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .about-text p {

@@ -48,10 +48,10 @@ export default function Navbar() {
   {link}
 </a>
 ))}
-        |  <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+        |  <a href="https://github.com/alamir06" target="_blank" rel="noreferrer">
             <FaGithub className="icon" />
           </a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank" rel="noreferrer">
             <FaLinkedin className="icon" />
           </a>
           <button className="theme-toggle" onClick={() => setIsDark(prev => !prev)}>
