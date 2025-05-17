@@ -103,7 +103,8 @@ export default function Home() {
       transition={{ duration: 1 }}
     >
       <h1 className="hero-name">
-        Hi, I'm Alamirew Wagaw
+        Hi,
+         I'm Alamirew Wagaw
       </h1>
       <h2 className="hero-title">
         Software Engineer
@@ -127,7 +128,7 @@ export default function Home() {
             className="cta-button"
           >
             <FaEye className="text-xl" />
-            View My Work
+           My Work
           </a>
         </motion.div>
         </div>

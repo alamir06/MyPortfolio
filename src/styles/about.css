@@ -36,25 +36,51 @@
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
 }
 
-.cv-download {
-  margin-top: 1.5rem;
+.about-btn{
+  display: flex;
+  gap: 2vw;
+}
+
+ .cv-download {
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .download-btn {
-  background: linear-gradient(to right, #091057, #3456d6);
-  color: #ffffff;
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font--family);
+  gap: 12px;
+  padding: 12px 24px;
+   color: var(--hero-title-color);
+     background: linear-gradient(to right, #121212, #444);
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 5px 15px rgba(9, 16, 87, 0.3);
+  font-weight: 600;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 
 .download-btn:hover {
-  background: linear-gradient(to right, #121212, #444);
-  transform: translateY(-2px);
+ background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
+   border-color: #00dfd8;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 223, 216, 0.3);
+}
+
+.download-icon {
+  font-size: 20px;
+  animation: bounce 2.5s infinite;
+}
+
+/* Subtle bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 .about-animation {
@@ -73,8 +99,9 @@
 }
 
 .about-text h2 {
-font-size: 4rem;    
-  font-weight: 800;    
+  font-size: 3.6rem !important;    
+  font-weight: 800;   
+  font-family: var(--font--family); 
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--hero-title-color) !important;

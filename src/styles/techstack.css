@@ -10,8 +10,9 @@ body.dark-mode .tech-section {
 }
 
 .tech-section h2 {
-  font-size: 2.2rem;
-  color: #222;
+  font-size: 3.6rem;
+ font-family: var(--font--family); 
+  color: var(--hero-title-color) !important;
   margin-bottom: 40px;
 }
 
@@ -28,9 +29,11 @@ body.dark-mode .tech-section h2 {
 }
 
 .tech-category h3 {
-  font-size: 1.5rem;
   margin-bottom: 20px;
-  color: #333;
+   font-size: 1.9rem;
+  font-family: var( --font--family);
+  font-weight: 700;
+  color: var(--hero-title-color) !important;
 }
 
 body.dark-mode .tech-category h3 {
@@ -70,6 +73,7 @@ body.dark-mode .tech-item {
 .tech-item span {
   font-size: 0.95rem;
   font-weight: 500;
+  font-family: var(--font--family);
   color: #333;
 }
 

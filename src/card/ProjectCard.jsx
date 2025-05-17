@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import '../styles/project.css';
+import { FaEye, FaEyeDropper } from 'react-icons/fa';
 
-export default function ProjectCard({ id, title, description, imgSrc }) {
+export default function ProjectCard({ id, title, description, imgSrc,link }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -27,10 +28,12 @@ export default function ProjectCard({ id, title, description, imgSrc }) {
       <div className="card-image-container">
         <img src={imgSrc} alt={title} className="project-img" />
         <div className="overlay">
-          <h3>{title}</h3>
-          <p>{description}</p>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <h3 className='eye'><FaEye /></h3>
+          {/* <p>{description}</p> */}
+          </a>
+          </div>
         </div>
-      </div>
     </div>
   );
 }

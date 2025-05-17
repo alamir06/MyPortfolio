@@ -6,6 +6,8 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaGithub,
+  FaTelegram,
+  FaYoutube,
 } from "react-icons/fa";
 import "../styles/footer.css";
 
@@ -13,6 +15,8 @@ const Footer = () => {
   return (
     <div className="footer-wrapper">
       <footer className="footer">
+         <hr className="footer-divider" />
+
         <div className="footer-nav">
           <div className="footer-link"><a href="#home">Home </a></div>
           <div className="footer-link"><a href="#contact">Projects</a></div>
@@ -21,18 +25,17 @@ const Footer = () => {
           <div className="footer-link"><a href="#connect">Contact</a></div>
         </div>
 
-        <hr className="footer-divider" />
-
+       
         <div className="footer-description">
           <p>
            Feel free to reach out to me for collaboration or just a friendly chat!
           </p>
         </div>
-
         <div className="footer-socials">
           <a href="https://web.facebook.com/alamir.alex.7"><FaFacebookF /></a>
-          <a href="#"><FaGoogle /></a>
+          <a href="#"><FaTelegram /></a>
           <a href="#"><FaInstagram /></a>
+           <a href="#"><FaYoutube/></a>
           <a href="https://www.linkedin.com/in/alamirewwagaw/"><FaLinkedinIn /></a>
           <a href="https://github.com/alamir06"><FaGithub /></a>
         </div>

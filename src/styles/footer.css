@@ -22,7 +22,8 @@
 }
 
 .footer-link a {
-  color: var(--hero-title-color);
+  color: var(--text-color);
+   font-family: var(--font--family);
   text-transform: capitalize;
   font-weight: bold;
   font-size: 2vw;
@@ -32,7 +33,7 @@
 
 .footer-link a:hover,
 .footer-link a:focus {
-  color: #0070f3;;
+  color: var(--hero-title-color);
 }
 
 .footer-divider {
@@ -40,6 +41,7 @@
   margin: 2rem 0;
   opacity: 0.3;
   color: white;
+  border-radius: 50%;
 }
 
 .footer-description {
@@ -56,7 +58,7 @@
 }
 
 .footer-socials a {
-  color: var(--hero-title-color);
+  color: var(--text-color);
   font-size: 1.4rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -65,11 +67,11 @@
 .footer-socials a:focus {
   color: var(--hero-name-color);
   transform: scale(1.1);
-  color: #0070f3;
+  color: var(--hero-title-color);
 }
-
 .footer-bottom {
   padding: 1rem;
   font-size: 0.9rem;
+  font-family: var(--font--family);
 }
 

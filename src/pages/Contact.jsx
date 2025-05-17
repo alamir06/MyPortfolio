@@ -58,7 +58,7 @@ export function Contact() {
   };
 
   return (
-    <section className="contact-section" id="Contact">
+    <section className="contact-section" id="contact">
       <motion.h2
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

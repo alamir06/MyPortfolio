@@ -12,6 +12,7 @@
   --cta-text-color: #fff;
   --social-icon-color: #4b5563;
   --social-hover-color: #6366f1;
+  --font--family:"Poppins", sans-serif;
 }
 
 .dark-mode {
@@ -126,12 +127,13 @@
   position: relative;
   z-index: 1;
   text-align: start;
-  max-width: 600px;
+  max-width: 750px;
 }
 
 .hero-name {
-   font-size: 3rem;    
-  font-weight: 800;    
+  font-size: 3.6rem;  
+  font-family: var( --font--family);
+  font-weight: 1000;    
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--hero-title-color);
@@ -140,6 +142,7 @@
 
 .hero-title {
   font-size: 1.9rem;
+  font-family: var( --font--family);
   font-weight: 700;
   color: var(--hero-title-color);
 }
@@ -148,20 +151,24 @@
 .cta-button {
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
-  color: var(--cta-text-color);
+    background: linear-gradient(to right, #121212, #444);
+    color: var(--hero-title-color);
   font-weight: 600;
   border-radius: 9999px;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  font-family: var( --font--family);
   text-decoration: none;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
 .cta-button:hover {
-  transform: scale(1.05);
+ background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
+  border-color: #00dfd8;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 223, 216, 0.3);
 }
 
 /* Circle Flip */
@@ -171,8 +178,17 @@
   perspective: 1000px;
   display: inline-block;
   margin-top: 20px;
+    transition: all 0.4s ease;
+  border-radius: 9999px;
+  background-color: transparent !important;
 }
-
+.circle-flip-wrapper:hover {
+  background: transparent !important;
+  box-shadow: 0 0 25px 10px rgba(255, 223, 140, 0.6),
+              0 0 50px 20px rgba(255, 193, 94, 0.4),
+              0 0 100px 40px rgba(255, 170, 70, 0.3);
+  transform: scale(1.05);
+}
 .circle-flip-inner {
   width: 100%;
   height: 100%;
@@ -288,6 +304,7 @@
   align-items: flex-start;
   gap: 8px;
   margin-top: 1.5rem;
+  font-family: var( --font--family);
   font-size: 1.1rem;
   font-weight: 500;
   color: var(--hero-title-color);
@@ -298,6 +315,7 @@
   transform: translateY(10px);
   transition: opacity 0.5s ease, transform 0.5s ease;
   display: flex;
+ color: var(--text-color);
   align-items: center;
 }
 
