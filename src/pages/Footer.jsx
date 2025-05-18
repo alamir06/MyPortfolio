@@ -8,6 +8,7 @@ import {
   FaGithub,
   FaTelegram,
   FaYoutube,
+  FaPhone,
 } from "react-icons/fa";
 import "../styles/footer.css";
 
@@ -32,12 +33,13 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-socials">
-          <a href="https://web.facebook.com/alamir.alex.7"><FaFacebookF /></a>
-          <a href="#"><FaTelegram /></a>
-          <a href="#"><FaInstagram /></a>
-           <a href="#"><FaYoutube/></a>
-          <a href="https://www.linkedin.com/in/alamirewwagaw/"><FaLinkedinIn /></a>
-          <a href="https://github.com/alamir06"><FaGithub /></a>
+           <a href="https://github.com/alamir06" target="_blank"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank"><FaLinkedinIn /></a>
+         <a href="tel:+251921991810"><FaPhone /></a>
+          <a href="https://web.facebook.com/alamir.alex.7" target="_blank"><FaFacebookF /></a>
+          <a href="https://t.me/@alamir_tel"><FaTelegram /></a>
+          <a href="#" target="_blank"><FaInstagram /></a>
+           <a href="https://www.youtube.com/@Alak_studio8495" target="_blank"><FaYoutube/></a>
         </div>
 
         <div className="footer-bottom">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaHeart, FaCode, FaGamepad, FaMusic, FaTractor, FaTelegram, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaHeart, FaCode, FaGamepad, FaMusic, FaTractor, FaTelegram, FaYoutube, FaPhone } from 'react-icons/fa';
 import './aboutDetal.css'; // We'll create this CSS file next
 import myImage from "../../../assets/alamir1.jpg"
 import { FaCableCar, FaReadme } from 'react-icons/fa6';
@@ -112,9 +112,9 @@ const AboutMe = () => {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
               <FaLinkedin />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link twitter">
+            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link twitter">
               <FaTwitter />
-            </a>
+            </a> */}
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link telegram">
               <FaTelegram />
             </a>
@@ -123,6 +123,9 @@ const AboutMe = () => {
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link instagram">
               <FaInstagram />
+            </a>
+             <a href="tel:+251921991810" target="_blank" rel="noopener noreferrer" className="social-link phone">
+              <FaPhone />
             </a>
           </div>
         </section>
