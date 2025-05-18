@@ -19,10 +19,10 @@ const Footer = () => {
 
         <div className="footer-nav">
           <div className="footer-link"><a href="#home">Home </a></div>
-          <div className="footer-link"><a href="#contact">Projects</a></div>
+          <div className="footer-link"><a href="#projects">Projects</a></div>
           <div className="footer-link"><a href="#experience">Educations</a></div>
           <div className="footer-link"><a href="#services">services</a></div>
-          <div className="footer-link"><a href="#connect">Contact</a></div>
+          <div className="footer-link"><a href="#contact">Contact</a></div>
         </div>
 
        

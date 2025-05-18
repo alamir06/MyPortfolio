@@ -20,11 +20,11 @@ function MainPage() {
         <section id="home"><Home /></section>
         <section id="about"><AboutSection /></section>
         <section id="services"><Services /></section>
-        <section id="contact"><TechStackSection /></section>
+        <section id="tech"><TechStackSection /></section>
         <section id="projects"><ProjectsSection /></section>
-        <section id="contact"><ExperienceSection /></section>
+        <section id="ex"><ExperienceSection /></section>
         <section id="contact"><Contact /></section>
-        <section id="contact"><Footer /></section>
+        <section id="footer"><Footer /></section>
       </main>
     </>
   );
