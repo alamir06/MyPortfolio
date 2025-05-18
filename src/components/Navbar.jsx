@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Logo and Name */}
         <div className="logo-section">
           <img src={logo} alt="Logo" className="logo" />
-          <span className="brand-name">|Alamirew Wagaw</span>
+          <span className="brand-name">Alamirew Wagaw</span>
         </div>
 
         {/* Desktop Links */}
