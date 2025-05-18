@@ -127,7 +127,7 @@ export default function Home() {
             href="#projects"
             className="cta-button"
           >
-            <FaEye className="text-xl" />
+            <FaEye className="text-xl"  />
            My Work
           </a>
         </motion.div>

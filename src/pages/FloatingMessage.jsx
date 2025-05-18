@@ -31,7 +31,7 @@ export  function FloatingMessage() {
 
   return (
     <div className="floating-message" ref={circleRef}>
-      <FaRegCommentDots className="floating-icon" />
+      <FaRegCommentDots className="floating-icon" title='hello' />
     </div>
   );
 }

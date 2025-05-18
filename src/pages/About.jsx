@@ -4,6 +4,7 @@ import devDesk from "../assets/dev-desk.json";
 import cvFile from "../assets/Alamir_cv.pdf"; // Ensure your CV file is in the correct path
 import { motion } from 'framer-motion';
 import { FaDownload, FaReadme, FaUser } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 export default function AboutSection() {
   return (
     <section className="about-section" id="about">
@@ -28,13 +29,10 @@ export default function AboutSection() {
           {/* CV Download Button */}
           <div className='about-btn'>
           <div className="cv-download">
-        <a
-          href="#about"
-          className="download-btn"
-        >
-          <FaReadme className="download-icon" />
-           About Me
-        </a>
+        <Link to="/about-me" className="download-btn">
+  <FaReadme className="download-icon" />
+  About Me
+</Link>
       </div>
         <div className="cv-download">
   <a href={cvFile} download="Alamirew_Wagaw_Resume.pdf" className="download-btn">
