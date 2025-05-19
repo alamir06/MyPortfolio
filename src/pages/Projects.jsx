@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import ProjectCard from '../card/ProjectCard';
 import '../styles/project.css';
 import { Projects } from '../Data/ProjectData';
+import { FaReact, FaTelegram } from 'react-icons/fa';
 const tabs = ['Tab 1', 'Tab 2', 'Tab 3'];
 
 export default function ProjectsSection() {
@@ -48,6 +49,7 @@ export default function ProjectsSection() {
             description={project.description}
             imgSrc={project.imgUrl}
             link={project.link}
+            techIcon={<FaReact />}
           />
         ))}
       </motion.div>

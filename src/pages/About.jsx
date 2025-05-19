@@ -22,7 +22,7 @@ export default function AboutSection() {
             blending design with functionality to create high-performing digital experiences.
           </p>
           <p>
-            With several completed projects under my belt and strong problem-solving skills, I strive to deliver
+            With several completed projects under my experience and strong problem-solving skills, I strive to deliver
             impactful solutions for clients and employers.
           </p>
           

@@ -147,7 +147,7 @@ body.dark-mode .navbar.scrolled {
 
 .brand-name {
   margin-left: 10px;
-  font-size: 1.2vw;
+   font-size: 1.2vw;
   font-weight: bold;
   font-family: var(--font--family);
 }

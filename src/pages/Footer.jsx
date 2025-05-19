@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         <div className="footer-socials">
           <a href="https://web.facebook.com/alamir.alex.7" target="_blank"><FaFacebookF /></a>
-          <a href="https://t.me/@alamir_tel"><FaTelegram /></a>
+          <a  href="https://t.me/alamir_tel"  target="_blank" rel="noopener noreferrer"><FaTelegram /></a>
           <a href="#" target="_blank"><FaInstagram /></a>
            <a href="https://www.youtube.com/@Alak_studio8495" target="_blank"><FaYoutube/></a>
           <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank"><FaLinkedinIn /></a>

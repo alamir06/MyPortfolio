@@ -22,7 +22,7 @@ function MainPage() {
         <section id="services"><Services /></section>
         <section id="tech"><TechStackSection /></section>
         <section id="projects"><ProjectsSection /></section>
-        <section id="ex"><ExperienceSection /></section>
+        <section id="exp"><ExperienceSection /></section>
         <section id="contact"><Contact /></section>
         <section id="footer"><Footer /></section>
       </main>

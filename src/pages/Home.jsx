@@ -12,9 +12,9 @@ import { CustomCursor } from './CustomeCursor';
 
 const messages = [
   "I'm a Software Engineer",
-  "UI/UX Enthusiast",
+  "UI/UX Desinger",
   "Open Source Contributor",
-  "Full-Stack Dev",
+  "Full-Stack Developer",
   "Tech Explorer",
 ];
 
