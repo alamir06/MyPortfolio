@@ -29,7 +29,7 @@ export default function ProjectCard({ id, title, description, imgSrc,link }) {
         <img src={imgSrc} alt={title} className="project-img" />
         <div className="overlay">
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <h3 className='eye'><FaEye /></h3>
+          <h3 className='eye'>👁️</h3>
           {/* <p>{description}</p> */}
           </a>
           </div>

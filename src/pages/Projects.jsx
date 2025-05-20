@@ -49,7 +49,7 @@ export default function ProjectsSection() {
             description={project.description}
             imgSrc={project.imgUrl}
             link={project.link}
-            techIcon={<FaReact />}
+
           />
         ))}
       </motion.div>

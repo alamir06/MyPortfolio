@@ -38,7 +38,7 @@
 
 .about-btn{
   display: flex;
-  gap: 2vw;
+  gap: 1vw !important;
 }
 
  .cv-download {

@@ -60,7 +60,7 @@
 }
 
 .tagline {
-   margin-left: -45rem;
+  margin-left: -45rem;
   font-size: 1rem;
   opacity: 0.9;
   position: relative;
@@ -128,10 +128,10 @@
 }
 
 .profile-text h2 {
-  font-size: 2.2rem;
-  font-family: var(--font-family);
-  margin-bottom: 1.5rem;
-  color: #444;
+    font-size: 1.9rem;
+    font-family: var( --font--family);
+    font-weight: 700;
+    color: var(--hero-title-color);
 }
 
 .highlight {
@@ -143,6 +143,7 @@
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
   color: #555;
+  text-align: justify;
 }
 
 /* Favorites Section */
@@ -192,21 +193,46 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 14px;
   overflow: hidden;
-  width: 90%;
-  max-width: 700px;
+  justify-content: flex-start;
+  width: 900px;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  line-height: 2.5vw;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: justify;
+  transition: transform 0.3s ease;
+}
+.favorite-cards{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background: rgba(39, 38, 38, 0.7);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+  color: #f0f0f0;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  line-height: 2.5vw;
+  width: 900px;
   margin: 20px 0;
   transition: transform 0.3s ease;
 }
-
 .favorite-card:hover {
+ transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--hero-title-color);
+}
+.favorite-cards:hover {
  transform: translateY(-12px) scale(1.02);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--hero-title-color);
 }
 
 .favorite-image {
-  width: 120px;
-  height: 120px;
+  width: 300px;
+  height: 430px;
   object-fit: cover;
   border-radius: 1vw;
 }
@@ -217,7 +243,7 @@
 
 .favorite-details h4 {
   margin-bottom: 8px;
-  color: #333;
+  font-size: 1.9rem;
   color: var(--hero-title-color) !important;
   font-family: var(--font-family) !important;
 }
@@ -248,8 +274,6 @@
   }
 }
 
-
-
 /* Skills Section */
 .skills-grid {
   display: grid;
@@ -258,8 +282,8 @@
   margin-bottom: 4rem;
   justify-items: center;
 }
-.section-title {
-  text-align: center;
+.section-title.about {
+  text-align: left;
   
 }
 .skill-item {
@@ -271,8 +295,8 @@
   height: 120px;
   border-radius: 50%;
   background: 
-    radial-gradient(white 55%, transparent 56%),
-    conic-gradient(var(--color) 0%, #eee 0%);
+  radial-gradient(white 55%, transparent 56%),
+  conic-gradient(var(--color) 0%, #eee 0%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -423,7 +447,7 @@ body.dark-mode .skill-item p {
   .tagline {
     font-size: 1.2rem;
   }
-  
+
   .profile-text {
     padding: 2rem;
   }
@@ -481,7 +505,31 @@ body.dark-mode .skill-item p {
     margin-left: 0;
     text-align: center;
   }
+ .favorite-card {
+   flex-direction: column;
+   line-height: 2vw;
+   width: 100%;
+  }
+  .favorite-cards{
+    flex-direction: column;
+    line-height: 2vw;
+     width: 100%;
+  }
+  .favorite-image {
+  width: 100%;
+  height: 50%;
+}
 
+.favorite-details {
+  padding: 16px;
+}
+
+.favorite-details h4 {
+  margin-bottom: 8px;
+  font-size: 1.9rem;
+  color: var(--hero-title-color) !important;
+  font-family: var(--font-family) !important;
+}
   .tagline {
     margin-left: 0;
     text-align: center;
@@ -513,6 +561,32 @@ body.dark-mode .skill-item p {
   .tagline {
     font-size: 0.85rem;
   }
+  .favorite-card {
+   flex-direction: column;
+   line-height: 3vw;
+   width: 100%;
+  }
+  .favorite-cards{
+    flex-direction: column;
+    line-height: 3vw;
+     width: 100%;
+  }
+  .favorite-image {
+  width: 100%;
+  height: 50%;
+}
+
+.favorite-details {
+  padding: 16px;
+  line-height: 3vw;
+}
+
+.favorite-details h4 {
+  margin-bottom: 8px;
+  font-size: 1.9rem;
+  color: var(--hero-title-color) !important;
+  font-family: var(--font-family) !important;
+}
 
   .profile-text h2 {
     font-size: 1.5rem;

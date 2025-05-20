@@ -1,11 +1,9 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import Lottie from 'lottie-react';
-import { FaEye, FaChevronDown } from 'react-icons/fa';
+import { FaEye, FaChevronDown,FaGithub, FaLinkedin } from 'react-icons/fa';
 import Animtion from '../assets/Animation.json';
 import '../styles/home.css';
 import { useEffect, useState } from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FloatingMessage } from './FloatingMessage';
 import { CustomCursor } from './CustomeCursor';
 
@@ -26,10 +24,11 @@ const steps = [
   'Deployment',
   'Maintenance',
 ];
-export default function Home() {
 
-    const [flipped, setFlipped] = useState(false);
+export default function Home() {
+  const [flipped, setFlipped] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [visibleIndex, setVisibleIndex] = useState(0);
 
  useEffect(() => {
     const interval = setInterval(() => {
@@ -37,11 +36,10 @@ export default function Home() {
       setTimeout(() => {
         setCurrentIndex((prev) => (prev + 1) % messages.length);
         setFlipped(false);
-      }, 5000); // match flip duration
+      }, 5000);
     }, 10000);
     return () => clearInterval(interval);
   }, []);
- const [visibleIndex, setVisibleIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,21 +52,19 @@ export default function Home() {
     <div className="page relative">
       <section className="hero">
            <CustomCursor />
-         <FloatingMessage />
-        {/* Lottie Animated Background */}
+           <FloatingMessage />
+      
         <div className="lottie-bg">
           <Lottie animationData={Animtion} loop autoplay />
         </div>
 
-        {/* Animated background circles */}
         <div className="hero-bg">
           <div className="circle1"></div>
           <div className="circle2"></div>
            <div className="circle3"></div>
         </div>
 
-
- <div
+     <div
       className={`circle-flip-wrapper ${flipped ? 'flipped' : ''}`}
       onMouseEnter={() => setFlipped(true)}
       onMouseLeave={() => setFlipped(false)}
@@ -90,26 +86,21 @@ export default function Home() {
         </div>
       </div>
     </div>
-
-        {/* Hero Content */}
-       <div className="timeliness-wrapper"> 
+          <div className="timeliness-wrapper"> 
           <div className="vertical-linesss" />
-  <div className="timeliness">
-   
-    <motion.div
-      className="hero-content"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-    >
-      <h1 className="hero-name">
-        Hi,
-         I'm Alamirew Wagaw
-      </h1>
-      <h2 className="hero-title">
-        Software Engineer
-      </h2>
-
+           <div className="timeliness">
+              <motion.div
+              className="hero-content"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
+            <h1 className="hero-name">
+              Hi,I'm Alamirew Wagaw
+            </h1>
+          <h2 className="hero-title">
+            Software Engineer
+          </h2>
       <div className="process-flow">
         {steps.map((step, index) => (
           <div
@@ -121,21 +112,18 @@ export default function Home() {
           </div>
         ))}
       </div>
-
-
-          <a
+           <a
             href="#projects"
             className="cta-button"
           >
             <FaEye className="text-xl"  />
-           My Work
+            My Work
           </a>
         </motion.div>
         </div>
 </div>
-        {/* Scroll Down Indicator */}
         <div className="scroll-indicator">
-          {/* <a href='#footer'></a> */}<FaChevronDown />
+        <FaChevronDown />
         </div>
       </section>
     </div>

@@ -1,12 +1,13 @@
-import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaHeart, FaCode, FaGamepad, FaMusic, FaTractor, FaTelegram, FaYoutube, FaPhone } from 'react-icons/fa';
-import './aboutDetal.css'; // We'll create this CSS file next
+
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaHeart, FaCode, FaGamepad, FaMusic, FaTractor, FaTelegram, FaYoutube, FaPhone, FaChurch } from 'react-icons/fa';
+import './aboutDetal.css'; 
 import myImage from "../../../assets/alamir1.jpg"
-import codeing from "../../../assets/image/codeing.jpg"
-import travel from "../../../assets/image/travel.jpg"
-import { FaCableCar, FaReadme } from 'react-icons/fa6';
+import codeing from "../../../assets/image/codeing.png"
+import travel from "../../../assets/image/travel.png"
+import read from "../../../assets/image/read.png"
+import { FaReadme } from 'react-icons/fa6';
 const AboutMe = () => {
-  // Skill data for the radial progress bars
+
   const skills = [
     { name: 'Frontend Development', percent: 85, color: '#61DAFB' },
     { name: 'Backend Developer', percent: 90, color: '#F0DB4F' },
@@ -18,26 +19,22 @@ const AboutMe = () => {
 
   // Favorite things data
 const favorites = [
-  { icon: <FaCode />, title: 'Coding', description: 'Building interactive web applications', image: codeing },
-  { icon: <FaReadme />, title: 'Reading', description: 'Church, philosophy and fiction  books', image:myImage },
-  { icon: <FaTractor />, title: 'Traveling', description: 'Exploring new cultures and places', image: travel },
-  { icon: <FaGamepad />, title: 'Gaming', description: 'Strategy games and RPGs', image: myImage },
-];
+  { icon: <FaCode />, title: 'Coding', description: 'I am passionate about coding and love turning ideas into real-world applications through clean, efficient code. I spend most of my time building modern web systems and Applications, solving problems, and learning new technologies. I enjoy working on both the frontend and backend, especially with React, NestJS, and PostgreSQL. Collaboration is key for me, and I thrive in team environments where innovation and sharing knowledge are encouraged. I’m constantly exploring new frameworks and tools to stay ahead in the tech world. For me, coding isn’t just a skill—it’s a creative outlet and a way to make a meaningful impact.', image: codeing },
+  { icon: <FaReadme />, title: 'Reading', description: 'Reading is one of my favorite ways to grow, reflect, and explore new ideas. I enjoy diving into books that expand my knowledge, whether it`s about technology, leadership,Church or personal development. Libraries and quiet corners are my comfort zones, where I can get lost in the pages for hours. Reading helps me stay curious and fuels my imagination and creativity. It also sharpens my focus and deepens my understanding of the world around me. For me, books are not just stories—they’re gateways to growth and lifelong learning.', image:read },
+   { icon: <FaChurch />, title: 'Church', description: 'I actively participate in church service with a heart full of dedication and faith. All Most all day, I arrive early to pray, to help with preparations. I am involved in various ministries, including youth leadership and technical support during worship sessions. My role allows me to serve others while growing spiritually and deepening my relationship with God. I value teamwork and always encourage unity and respect among fellow members. Serving in church brings me peace, purpose, and a strong sense of community.', image: myImage },
+  { icon: <FaTractor />, title: 'Traveling', description: ' Traveling is one of my greatest passions! It opens my mind, refreshes my spirit, and connects me with diverse cultures. I love discovering new places, whether it`s a quiet rural village, a bustling city, or a breathtaking natural landscape. Each trip teaches me something valuable, from historical insights to everyday local customs. I enjoy meeting new people along the way and listening to their stories, which often broaden my perspective. Traveling also fuels my creativity and helps me appreciate the beauty in simplicity. Every journey becomes a memory that shapes who I am and how I see the world.', image: travel },
+ ];
 
 
   return (
     <div className="about-me-container">
-      {/* Hero Section */}
       <div className="hero-sections">
         <div className="hero-contents">
           <h1>Get to Know Me</h1>
           <p className="tagline">Developer | Team Leader | Creative Thinker</p>
         </div>
       </div>
-
-      {/* Main Content */}
       <div className="content-wrapper">
-        {/* Profile Section */}
         <section className="profile-section">
           <div className="profile-image-container">
             <img 
@@ -52,7 +49,7 @@ const favorites = [
             <h2>Hello, I'm <span className="highlight">[Alamirew Wagaw]</span></h2>
             <p>
               I'm a passionate developer with a love for creating beautiful, functional digital experiences. 
-              With over [X] years in the industry, I've worked on projects ranging from small business websites 
+              With over [1] years in the industry, I've worked on projects ranging from small business websites 
               to large-scale enterprise applications.
             </p>
             <p>
@@ -66,14 +63,11 @@ const favorites = [
     <path d="M0,100 C40,0 60,0 100,100" stroke="#ccc" strokeWidth="2" fill="none" />
   </svg>
 </div>
-        {/* Favorites Section */}
-{/* Favorites Section */}
 <section className="favorites-section">
-  <h3 className="section-title">My Favorite Things</h3>
+  <h3 className="section-title about">My Favorite Things</h3>
   <div className="favorites-timeline">
     {favorites.map((item, index) => (
       <div className="timeline-item" key={index}>
-        {/* Line Connector and Icon */}
         {index !== 0 && (
           <div className="connector">
             <div className="line" />
@@ -81,9 +75,7 @@ const favorites = [
             <div className="line" />
           </div>
         )}
-
-        {/* Favorite Card */}
-        <div className="favorite-card">
+        <div className={index % 2 === 0 ? "favorite-card" : "favorite-cards"}>
           <img src={item.image} alt={item.title} className="favorite-image" />
           <div className="favorite-details">
             <h4>{item.title}</h4>
@@ -95,16 +87,11 @@ const favorites = [
     ))}
   </div>
 </section>
-
-{/* Connector Line to Skills Section */}
 <div className="favorites-connector">
   <svg viewBox="0 0 100 100" preserveAspectRatio="none">
     <path d="M0,100 C40,0 60,0 100,100" stroke="#ccc" strokeWidth="2" fill="none" />
   </svg>
 </div>
-
-
-        {/* Skills Section */}
         <section className="skills-section">
           <h3 className="section-title">My Skills</h3>
           <div className="skills-grid">
@@ -121,10 +108,8 @@ const favorites = [
             ))}
           </div>
         </section>
-
-        {/* Social Media Section */}
         <section className="social-section">
-          <h3 className="section-title">Connect With Me</h3>
+          <h3 className="section-title about">Connect With Me</h3>
           <div className="social-links">
             <a href="https://github.com/alamir06" target="_blank" rel="noopener noreferrer" className="social-link github">
               <FaGithub />

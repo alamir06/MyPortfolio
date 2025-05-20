@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaDocker, FaAws, FaGithub, FaHtml5, FaCss3Alt, FaPython } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiPostgresql, SiTailwindcss, SiNestjs } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaDocker, FaAws, FaGithub, FaHtml5, FaCss3Alt, FaPython, FaJs } from 'react-icons/fa';
+import { SiTypescript, SiMongodb, SiPostgresql, SiTailwindcss, SiNestjs, SiMysql } from 'react-icons/si';
 import '../styles/techstack.css';
 
 const techStacks = {
@@ -10,11 +10,13 @@ const techStacks = {
     { name: 'TailwindCSS', icon: <SiTailwindcss color="#38BDF8" /> },
     { name: 'HTML5', icon: <FaHtml5 color="#E34F26" /> },
     { name: 'CSS3', icon: <FaCss3Alt color="#1572B6" /> },
+    { name: 'JS', icon: <FaJs color="#FCF259" /> },
   ],
   Backend: [
     { name: 'Node.js', icon: <FaNodeJs color="#339933" /> },
     { name: 'NestJS', icon: <SiNestjs color="#E0234E" /> },
     { name: 'PostgreSQL', icon: <SiPostgresql color="#336791" /> },
+    { name: 'MySQL', icon: <SiMysql color="#4479A1" /> },
     { name: 'MongoDB', icon: <SiMongodb color="#47A248" /> },
     { name: 'Python', icon: <FaPython color="#3776AB" /> },
   ],
