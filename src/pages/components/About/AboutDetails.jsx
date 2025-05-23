@@ -129,7 +129,7 @@ const favorites = [
               <a href="https://www.youtube.com/@Alak_studio8495" target="_blank" rel="noopener noreferrer" className="social-link youtube">
               <FaYoutube />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link instagram">
+            <a href="https://www.instagram.com/alam_irew/" target="_blank" rel="noopener noreferrer" className="social-link instagram">
               <FaInstagram />
             </a>
           </div>
