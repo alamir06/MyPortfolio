@@ -10,7 +10,8 @@ import TechStackSection from './pages/Teck';
 import ExperienceSection from './pages/Experience';
 import Footer from './pages/Footer';
 import AboutMe from './pages/components/About/AboutDetails';
-
+import WebDetails from './pages/components/WebDetails/Web';
+import SoftwareAIShowcase from './pages/components/Software/Software';
 
 function MainPage() {
   return (
@@ -35,6 +36,8 @@ function App() {
     <Routes>
       <Route path="/" element={<MainPage />} />
       <Route path="/about-me" element={<AboutMe />} />
+      <Route path="/web" element={<WebDetails />} />
+      <Route path="/software" element={<SoftwareAIShowcase />} />
     </Routes>
   );
 }

@@ -1,0 +1,498 @@
+Base Styles
+.dev-showcase {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.showcase-header {
+  text-align: center;
+  margin-bottom: 3rem !important;
+}
+
+.showcase-header h2 {
+   font-size: 3.6rem !important;
+  font-family: var(--font--family) !important;
+  color: var(--hero-title-color) !important;
+  margin-bottom: 3rem !important;
+  font-weight: 800 !important;
+}
+
+.showcase-header p {
+  font-size: 1.2rem !important;
+  color: var(--hero-title-color) !important;
+ font-family: var(--font--family) !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+}
+
+/* Tab Navigation */
+.tab-nav {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 2rem !important;
+    gap: 1.6vw !important;
+    text-align: center !important;
+    flex-wrap: wrap !important;
+    margin-top: 2rem !important;
+    margin-bottom: 3rem !important;
+    padding: 10px !important;
+    list-style: none !important;
+}
+
+.tab-btn {
+   border: 2px solid transparent !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  width: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: var(--font--family) !important;
+  gap: 20px !important;
+  padding: 12px 24px !important;
+ color: var(--hero-title-color) !important;
+  background: linear-gradient(to right, #121212, #444) !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s ease !important;
+  text-align: center !important;
+}
+
+.tab-btn:hover {
+ background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end)) !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0 8px 20px rgba(0, 223, 216, 0.3) !important;
+}
+
+.tab-btn.active {
+  background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end)) !important;
+  transform: translateY(-2px) !important;
+  font-weight: bold !important;
+  border-color: #00dfd8 !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0 8px 20px rgba(0, 223, 216, 0.3) !important;
+}
+
+
+.tab-icon {
+  font-size: 1.5rem;
+}
+.tab-icon:hover {
+   transform: translateY(-2px) !important;
+   transition: 0.3s ease !important;
+}
+
+/* Methodology Section */
+.methodology-section {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.methodology-section h3 {
+  font-size: 1.2rem !important;
+  color: var(--hero-title-color) !important;
+ font-family: var(--font--family) !important;
+  max-width: 600px !important;
+  margin: 2rem auto !important;
+}
+
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.methodology-card {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.methodology-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.step-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.methodology-card h4 {
+   font-size: 1.8rem !important;
+  color: var(--hero-title-color) !important;
+ font-family: var(--font--family) !important;
+  max-width: 600px !important;
+  margin-bottom: 1rem !important;
+}
+
+.methodology-card p {
+   font-size: 0.8rem !important;
+  color: var(--hero-title-color) !important;
+ font-family: var(--font--family) !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  line-height: 1.25 !important;
+ 
+}
+
+/* Projects Section */
+.projects-sections {
+  margin-bottom: 3rem;
+}
+
+.projects-section h3 {
+  font-size: 1.8rem !important;
+  color: var(--hero-title-color) !important;
+ font-family: var(--font--family) !important;
+  max-width: 600px !important;
+  margin-bottom: 1rem !important;
+  text-align: center !important;
+}
+
+.projects-grids {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+} */
+
+.project-image {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.project-header h4 {
+  font-size: 1rem !important;
+  font-weight: 600;
+  color: var(--hero-title-color) !important;
+    font-family: var(--font--family) !important;
+  
+}
+
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-links a {
+  color: #718096;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: #4299e1;
+}
+
+.project-content p {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tags span {
+  background: #ebf8ff;
+  color: #3182ce;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.view-process-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4299e1;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.view-process-btn:hover {
+  color: #3182ce;
+}
+
+/* Project Modal */
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 0.5rem;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #718096;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #e53e3e;
+}
+
+.modal-content h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+}
+
+.modal-image {
+  height: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem;
+  color: #2d3748;
+}
+
+.process-steps {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.process-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.step-number {
+  background: #4299e1;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.modal-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.github-btn, .live-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.github-btn {
+  background: #2d3748;
+  color: white;
+}
+
+.github-btn:hover {
+  background: #1a202c;
+}
+
+.live-btn {
+  background: #4299e1;
+  color: white;
+}
+
+.live-btn:hover {
+  background: #3182ce;
+}
+
+/* Dark Mode Support */
+ @media (prefers-color-scheme: dark) {
+  .dev-showcase {
+    color: #e2e8f0;
+  }
+  
+  .showcase-header h2,
+  .methodology-section h3,
+  .projects-section h3,
+  .project-header h4,
+  .modal-content h3,
+  .modal-content h4 {
+    color: #f7fafc;
+  }
+  
+  .showcase-header p,
+  .methodology-card p,
+  .project-content p {
+    color: #cbd5e0;
+  }
+  
+  .tab-btn {
+    background: #2d3748;
+    color: #cbd5e0;
+  }
+  
+  .tab-btn.active {
+    background: #3182ce;
+    color: white;
+  }
+  
+  .methodology-card,
+  .project-card,
+  .modal-content {
+    background: #2d3748;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .tech-tags span {
+    background: #1a365d;
+    color: #90cdf4;
+  }
+  
+  .project-links a {
+    color: #a0aec0;
+  }
+  
+  .project-links a:hover {
+    color: #63b3ed;
+  }
+  
+  .view-process-btn {
+    color: #63b3ed;
+  }
+  
+  .view-process-btn:hover {
+    color: #4299e1;
+  }
+  
+  .process-steps li {
+    border-bottom-color: #4a5568;
+  }
+} 
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .showcase-header h2 {
+    font-size: 2rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-image {
+    height: 200px;
+  }
+  
+  .modal-footer {
+    flex-direction: column;
+  }
+  
+  .github-btn, .live-btn {
+    justify-content: center;
+  }
+}

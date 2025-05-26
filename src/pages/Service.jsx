@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import '../styles/service.css'; // You'll create this next
 import { Player } from '@lottiefiles/react-lottie-player';
 import {ServiceData} from "../Data/ServiceData"
+import { FaArrowAltCircleRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 export default function Services() {
@@ -12,7 +14,7 @@ export default function Services() {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="section-title"
+        className="section-titles"
       >
        How Can I help You?
       </motion.h2>
@@ -28,6 +30,9 @@ export default function Services() {
             <Player autoplay loop src={service.animation} className="service-animation" />
             <h3>{service.title}</h3>
             <p>{service.description}</p>
+          <Link to={service.link} className="service-link">
+          <FaArrowAltCircleRight /> Explore More
+          </Link>
           </motion.div>
         ))}
       </div>

@@ -10,16 +10,15 @@ import code from "../assets/image/code.png";
 import cash from "../assets/image/cash.png";
 import bole from "../assets/image/bole.png";
 import aa from "../assets/image/aa.jpg";
-import { link } from "framer-motion/client";
+import zemzem from "../assets/image/zemzem.jpg";
+import technosophiys from "../assets/image/Technosophia.png";
 
 export const Projects=[
-        {title: "Stop Watcher Application",description: "Stop,Start,Reset and Pause Timer.",imgUrl: aa,link:"the system is under development/",   tab: 'Tab 1',},
-        {title: "Ethiopian Cash Calculator",description: "cash calculator of ethiopia .",imgUrl: bole, link:"https://cfmsui.technosophia.net/",   tab: 'Tab 1',},
-        {title: "Ethiopian Cash Calculator",description: "cash calculator of ethiopia .",imgUrl: cash, link:"https://alamir046.github.io/Cash-Calculator-of-Ethiopia/",   tab: 'Tab 1',},
-        {title: "Random Password Generator",description: "Random Password Generation App",imgUrl: Pimage3,link:"https://alamir046.github.io/Random-Password-Generation-project./",   tab: 'Tab 2', }, 
-        {title: "English Application",description: "Dictionary words in internet.",imgUrl: Pimage4, link:"https://alamir046.github.io/poll-system-by-using-javascript/",   tab: 'Tab 2',},
-        {title: "English Application",description: "Dictionary words in internet.",imgUrl: pimage2, link:"https://alamir046.github.io/Dictionary-Application/",   tab: 'Tab 2',},
-        {title: "Vowel Checker ", description: "Vowel Checker APPlication", imgUrl: Pimage5,  link:" https://alamir046.github.io/Vowel-count-Application-/",  tab: 'Tab 3',},
-        {title: "Who buy system",description: "Who Buy Chance Draw system ",imgUrl: Pimage1, link:"https://alamir046.github.io/Stop-Watch-Timer-Application/",   tab: 'Tab 3',},
-        // {title: "aa",description: "aa",imgUrl: image, link:"https://alamir06.github.io/Dictionary-Application/",   tab: 'Tab 3',},
+        {imgUrl: aa,link:"/software",   tab: 'Software',},
+        {imgUrl: bole, link:"/web",   tab: 'Website',},
+        {imgUrl: technosophiys, link:"/web",   tab: 'Website',},
+         {imgUrl: zemzem, link:"/web",   tab: 'Website',},
+        {imgUrl: cash, link:"https://alamir06.github.io/poll-system-by-using-javascript/",   tab: 'Javascript',},
+        {imgUrl: Pimage3,link:"https://alamir046.github.io/Random-Password-Generation-project./",   tab: 'Javascript', }, 
+        {imgUrl: pimage2, link:"https://alamir046.github.io/Dictionary-Application/",   tab: 'Javascript',},
 ];

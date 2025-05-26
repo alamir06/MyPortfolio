@@ -86,6 +86,7 @@ export default function Home() {
         </div>
       </div>
     </div>
+   
           <div className="timeliness-wrapper"> 
           <div className="vertical-linesss" />
            <div className="timeliness">
@@ -95,6 +96,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
+                              <div className="timeline-dot" />
             <h1 className="hero-name">
               Hi,I'm Alamirew Wagaw
             </h1>

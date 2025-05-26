@@ -92,4 +92,7 @@ body.dark-mode .tech-item span {
   .tech-icon {
     font-size: 1.6rem;
   }
+  .tech-section h2 {
+  font-size: 3rem;
+  }
 }

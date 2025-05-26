@@ -4,7 +4,7 @@ import ProjectCard from '../card/ProjectCard';
 import '../styles/project.css';
 import { Projects } from '../Data/ProjectData';
 import { FaReact, FaTelegram } from 'react-icons/fa';
-const tabs = ['Tab 1', 'Tab 2', 'Tab 3'];
+const tabs = ['Website', 'Software', 'Javascript'];
 
 export default function ProjectsSection() {
   const [activeTab, setActiveTab] = useState('Tab 1');

@@ -213,28 +213,27 @@ body.dark-mode .navbar.scrolled {
   }
 
   .menu-toggle {
-    display: block;
+    display: flex;
+    padding: 0%;
+    margin: 0%;
   }
 
   .mobile-menu {
     display: flex;
+     
   }
 
   body.dark-mode .mobile-menu {
     background-color: #1e1e1e;
   }
+  .brand-name {
+  font-size: 1.5rem;
+}
 
   .mobile-link {
     border-color: #333;
   }
+  .nav-link {
+   font-size: 0.8rem;
 }
-/* Responsive behavior */
-@media screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
 }

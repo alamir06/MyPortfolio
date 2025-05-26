@@ -16,7 +16,7 @@ export default function ExperienceSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
-            <div className="timeline-dot" />
+            <div className="timeline-dots" />
             <div className="timeline-content">
               <h3>{exp.title}</h3>
               <h4>{exp.org}</h4>

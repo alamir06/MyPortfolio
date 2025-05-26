@@ -1,30 +1,11 @@
 
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaHeart, FaCode, FaGamepad, FaMusic, FaTractor, FaTelegram, FaYoutube, FaPhone, FaChurch } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaHeart, FaCode, FaGamepad, FaMusic, FaTractor, FaTelegram, FaYoutube, FaPhone, FaChurch, FaSchool, FaBook, FaUniversity, FaGraduationCap } from 'react-icons/fa';
 import './aboutDetal.css'; 
-import myImage from "../../../assets/alamir1.jpg"
-import codeing from "../../../assets/image/codeing.png"
-import travel from "../../../assets/image/travel.png"
-import read from "../../../assets/image/read.png"
-import { FaReadme } from 'react-icons/fa6';
+import myImage from "../../../assets/alamir2.jpg"
+import { skills } from '../../../Data/AboutDetails';
+import { favorites } from '../../../Data/AboutDetails';
 const AboutMe = () => {
-
-  const skills = [
-    { name: 'Frontend Development', percent: 85, color: '#61DAFB' },
-    { name: 'Backend Developer', percent: 90, color: '#F0DB4F' },
-    { name: 'UI/UX Design', percent: 70, color: '#FF4081' },
-    { name: 'FullStack Development', percent: 87.5, color: '#68A063' },
-    { name: 'Project Management', percent: 85, color: '#000000' },
-     { name: 'Technology Consulting', percent: 87, color: '#4E71FF' },
-  ];
-
-  // Favorite things data
-const favorites = [
-  { icon: <FaCode />, title: 'Coding', description: 'I am passionate about coding and love turning ideas into real-world applications through clean, efficient code. I spend most of my time building modern web systems and Applications, solving problems, and learning new technologies. I enjoy working on both the frontend and backend, especially with React, NestJS, and PostgreSQL. Collaboration is key for me, and I thrive in team environments where innovation and sharing knowledge are encouraged. I’m constantly exploring new frameworks and tools to stay ahead in the tech world. For me, coding isn’t just a skill—it’s a creative outlet and a way to make a meaningful impact.', image: codeing },
-  { icon: <FaReadme />, title: 'Reading', description: 'Reading is one of my favorite ways to grow, reflect, and explore new ideas. I enjoy diving into books that expand my knowledge, whether it`s about technology, leadership,Church or personal development. Libraries and quiet corners are my comfort zones, where I can get lost in the pages for hours. Reading helps me stay curious and fuels my imagination and creativity. It also sharpens my focus and deepens my understanding of the world around me. For me, books are not just stories—they’re gateways to growth and lifelong learning.', image:read },
-   { icon: <FaChurch />, title: 'Church', description: 'I actively participate in church service with a heart full of dedication and faith. All Most all day, I arrive early to pray, to help with preparations. I am involved in various ministries, including youth leadership and technical support during worship sessions. My role allows me to serve others while growing spiritually and deepening my relationship with God. I value teamwork and always encourage unity and respect among fellow members. Serving in church brings me peace, purpose, and a strong sense of community.', image: myImage },
-  { icon: <FaTractor />, title: 'Traveling', description: ' Traveling is one of my greatest passions! It opens my mind, refreshes my spirit, and connects me with diverse cultures. I love discovering new places, whether it`s a quiet rural village, a bustling city, or a breathtaking natural landscape. Each trip teaches me something valuable, from historical insights to everyday local customs. I enjoy meeting new people along the way and listening to their stories, which often broaden my perspective. Traveling also fuels my creativity and helps me appreciate the beauty in simplicity. Every journey becomes a memory that shapes who I am and how I see the world.', image: travel },
- ];
-
+ 
 
   return (
     <div className="about-me-container">
@@ -51,20 +32,80 @@ const favorites = [
               I'm a passionate developer with a love for creating beautiful, functional digital experiences. 
               With over [1] years in the industry, I've worked on projects ranging from small business websites 
               to large-scale enterprise applications.
-            </p>
+            I specialize in full-stack development,
+            blending design with functionality to create high-performing digital experiences.
+             With several completed projects under my experience and strong problem-solving skills, I strive to deliver
+             impactful solutions for clients and employers.
+             </p>
             <p>
+              My journey in technology has been driven by a desire to learn and grow. 
+              I thrive on challenges and enjoy collaborating with others to bring innovative ideas to life.
               When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
               or enjoying my other passions listed below.
             </p>
           </div>
         </section>
-<div className="favorites-connector">
+        <div className="favorites-connector">
   <svg viewBox="0 0 100 100" preserveAspectRatio="none">
     <path d="M0,100 C40,0 60,0 100,100" stroke="#ccc" strokeWidth="2" fill="none" />
   </svg>
 </div>
-<section className="favorites-section">
-  <h3 className="section-title about">My Favorite Things</h3>
+         <section className={`education-timelines`}>
+      <div className="containers">
+        <h2 className="section-titles">My Favorite activities</h2>
+        <p className="section-subtitles">In almost My Every day Journey</p>
+        <div className="timeline-containers">
+          <div className="timeline-lines"></div>
+          
+          {favorites.map((item, index) => (
+            <div 
+              key={item.id} 
+              className={`timeline-items ${index % 2 === 0 ? 'left' : 'right'}`}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <div 
+                className="timeline-icons" 
+                style={{ backgroundColor: item.color }}
+              >
+                {item.icon}
+              </div>
+              
+              <div className="timeline-contents">
+                <div className="timeline-headers">
+                  <h3>{item.title}</h3>
+                  <span className="timeline-years">{item.year}</span>
+                </div>
+                <h4 className="timeline-degrees">{item.qoute}</h4>
+                <p className="timeline-descriptions">{item.description}</p>
+                
+                <div className="progress-containers">
+                  <div 
+  className="progress-bars" 
+  style={{ 
+    width: `${100 - index * 25}%`,
+    backgroundColor: item.color
+  }}
+>
+  <span style={{
+    color: '#fff',
+    fontWeight: 'bold',
+    paddingLeft: '8px'
+  }}>
+    {100 - index * 25}%
+  </span>
+</div>
+
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+{/* <section className="favorites-section">
+  <h3 className="about-title">My Favorite activities</h3>
   <div className="favorites-timeline">
     {favorites.map((item, index) => (
       <div className="timeline-item" key={index}>
@@ -86,14 +127,14 @@ const favorites = [
       </div>
     ))}
   </div>
-</section>
+</section> */}
 <div className="favorites-connector">
   <svg viewBox="0 0 100 100" preserveAspectRatio="none">
     <path d="M0,100 C40,0 60,0 100,100" stroke="#ccc" strokeWidth="2" fill="none" />
   </svg>
 </div>
         <section className="skills-section">
-          <h3 className="section-title">My Skills</h3>
+          <h3 className="about-title">My Skills</h3>
           <div className="skills-grid">
             {skills.map((skill, index) => (
               <div className="skill-item" key={index}>
@@ -109,7 +150,7 @@ const favorites = [
           </div>
         </section>
         <section className="social-section">
-          <h3 className="section-title about">Connect With Me</h3>
+          <h3 className="about-title">Connect With Me</h3>
           <div className="social-links">
             <a href="https://github.com/alamir06" target="_blank" rel="noopener noreferrer" className="social-link github">
               <FaGithub />

@@ -137,6 +137,11 @@ body.dark-mode .contact-form textarea {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    .contact-section h2 {
+   font-size: 4rem;
+  }
+}
 @media (max-width: 768px) {
   .contact-content {
     flex-direction: column;
@@ -145,5 +150,8 @@ body.dark-mode .contact-form textarea {
 
   .contact-form {
     width: 100%;
+  }
+  .contact-section h2 {
+   font-size: 3rem;
   }
 }

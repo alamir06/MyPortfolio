@@ -33,7 +33,7 @@ body.dark-mode .projects-section {
   justify-content: center;
   margin-bottom: 2rem;
   gap: 1.6vw;
-text-align: center;
+ text-align: center;
   flex-wrap: wrap;
 }
 
@@ -265,4 +265,8 @@ body.dark-mode .project-info p {
   .project-img {
     height: 100%;
   }
+  
+.projects-title {
+  font-size: 3rem;
+}
 }

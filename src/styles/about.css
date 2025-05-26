@@ -18,7 +18,9 @@
   gap: 2.5rem;
   flex-wrap: wrap;
 }
-
+.about-text h2{
+  color: var(--hero-title-color) !important;
+}
 .about-text {
   flex: 1;
   background: rgba(39, 38, 38, 0.7);
@@ -36,14 +38,16 @@
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
 }
 
-.about-btn{
+.about-btn {
   display: flex;
   gap: 1vw !important;
+  flex-wrap: wrap;
 }
 
- .cv-download {
+.cv-download {
   text-align: center;
   margin-top: 2rem;
+  color: var(--hero-title-color) !important;
 }
 
 .download-btn {
@@ -52,7 +56,7 @@
   font-family: var(--font--family);
   gap: 12px;
   padding: 12px 24px;
-  color: var(--hero-title-color);
+  color: var(--hero-title-color) !important;
   background: linear-gradient(to right, #121212, #444);
   text-decoration: none;
   font-weight: 600;
@@ -62,8 +66,8 @@
 }
 
 .download-btn:hover {
- background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
-   border-color: #00dfd8;
+  background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
+  border-color: #00dfd8;
   transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(0, 223, 216, 0.3);
 }
@@ -99,13 +103,13 @@
 }
 
 .about-text h2 {
-  font-size: 3.6rem !important;    
-  font-weight: 800;   
-  font-family: var(--font--family); 
+  font-size: 3.2rem;
+  font-weight: 800;
+  font-family: var(--font--family);
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: var(--hero-title-color) !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: var(--hero-title-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .about-text p {
@@ -131,4 +135,72 @@ body.dark-mode .about-text h2 {
 
 body.dark-mode .about-text p {
   color: #cccccc;
+}
+
+/* Responsive Typography and Layout */
+@media (max-width: 1024px) {
+  .about-text h2 {
+    font-size: 4rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .download-btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text {
+    padding: 2rem;
+  }
+
+  .about-text h2 {
+    font-size: 3rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .download-btn {
+    font-size: 0.9rem;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 3rem 1rem;
+  }
+
+  .about-text h2 {
+    font-size: 3rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  .download-btn {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+
+  .about-btn {
+    flex-direction: column;
+    gap: 1rem !important;
+  }
 }

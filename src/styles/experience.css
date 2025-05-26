@@ -9,11 +9,11 @@ body.dark-mode .experience-section {
 }
 
 .experience-section h2 {
-      text-align: center;
-      font-size: 3.6rem;
-      margin-bottom: 50px;
-      font-family: var(--font--family) !important;
-      color: var(--hero-title-color) !important;
+  text-align: center;
+  font-size: 3.6rem;
+  margin-bottom: 50px;
+  font-family: var(--font--family);
+  color: var(--hero-title-color) !important;
 }
 
 body.dark-mode .experience-section h2 {
@@ -34,7 +34,7 @@ body.dark-mode .experience-section h2 {
   padding-left: 25px;
 }
 
-.timeline-dot {
+.timeline-dots {
   position: absolute;
   left: -9px;
   top: 5px;
@@ -50,7 +50,7 @@ body.dark-mode .experience-section h2 {
   background: #f9f9f9;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: background 0.3s ease;
 }
 
@@ -63,19 +63,19 @@ body.dark-mode .timeline-content {
 .timeline-content h3 {
   margin: 0;
   font-size: 1.4rem;
-  color: var(--hero-title-color) !important;
-  font-family: var(--font--family) !important;
+  color: var(--hero-title-color);
+  font-family: var(--font--family);
 }
 
 body.dark-mode .timeline-content h3 {
-  color: #fff;
+  color: #ffffff;
 }
 
 .timeline-content h4 {
   margin: 4px 0;
   font-size: 1rem;
-  color: var(--hero-title-color) !important;
-
+  color: var(--hero-title-color);
+  font-weight: 500;
 }
 
 body.dark-mode .timeline-content h4 {
@@ -91,22 +91,107 @@ body.dark-mode .timeline-content h4 {
 
 .timeline-content p {
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-top: 10px;
+  color: #333;
+}
+
+body.dark-mode .timeline-content p {
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .experience-section {
+    padding: 50px 15px;
+  }
+
+  .experience-section h2 {
+    font-size: 4rem;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-content {
+    padding: 18px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 0.95rem;
+  }
+
+  .timeline-dot {
+    width: 16px;
+    height: 16px;
+    top: 6px;
+  }
 }
 
 @media (max-width: 768px) {
+  .experience-section {
+    padding: 40px 12px;
+  }
+
+  .experience-section h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+
   .timeline {
-    padding-left: 18px;
+    padding-left: 16px;
   }
 
   .timeline-content {
     padding: 15px;
   }
 
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 0.9rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.9rem;
+  }
+
   .timeline-dot {
     width: 14px;
     height: 14px;
     top: 7px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-section h2 {
+    font-size: 3rem;
+  }
+
+  .timeline-content {
+    padding: 12px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 0.85rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.85rem;
+  }
+
+  .timeline-date {
+    font-size: 0.8rem;
   }
 }
