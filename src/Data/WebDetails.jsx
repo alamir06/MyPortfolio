@@ -14,32 +14,37 @@ import bole from "../assets/image/bole.png";
         github: "https://github.com/TechnoSophia-Solutions/Bole-SubCity-CFMS",
         live: "https://cfmsui.technosophia.net/",
         process: [
+          "Discuss with The client to understand the requirements",
           "Market research and competitive analysis",
           "UI/UX design in Figma",
-          "Frontend development with React/Redux",
-          "Backend API development",
-          "Payment integration and testing"
+          "Frontend development with React",
+          "Backend API development with NestJs",
+          "Database integration with Postgress",
+          "Deployment on  Yegara hosting",
+          "Testing and bug fixing",
         ]
       },
       {
         id: 2,
-        title: "Technosophia IT Solutions Website",
+        title: "Technosophia IT Solutions ",
         description: "Built with React, NestJs, and Postgress with Great Collaboration",
-        technologies: ["React", "NestJs", "Postgress", "📂"],
+        technologies: ["React", "NestJs", "Postgress", "📂","🙏"],
         image: Technsophia,
         github: "https://github.com/TechnoSophia-Solutions/TS-portfolio",
         live: "https://technosophia.net/",
         process: [
-          "Market research and competitive analysis",
+          "discuss with The Technosophia Team to understand the requirements",
           "UI/UX design in Figma",
-          "Frontend development with React/Redux",
-          "Backend API development",
-          "Payment integration and testing"
+          "Frontend development with React",
+          "Backend API development with NestJs for  Blog and Portfolio",
+          "Database integration with Postgress for Blog",
+          "Deployment on  Yegara hosting",
+          "Testing and bug fixing",
         ]
       },
       {
         id: 3,
-        title: "Zemzem Food Complex Website",
+        title: "Zemzem Food Complex ",
         description: "Built with React,nestJs, and Mysql with Great Collaboration",
         technologies: ["React", "NestJs", "MYSQL", "📂"],
         image: zemzem,
@@ -48,9 +53,11 @@ import bole from "../assets/image/bole.png";
         process: [
           "Market research and competitive analysis",
           "UI/UX design in Figma",
-          "Frontend development with React/Redux",
-          "Backend API development",
-          "Payment integration and testing"
+          "Frontend development with React",
+          "Backend API development with NestJs",
+          "Database integration with MySQL",
+          "Deployment on Yegara hosting",
+          "Testing and bug fixing",
         ]
       },
     ],
@@ -68,7 +75,7 @@ import bole from "../assets/image/bole.png";
           "Native component development",
           "Health API integration",
           "Offline data sync",
-          "App Store deployment"
+          "App/play Store deployment"
         ]
       },
       // Add more mobile projects...
@@ -78,15 +85,17 @@ import bole from "../assets/image/bole.png";
   // Development methodology
   export const methodology = {
     web: [
-      { title: "Discovery", icon: "🔍", description: "Requirement analysis" },
+      { title: "Discovery", icon: "🔍", description: "Requirement Gather and analysis" },
       { title: "Design", icon: "🎨", description: "UI/UX prototyping" },
       { title: "Development", icon: "💻", description: "Agile implementation" },
-      { title: "Deployment", icon: "🚀", description: "CI/CD setup" }
+      { title: "Deployment", icon: "🚀", description: "CI/CD setup" },
+      { title: "Maintenance", icon: "🔧", description: "Ongoing support" }
     ],
     mobile: [
-      { title: "Research", icon: "📱", description: "Platform patterns" },
+      { title: "Research", icon: "📱", description: "Platform patterns identificatin" },
       { title: "Prototyping", icon: "✏️", description: "Interactive designs" },
       { title: "Development", icon: "📲", description: "Native coding" },
-      { title: "Publishing", icon: "📦", description: "App store release" }
+      { title: "Publishing", icon: "📦", description: "App store release" },
+      { title: "Support", icon: "🛠️", description: "User feedback and updates" }
     ]
   };

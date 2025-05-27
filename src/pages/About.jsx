@@ -1,7 +1,7 @@
 import Lottie from 'lottie-react';
 import '../styles/about.css';
 import devDesk from "../assets/dev-desk.json";
-import cvFile from "../assets/Alamir_cv.pdf"; // Ensure your CV file is in the correct path
+import cvFile from "../assets/Alamirew_Wagaw_Resume.pdf"; // Ensure your CV file is in the correct path
 import { motion } from 'framer-motion';
 import { FaDownload, FaReadme, FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';

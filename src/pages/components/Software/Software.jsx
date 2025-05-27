@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { FiCpu, FiCode, FiDatabase, FiLayers, FiGithub, FiExternalLink, FiX } from 'react-icons/fi';
-import './software.css'; // Ensure you have the correct CSS file for styling
-import aa from '../../../assets/image/aa.jpg'; // Example image, replace with your actual image path
+import './software.css'; 
+import aa from '../../../assets/image/aa.jpg'; 
 import Footer from '../../components/FooterDetails/FooterDetails';
+import flower from '../../../assets/image/flower.jpg'; 
+import { GiBasket } from 'react-icons/gi';
+
 const SoftwareAIShowcase = () => {
   const [activeTab, setActiveTab] = useState('software');
   const [selectedProject, setSelectedProject] = useState(null);
@@ -14,23 +17,25 @@ const SoftwareAIShowcase = () => {
         id: 1,
         title: "Hotel StreamLine Platform",
         description: "Scalable business management solution with microservices architecture",
-        technologies: ["TypeScript", "NestJs", "typeorm", "PostgreSQL"],
+        technologies: ["TypeScript", "NestJs", "typeorm", "PostgreSQL", "Docker",],
         image: aa,
-        github: "#",
-        live: "#",
+        github: "https://github.com/Timewize-Systems/gpiisms-dev_api",
+        live: "https://github.com/Timewize-Systems/gpiisms-dev_api",
         process: [
-          "Requirements analysis with stakeholders",
+          "Requirements Gather and analysis with stakeholders",
           "System architecture design",
           "CI/CD pipeline implementation",
           "Microservices development",
-          "Load testing and optimization"
+          "Load testing and optimization",
+          "Deployment on cloud infrastructure",
+          "Monitoring and maintenance"
         ]
       },
       {
         id: 2,
-        title: "Cooming Soon",
-        // description: "Infrastructure as Code solution for cloud deployment",
-        technologies: ["Terraform", "AWS", "Docker", "Python"],
+        title: "Cooming Soon  ",
+        description: "Under Market research ",
+        technologies: ["nextjs", "AWS", "Docker", "prisma", "TailwindCSS","nodejs"],
         // image: "/images/devops-system.jpg",
         // github: "#",
         // live: "#",
@@ -49,11 +54,13 @@ const SoftwareAIShowcase = () => {
         title: "Predictive Analytics for Flower species classification", 
         description: "Machine learning model for flower species forecasting",
         technologies: ["Python", "TensorFlow", "Pandas", "Flask"],
-        image: "/images/ai-analytics.jpg",
+        image: flower,
         github: "#",
         live: "#",
         process: [
           "Data collection and preprocessing",
+          "Exploratory data analysis",
+          "Model selection and tuning",
           "Feature engineering",
           "Model training and validation",
           "API development for integration",
@@ -82,29 +89,33 @@ const SoftwareAIShowcase = () => {
   // Development methodology
   const methodology = {
     software: [
-      { title: "Requirment Gathering", icon: <FiLayers />, description: "Requirement gathering and anl=alysis" },
+      { title: "Planning", icon: <FiCpu />, description: "Project scoping and requirements" },
+      { title: "Requirment Gathering", icon: <GiBasket />, description: "Requirement gathering and anlalysis" },
       { title: "Architecture", icon: <FiLayers />, description: "System design and planning" },
       { title: "Development", icon: <FiCode />, description: "Clean code implementation" },
       { title: "Testing", icon: "🧪", description: "Automated test suites" },
-      { title: "Deployment", icon: "🚀", description: "CI/CD pipelines" }
+      { title: "Deployment", icon: "🚀", description: "CI/CD pipelines" },
+      { title: "Maintenance", icon: "🔧", description: "Ongoing support and updates" }
+
     ],
     ai: [
+      { title: "Data Collection", icon: "📊", description: "Gathering datasets" },
       { title: "Research", icon: "🔍", description: "Literature review" },
       { title: "Prototyping", icon: "🧠", description: "Model experimentation" },
       { title: "Training", icon: "⚡", description: "GPU-accelerated learning" },
-      { title: "Deployment", icon: "🤖", description: "Production integration" }
+      { title: "Evaluation", icon: "📏", description: "Model performance assessment" },
+      { title: "Deployment", icon: "🤖", description: "Production integration" },
+      { title: "Monitoring", icon: "📈", description: "Model performance tracking" },
     ]
   };
 
   return (
     <div className="software-ai-showcase">
-      {/* Header */}
       <div className="showcase-header">
         <h2>Software & AI Development</h2>
         <p>End-to-end solutions from system architecture to intelligent algorithms</p>
       </div>
 
-      {/* Tab Navigation */}
       <div className="tab-nav">
         <button 
           className={`tab-btn ${activeTab === 'software' ? 'active' : ''}`}
@@ -123,21 +134,26 @@ const SoftwareAIShowcase = () => {
       </div>
 
       {/* Methodology */}
-      <div className="methodology-section">
-        <h3>My {activeTab === 'software' ? 'Software' : 'AI'} Development Approach</h3>
-        <div className="methodology-grid">
-          {methodology[activeTab].map((step, index) => (
-            <div key={index} className="methodology-card">
-              <div className="step-icon">{step.icon}</div>
-              <h4>{step.title}</h4>
-              <p>{step.description}</p>
-            </div>
-          ))}
+<div className="methodology-section">
+  <h3>My {activeTab === 'software' ? 'Software' : 'AI'} Development Approach</h3>
+  <div className="methodology-grid">
+    {methodology[activeTab].map((step, index) => (
+      <div key={index} className="mesob-wrapper">
+        {/* <div className="mesob-base" /> */}
+        {/* <div className="arrow-forward" /> */}
+        <div className="methodology-card">
+          <div className="step-icon">{step.icon}</div>
+          <h4>{step.title}</h4>
+          <p>{step.description}</p>
         </div>
       </div>
+    ))}
+  </div>
+</div>
+
 
       {/* Projects */}
-      <div className="projects-section">
+      <div className="projects-sections">
         <h3>Featured {activeTab === 'software' ? 'Software' : 'AI'} Projects</h3>
         <div className="projects-grid">
           {projects[activeTab].map(project => (

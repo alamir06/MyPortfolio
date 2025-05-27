@@ -86,38 +86,57 @@ Base Styles
    transform: translateY(-2px) !important;
    transition: 0.3s ease !important;
 }
-
-/* Methodology Section */
-.methodology-section {
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-}
-
-.methodology-section h3 {
-  font-size: 1.2rem !important;
-  color: var(--hero-title-color) !important;
- font-family: var(--font--family) !important;
-  max-width: 600px !important;
-  margin: 2rem auto !important;
-}
-
 .methodology-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 3rem;
+  padding: 0 2rem;
+}
+
+.mesob-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .mesob-base {
+  width: 110px;
+  height: 60px;
+  background: #d89e60;
+  border-radius: 50% 50% 35% 35% / 60% 60% 40% 40%;
+  transform: rotateX(60deg);
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: -30px;
+  z-index: 1;
+} */
+
+.arrow-forward {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  width: 60px;
+  height: 3px;
+  background-color: #555;
+  transform: rotate(-45deg) translateX(-50%);
+  transform-origin: left center;
+  z-index: 0;
 }
 
 .methodology-card {
+  position: relative;
   background: #fff;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   padding: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 2;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .methodology-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
 
 .step-icon {
@@ -126,35 +145,38 @@ Base Styles
 }
 
 .methodology-card h4 {
-   font-size: 1.8rem !important;
-  color: var(--hero-title-color) !important;
- font-family: var(--font--family) !important;
-  max-width: 600px !important;
-  margin-bottom: 1rem !important;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .methodology-card p {
-   font-size: 0.8rem !important;
-  color: var(--hero-title-color) !important;
- font-family: var(--font--family) !important;
-  max-width: 600px !important;
-  margin: 0 auto !important;
-  line-height: 1.25 !important;
- 
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
+
+
+.methodology-section h3 {
+    font-size: 1.8rem !important;
+    color: var(--hero-title-color) !important;
+    font-family: var(--font--family) !important;
+    max-width: 600px !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+}
+
 
 /* Projects Section */
 .projects-sections {
   margin-bottom: 3rem;
+  background: none !important;
 }
-
-.projects-section h3 {
-  font-size: 1.8rem !important;
-  color: var(--hero-title-color) !important;
- font-family: var(--font--family) !important;
-  max-width: 600px !important;
-  margin-bottom: 1rem !important;
-  text-align: center !important;
+.projects-sections h3 {
+    font-size: 1.8rem !important;
+    color: var(--hero-title-color) !important;
+    font-family: var(--font--family) !important;
+    max-width: 600px !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
 }
 
 .projects-grids {

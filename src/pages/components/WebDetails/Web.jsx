@@ -35,21 +35,26 @@ const DevelopmentShowcase = () => {
       </div>
 
       {/* Methodology */}
-      <div className="methodology-section">
-        <h3>My {activeTab === 'web' ? 'Web' : 'Mobile'} Development Approach</h3>
-        <div className="methodology-grid">
-          {methodology[activeTab].map((step, index) => (
-            <div key={index} className="methodology-card">
-              <div className="step-icon">{step.icon}</div>
-              <h4>{step.title}</h4>
-              <p>{step.description}</p>
-            </div>
-          ))}
+  <div className="methodology-section">
+  <h3>My {activeTab === 'web' ? 'Web' : 'Mobile'} Development Approach</h3>
+  <div className="methodology-grid">
+    {methodology[activeTab].map((step, index) => (
+      <div key={index} className="mesob-wrapper">
+        <div className="mesob-base" />
+        <div className="methodology-card">
+          <div className="step-icon">{step.icon}</div>
+          <h4>{step.title}</h4>
+          <p>{step.description}</p>
         </div>
       </div>
+    ))}
+  </div>
+</div>
+
+
 
       {/* Projects */}
-      <div className="projects-section">
+      <div className="projects-sections">
         <h3>Featured {activeTab === 'web' ? 'Web' : 'Mobile'} Projects</h3>
         <div className="projects-grid">
           {projects[activeTab].map(project => (

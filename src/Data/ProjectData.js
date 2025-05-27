@@ -18,7 +18,7 @@ export const Projects=[
         {imgUrl: bole, link:"/web",   tab: 'Website',},
         {imgUrl: technosophiys, link:"/web",   tab: 'Website',},
          {imgUrl: zemzem, link:"/web",   tab: 'Website',},
-        {imgUrl: cash, link:"https://alamir06.github.io/poll-system-by-using-javascript/",   tab: 'Javascript',},
-        {imgUrl: Pimage3,link:"https://alamir046.github.io/Random-Password-Generation-project./",   tab: 'Javascript', }, 
-        {imgUrl: pimage2, link:"https://alamir046.github.io/Dictionary-Application/",   tab: 'Javascript',},
+        {imgUrl: cash, link:"https://alamir06.github.io/Cash-Calculator-of-Ethiopia/",   tab: 'Javascript',},
+        {imgUrl: Pimage3,link:"https://alamir06.github.io/Random-Password-Generation-project./",   tab: 'Javascript', }, 
+        {imgUrl: pimage2, link:"https://alamir06.github.io/Dictionary-Application/",   tab: 'Javascript',},
 ];
