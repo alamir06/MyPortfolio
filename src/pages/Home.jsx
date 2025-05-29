@@ -55,7 +55,8 @@ export default function Home() {
            <FloatingMessage />
       
         <div className="lottie-bg">
-          <Lottie animationData={Animtion} loop autoplay />
+          {/* <Lottie animationData={Animtion} loop autoplay /> */}
+          
         </div>
 
         <div className="hero-bg">

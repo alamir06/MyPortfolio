@@ -96,6 +96,8 @@
   width: 400px;
   height: 400px;
   background: var(--circle3-color);
+  /* background: url(../assets/back.png); */
+  background-size: cover;
   border-radius: 10% 20% 30% 50%;
   bottom: 100px;
   right: 150px;
