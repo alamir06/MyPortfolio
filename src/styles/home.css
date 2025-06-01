@@ -36,13 +36,18 @@
   position: relative;
   height: 100vh;
   padding: 0 2rem;
-  background: var(--bg-color);
+  background-color: var(--bg-color);
+  background-image: url(../../public/home.png); /* update this path */
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
   color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
+
 
 /* Animated Background Elements */
 .lottie-bg {

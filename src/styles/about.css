@@ -1,7 +1,7 @@
 /* Base styles - light mode */
 .about-section {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #f5f7fa, #167ce1);
+  background:var(--bg-color) !important;
   display: flex;
   justify-content: center;
   align-items: center;
