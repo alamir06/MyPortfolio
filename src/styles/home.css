@@ -37,7 +37,7 @@
   height: 100vh;
   padding: 0 2rem;
   background-color: var(--bg-color);
-  background-image: url(../../public/home.png); /* update this path */
+  background-image: url(/home.png); /* update this path */
   /* background-size: cover;
   background-position: center;
   background-repeat: no-repeat; */
