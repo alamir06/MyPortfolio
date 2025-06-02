@@ -1,10 +1,18 @@
+
 .footer-wrapper {
-  background: rgba(39, 38, 38, 0.7);
+  background: url(../../public/about.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: var(--footer-text);
   padding: 4rem 1rem;
   text-align: center;
+
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 .footer {
   max-width: 960px;

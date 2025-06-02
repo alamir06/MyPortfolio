@@ -6,7 +6,7 @@
 }
 
 body.dark-mode .tech-section {
-  background-color: #121212;
+background:var(--bg-color) !important;
 }
 
 .tech-section h2 {
@@ -58,10 +58,11 @@ body.dark-mode .tech-category h3 {
   height: 110px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: rotate(45deg) !important;
 }
 
 body.dark-mode .tech-item {
-  background-color: #1f1f1f;
+  background: rgba(255, 255, 255, 0.03);
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
 }
 

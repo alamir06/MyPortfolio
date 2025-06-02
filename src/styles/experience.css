@@ -1,11 +1,11 @@
 .experience-section {
-  padding: 60px 20px;
+  padding: 40px 20px;
   background-color: #ffffff;
   transition: background-color 0.3s ease;
 }
 
 body.dark-mode .experience-section {
-  background-color: #121212;
+ background:var(--bg-color) !important;
 }
 
 .experience-section h2 {
@@ -55,7 +55,7 @@ body.dark-mode .experience-section h2 {
 }
 
 body.dark-mode .timeline-content {
-  background: #1e1e1e;
+ background: rgba(255, 255, 255, 0.03);
   color: #e0e0e0;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
 }
@@ -63,8 +63,8 @@ body.dark-mode .timeline-content {
 .timeline-content h3 {
   margin: 0;
   font-size: 1.4rem;
-  color: var(--hero-title-color);
-  font-family: var(--font--family);
+  color: var(--hero-title-color) !important;
+  font-family: var(--font--family) !important;
 }
 
 body.dark-mode .timeline-content h3 {
@@ -74,7 +74,7 @@ body.dark-mode .timeline-content h3 {
 .timeline-content h4 {
   margin: 4px 0;
   font-size: 1rem;
-  color: var(--hero-title-color);
+  color: var(--hero-title-color) !important;
   font-weight: 500;
 }
 

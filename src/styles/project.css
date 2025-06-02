@@ -17,7 +17,7 @@
 }
 
 body.dark-mode .projects-section {
-  background-color: #1e1e1e;
+ background:var(--bg-color) !important;
 }
 
 .projects-title {

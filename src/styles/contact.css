@@ -7,7 +7,7 @@
 }
 
 body.dark-mode .contact-section {
-  background-color: #121212;
+  background:var(--bg-color) !important;
   color: #f0f0f0;
 }
 
@@ -42,7 +42,7 @@ body.dark-mode .contact-section {
   flex: 1;
   max-width: 500px;
   text-align: left;
-   background-color: #1e1e1e;
+  background: rgba(255, 255, 255, 0.03) !important;
    padding: 24px;
    border-radius: 20px;
 }
@@ -65,6 +65,10 @@ body.dark-mode .contact-section {
   resize: vertical;
 }
 
+.contact-form input::placeholder
+{
+font-family: var(--font--family);
+}
 /* Input & Textarea */
 .contact-form input,
 .contact-form textarea {
@@ -73,13 +77,14 @@ body.dark-mode .contact-section {
   border-radius: 8px;
   font-size: 1rem;
   color: #000;
+  font-family: var(--font--family);
   transition: background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 /* Dark Mode Inputs */
 body.dark-mode .contact-form input,
 body.dark-mode .contact-form textarea {
-  background-color: #1e1e1e;
+   background: rgba(255, 255, 255, 0.03) !important;
   color: #f0f0f0;
   border-color: #333;
 }

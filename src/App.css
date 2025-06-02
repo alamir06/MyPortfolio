@@ -1,6 +1,9 @@
-
+*{
+    background:var(--bg-color) !important;
+}
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   transition: background-color 0.3s, color 0.3s;
+  background:var(--bg-color) !important;
 }

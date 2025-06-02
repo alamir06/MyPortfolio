@@ -23,7 +23,7 @@
 }
 .about-text {
   flex: 1;
-  background: rgba(39, 38, 38, 0.7);
+   background: rgba(255, 255, 255, 0.03) !important;
   backdrop-filter: blur(10px);
   border-radius: 1.5rem;
   padding: 2.5rem;

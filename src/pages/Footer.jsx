@@ -15,6 +15,11 @@ import "../styles/footer.css";
 const Footer = () => {
   return (
     <div className="footer-wrapper">
+    <div class="wave-layer wave1"></div>
+    <div class="wave-layer wave2"></div>
+    <div class="wave-layer wave3"></div>
+    <div class="wave-layer wave4"></div>
+    <div class="wave-layer wave5"></div>
       <footer className="footer">
          <hr className="footer-divider" />
 
