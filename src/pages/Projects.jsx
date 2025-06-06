@@ -7,7 +7,7 @@ import { FaReact, FaTelegram } from 'react-icons/fa';
 const tabs = ['Website', 'Software', 'Javascript'];
 
 export default function ProjectsSection() {
-  const [activeTab, setActiveTab] = useState('Tab 1');
+  const [activeTab, setActiveTab] = useState('Website');
   const filteredProjects = Projects.filter((p) => p.tab === activeTab);
 
   return (

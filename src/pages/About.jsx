@@ -1,7 +1,7 @@
 import Lottie from 'lottie-react';
 import '../styles/about.css';
 import devDesk from "../assets/dev-desk.json";
-import cvFile from "../assets/Alamirew_Wagaw_Resume.pdf"; // Ensure your CV file is in the correct path
+import cvFile from "../assets/AlamirewResume.pdf"; // Ensure your CV file is in the correct path
 import { motion } from 'framer-motion';
 import { FaDownload, FaReadme, FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -35,7 +35,7 @@ export default function AboutSection() {
 </Link>
       </div>
         <div className="cv-download">
-  <a href={cvFile} download="Alamirew_Wagaw_Resume.pdf" className="download-btn">
+  <a href={cvFile} download="AlamirewResume.pdf" className="download-btn">
     <FaDownload className="download-icon" />
     My Resume
   </a>

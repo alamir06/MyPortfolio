@@ -60,7 +60,10 @@ body.dark-mode .tech-category h3 {
   transition: background-color 0.3s ease, transform 0.3s ease;
   transform: rotate(45deg) !important;
 }
-
+.tech-item:hover{
+ transform: rotate(-45deg) !important;
+   /* border: 2px solid var(--hero-title-color); */
+}
 body.dark-mode .tech-item {
   background: rgba(255, 255, 255, 0.03);
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);

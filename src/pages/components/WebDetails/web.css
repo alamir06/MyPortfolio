@@ -1,4 +1,4 @@
-Base Styles
+
 .dev-showcase {
   max-width: 1200px;
   margin: 0 auto;
@@ -128,10 +128,11 @@ Base Styles
   background: #fff;
   border-radius: 0.75rem;
   padding: 1.5rem;
-  width: 100%;
+  width: 50%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   z-index: 2;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: rotate(15deg);
 }
 
 .methodology-card:hover {

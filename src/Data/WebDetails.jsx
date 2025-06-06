@@ -11,7 +11,7 @@ import bole from "../assets/image/bole.png";
         description: "Built with React, NestJs, and Postgress with Great Collaboration",
         technologies: ["React", "NestJs", "Postgress", "📂"],
         image: bole,
-        github: "https://github.com/TechnoSophia-Solutions/Bole-SubCity-CFMS",
+        github: "#",
         live: "https://cfmsui.technosophia.net/",
         process: [
           "Discuss with The client to understand the requirements",
@@ -30,7 +30,7 @@ import bole from "../assets/image/bole.png";
         description: "Built with React, NestJs, and Postgress with Great Collaboration",
         technologies: ["React", "NestJs", "Postgress", "📂","🙏"],
         image: Technsophia,
-        github: "https://github.com/TechnoSophia-Solutions/TS-portfolio",
+        github: "#",
         live: "https://technosophia.net/",
         process: [
           "discuss with The Technosophia Team to understand the requirements",
@@ -48,7 +48,7 @@ import bole from "../assets/image/bole.png";
         description: "Built with React,nestJs, and Mysql with Great Collaboration",
         technologies: ["React", "NestJs", "MYSQL", "📂"],
         image: zemzem,
-        github: "https://github.com/TechnoSophia-Solutions/ZFC-N/tree/main/ZFC-UI",
+        github: "#",
         live: "https://zemzem.technosophia.net/",
         process: [
           "Market research and competitive analysis",

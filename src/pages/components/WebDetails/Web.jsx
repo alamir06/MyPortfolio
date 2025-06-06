@@ -123,7 +123,7 @@ const DevelopmentShowcase = () => {
               )}
               {selectedProject.live && (
                 <a href={selectedProject.live} className="live-btn">
-                  <FiExternalLink /> Live Demo
+                  <FiExternalLink /> Live View
                 </a>
               )}
             </div>
