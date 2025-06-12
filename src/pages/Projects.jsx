@@ -3,9 +3,7 @@ import { motion } from 'framer-motion';
 import ProjectCard from '../card/ProjectCard';
 import '../styles/project.css';
 import { Projects } from '../Data/ProjectData';
-import { FaReact, FaTelegram } from 'react-icons/fa';
 const tabs = ['Website', 'Software', 'Javascript'];
-
 export default function ProjectsSection() {
   const [activeTab, setActiveTab] = useState('Website');
   const filteredProjects = Projects.filter((p) => p.tab === activeTab);
@@ -21,7 +19,6 @@ export default function ProjectsSection() {
       >
         What I've Done!
       </motion.h2>
-
       <div className="tabs">
         {tabs.map((tab) => (
           <button
@@ -33,7 +30,6 @@ export default function ProjectsSection() {
           </button>
         ))}
       </div>
-
       <motion.div
         className="projects-container"
         initial={{ opacity: 0, y: 40 }}
@@ -49,7 +45,6 @@ export default function ProjectsSection() {
             description={project.description}
             imgSrc={project.imgUrl}
             link={project.link}
-
           />
         ))}
       </motion.div>

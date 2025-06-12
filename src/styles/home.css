@@ -31,16 +31,12 @@
   --social-hover-color: #a5b4fc;
 }
 
-/* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
   padding: 0 2rem;
   background-color: var(--bg-color);
-  background-image: url(/home.png); /* update this path */
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
+  background-image: url(/home.png); 
   background-attachment: fixed;
   color: var(--text-color);
   display: flex;
@@ -351,10 +347,45 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+.scroll-indicator{
+  cursor: pointer;
+}
+.nav-social{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  gap: 1.2rem;
+  z-index: 1000;
+}
+.nav-social a {
+  text-decoration: none;
+  color: inherit; /* Use icon's original color if defined */
+  transition: transform 0.3s;
+}
 
-/* Responsive Styles */
+.nav-social a:hover {
+  transform: scale(1.2);
+}
 
-/* Tablet and below */
+/* .staircase-word {
+  position: absolute;
+  top: 120px; 
+  left: 80px;
+  z-index: 5;
+  font-size: 2rem;
+  font-weight: bold;
+  pointer-events: none;
+} */
+
+/* .stair-letter {
+  position: absolute;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+} */
+
+
+
 @media (max-width: 1024px) {
   .hero {
     padding: 0 1.5rem;

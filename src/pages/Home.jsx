@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
-import { FaEye, FaChevronDown,FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaEye, FaChevronDown,FaGithub, FaLinkedin, FaTelegram, FaYoutube, FaInstagram } from 'react-icons/fa';
 import Animtion from '../assets/Animation.json';
 import '../styles/home.css';
 import { useEffect, useState } from 'react';
@@ -15,7 +15,16 @@ const messages = [
   "Full-Stack Developer",
   "Tech Explorer",
 ];
-
+const stairLetterPositions = [
+  { top: -90, left: 470 },
+  { top: -50, left: 430 },
+  { top: 100, left: 300 },
+  { top: 150, left: 240 },
+  { top: 200, left: 180 },
+  { top: 250, left: 120 },
+  { top: 300, left: 60 },
+  { top: 350, left: 0 },
+];
 const steps = [
   'Understand Problem',
   'Requirement Gathering',
@@ -52,7 +61,7 @@ export default function Home() {
     <div className="page relative">
       <section className="hero">
            <CustomCursor />
-           <FloatingMessage />
+           {/* <FloatingMessage /> */}
       
         <div className="lottie-bg">
           {/* <Lottie animationData={Animtion} loop autoplay /> */}
@@ -104,6 +113,23 @@ export default function Home() {
           <h2 className="hero-title">
             Software Engineer
           </h2>
+
+{/* 
+<div className="staircase-word">
+  {'Software'.split('').map((char, index) => (
+    <span
+      key={index}
+      className="stair-letter"
+      style={{
+        top: `${stairLetterPositions[index].top}px`,
+        left: `${stairLetterPositions[index].left}px`,
+      }}
+    >
+      {char}
+    </span>
+  ))}
+</div> */}
+
       <div className="process-flow">
         {steps.map((step, index) => (
           <div
@@ -126,7 +152,14 @@ export default function Home() {
         </div>
 </div>
         <div className="scroll-indicator">
-        <FaChevronDown />
+          <FaChevronDown />
+               <div className='nav-social'>
+                  <a href='https://t.me/alamir_tel'><FaTelegram /></a>  
+                  <a href='https://www.instagram.com/alam_irew/'><FaInstagram /></a>
+                  <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank"><FaLinkedin /></a>
+                  <a href="https://github.com/alamir06" target="_blank"><FaGithub /></a>
+                  <a href="https://www.youtube.com/@Alak_studio8495" target="_blank"><FaYoutube /></a> 
+                  </div>
         </div>
       </section>
     </div>

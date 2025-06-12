@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaSun, FaMoon } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaSun, FaMoon, FaTelegram, FaYoutube } from 'react-icons/fa';
 import { FiMenu, FiX } from 'react-icons/fi';
 import '../styles/navbar.css';
 import logo from '../assets/alamir1.jpg'; // replace with your actual logo path
@@ -48,7 +48,8 @@ export default function Navbar() {
   {link}
 </a>
 ))}
-        |  <a href="https://github.com/alamir06" target="_blank" rel="noreferrer">
+        |  
+        <a href="https://github.com/alamir06" target="_blank" rel="noreferrer">
             <FaGithub className="icon" />
           </a>
           <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank" rel="noreferrer">

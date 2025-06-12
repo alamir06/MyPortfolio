@@ -1,6 +1,6 @@
 /* Base styles - light mode */
 .about-section {
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   background:var(--bg-color) !important;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@
 }
 .about-text {
   flex: 1;
-   background: rgba(255, 255, 255, 0.03) !important;
+  background: rgba(255, 255, 255, 0.03) !important;
   backdrop-filter: blur(10px);
   border-radius: 1.5rem;
   padding: 2.5rem;

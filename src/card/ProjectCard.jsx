@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import '../styles/project.css';
-import { FaEye, FaEyeDropper } from 'react-icons/fa';
+import { FaClipboardCheck, FaEye, FaEyeDropper, FaFolder } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { FaUsersViewfinder } from 'react-icons/fa6';
 
 export default function ProjectCard({ id, title, description, imgSrc,link }) {
   const ref = useRef(null);
@@ -30,9 +31,10 @@ export default function ProjectCard({ id, title, description, imgSrc,link }) {
         <img src={imgSrc} alt={title} className="project-img" />
         <div className="overlay">
   
-<Link to={link} className="eye-link">
-  <h3 className="eye">👁️</h3>
+<Link to={link} className="eye">
+  <h3 className="eye yellow-folder"><FaFolder /></h3>
 </Link>
+
 
           </div>
         </div>

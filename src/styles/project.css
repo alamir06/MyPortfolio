@@ -10,7 +10,7 @@
 }
 
 .projects-section {
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   background: #f9f9f9;
   text-align: center;
   min-height: 100vh;
@@ -85,8 +85,9 @@ body.dark-mode .projects-section {
 .project-card {
   position: relative;
   overflow: hidden;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
   background: rgba(255, 255, 255, 0.03);
   width: 300px;
   min-height: 300px;
@@ -169,6 +170,7 @@ body.dark-mode .projects-section {
   overflow: hidden;
   background-color: var(--card-bg);
   transition: box-shadow 0.3s ease, border 0.3s ease;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
 
 .card-image-container:hover {
@@ -202,13 +204,19 @@ body.dark-mode .projects-section {
 .card-image-container .overlay {
   opacity: 1;
 }
+.yellow-folder {
+  color: #facc15 !important; /* Tailwind's yellow-400 (classic folder yellow) */
+  font-size: 2rem; /* Adjust as needed */
+  transition: transform 0.3s ease;
+}
 
-
-
+.yellow-folder:hover {
+  transform: scale(1.1);
+  color: #fbbf24; /* Slightly darker yellow on hover */
+}
 .eye:hover {
   -webkit-text-fill-color: #ffffff; /* Actual solid color on hover */
 }
-
 .overlay h3 {
   position: absolute;
   top: 76%;
@@ -251,11 +259,13 @@ body.dark-mode .project-info p {
   color: #ccc;
 }
 
+
 /* Responsive */
 @media (max-width: 768px) {
   .project-card {
     min-height: auto;
     max-height: none;
+    transform: rotate(45deg);
   }
 
   .card-image-container {
