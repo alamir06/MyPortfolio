@@ -1,6 +1,3 @@
-
-
-
 export const Experiences = [
   {
     title: 'Frontend Developer Intern',

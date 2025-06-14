@@ -1,0 +1,27 @@
+.experience-note-container {
+  padding: 80px 20px;
+  background:var(--bg-color) !important;
+  display: flex;
+  justify-content: center;
+}
+.experience-note {
+  background:var(--bg-color) !important;
+  padding: 30px 40px;
+  border-left: 6px solid #ff8c42;
+  border-radius: 12px;
+  max-width: 800px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  color: #2e2e2e;
+  transition: all 0.3s ease;
+}
+
+.experience-note h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: var(--hero-title-color);
+}
+.experience-note p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: whitesmoke;
+}

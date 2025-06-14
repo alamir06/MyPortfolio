@@ -4,8 +4,17 @@ import './aboutDetal.css';
 import myImage from "../../../assets/alamir2.jpg"
 import { skills } from '../../../Data/AboutDetails';
 import { favorites } from '../../../Data/AboutDetails';
+import {motion} from "framer-motion"
 const AboutMe = () => {
  
+const cardVariants = {
+  hidden: { opacity: 0, y: 60 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.3, duration: 0.6 },
+  }),
+};
 
   return (
     <div className="about-me-container">
@@ -32,10 +41,10 @@ const AboutMe = () => {
               I'm a passionate developer with a love for creating beautiful, functional digital experiences. 
               With over [1] years in the industry, I've worked on projects ranging from small business websites 
               to large-scale enterprise applications.
-            I specialize in full-stack development,
-            blending design with functionality to create high-performing digital experiences.
-             With several completed projects under my experience and strong problem-solving skills, I strive to deliver
-             impactful solutions for clients and employers.
+              I specialize in full-stack development,
+              blending design with functionality to create high-performing digital experiences.
+              With several completed projects under my experience and strong problem-solving skills, I strive to deliver
+              impactful solutions for clients and employers.
              </p>
             <p>
               My journey in technology has been driven by a desire to learn and grow. 
@@ -46,17 +55,17 @@ const AboutMe = () => {
           </div>
         </section>
         <div className="favorites-connector">
-  <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+       <svg viewBox="0 0 100 100" preserveAspectRatio="none">
     <path d="M0,100 C40,0 60,0 100,100" stroke="#ccc" strokeWidth="2" fill="none" />
   </svg>
 </div>
-         <section className={`education-timelines`}>
+    <section className={`education-timelines`}>
       <div className="containers">
         <h2 className="section-titles">My Favorite activities</h2>
         <p className="section-subtitles">In almost My Every day Journey</p>
-        <div className="timeline-containers">
+         <div className="timeline-containers">
           <div className="timeline-lines"></div>
-          
+  
           {favorites.map((item, index) => (
             <div 
               key={item.id} 
@@ -70,34 +79,41 @@ const AboutMe = () => {
               >
                 {item.icon}
               </div>
-              
-              <div className="timeline-contents">
-                <div className="timeline-headers">
-                  <h3>{item.title}</h3>
-                  <span className="timeline-years">{item.year}</span>
-                </div>
-                <h4 className="timeline-degrees">{item.qoute}</h4>
+            
+            <motion.div
+            className="timeline-contents"
+            key={index}
+            custom={index}
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+          <div className="timeline-headers">
+            <h3>{item.title}</h3>
+            <span className="timeline-years">{item.year}</span>
+            </div>
+              <h4 className="timeline-degrees">{item.qoute}</h4>
                 <p className="timeline-descriptions">{item.description}</p>
-                
                 <div className="progress-containers">
-                  <div 
-  className="progress-bars" 
-  style={{ 
-    width: `${100 - index * 25}%`,
-    backgroundColor: item.color
-  }}
->
-  <span style={{
-    color: '#fff',
-    fontWeight: 'bold',
-    paddingLeft: '8px'
-  }}>
-    {100 - index * 25}%
-  </span>
-</div>
+                <div 
+          className="progress-bars" 
+          style={{ 
+            width: `${100 - index * 25}%`,
+            backgroundColor: item.color
+          }}
+            >
+              <span style={{
+                color: '#fff',
+                fontWeight: 'bold',
+                paddingLeft: '8px'
+              }}>
+              {100 - index * 25}%
+            </span>
+          </div>
 
                 </div>
-              </div>
+             </motion.div>
             </div>
           ))}
         </div>
@@ -129,10 +145,10 @@ const AboutMe = () => {
   </div>
 </section> */}
 <div className="favorites-connector">
-  <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+   <svg viewBox="0 0 100 100" preserveAspectRatio="none">
     <path d="M0,100 C40,0 60,0 100,100" stroke="#ccc" strokeWidth="2" fill="none" />
-  </svg>
-</div>
+      </svg>
+        </div>
         <section className="skills-section">
           <h3 className="about-title">My Skills</h3>
           <div className="skills-grid">

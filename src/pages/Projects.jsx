@@ -3,9 +3,11 @@ import { motion } from 'framer-motion';
 import ProjectCard from '../card/ProjectCard';
 import '../styles/project.css';
 import { Projects } from '../Data/ProjectData';
-const tabs = ['Website', 'Software', 'Javascript'];
+
+const tabs = ['System', 'Website', 'Javascript'];
+
 export default function ProjectsSection() {
-  const [activeTab, setActiveTab] = useState('Website');
+  const [activeTab, setActiveTab] = useState('System');
   const filteredProjects = Projects.filter((p) => p.tab === activeTab);
 
   return (

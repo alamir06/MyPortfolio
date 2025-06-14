@@ -12,6 +12,7 @@ import Footer from './pages/Footer';
 import AboutMe from './pages/components/About/AboutDetails';
 import WebDetails from './pages/components/WebDetails/Web';
 import SoftwareAIShowcase from './pages/components/Software/Software';
+import ExperienceNote from './pages/components/Consulting/Consulting';
 
 function MainPage() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <Route path="/about-me" element={<AboutMe />} />
       <Route path="/web" element={<WebDetails />} />
       <Route path="/software" element={<SoftwareAIShowcase />} />
+      <Route path="/consulting" element={<ExperienceNote />} />
     </Routes>
   );
 }

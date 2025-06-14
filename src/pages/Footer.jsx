@@ -15,14 +15,13 @@ import "../styles/footer.css";
 const Footer = () => {
   return (
     <div className="footer-wrapper">
-    <div class="wave-layer wave1"></div>
-    <div class="wave-layer wave2"></div>
-    <div class="wave-layer wave3"></div>
-    <div class="wave-layer wave4"></div>
-    <div class="wave-layer wave5"></div>
+    <div className="wave-layer wave1"></div>
+    <div className="wave-layer wave2"></div>
+    <div className="wave-layer wave3"></div>
+    <div className="wave-layer wave4"></div>
+    <div className="wave-layer wave5"></div>
       <footer className="footer">
          <hr className="footer-divider" />
-
         <div className="footer-nav">
           <div className="footer-link"><a href="#home">Home </a></div>
           <div className="footer-link"><a href="#projects">Projects</a></div>
@@ -30,8 +29,6 @@ const Footer = () => {
           <div className="footer-link"><a href="#services">services</a></div>
           <div className="footer-link"><a href="#contact">Contact</a></div>
         </div>
-
-       
         <div className="footer-description">
           <p>
            Feel free to reach out to me for collaboration or just a friendly chat!
@@ -47,7 +44,6 @@ const Footer = () => {
          {/* <a href="tel:+251921991810"><FaPhone /></a> */}
 
         </div>
-
         <div className="footer-bottom">
           <p>
             @2025 :&nbsp;Alamirew wagaw

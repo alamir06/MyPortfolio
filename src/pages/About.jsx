@@ -1,7 +1,7 @@
 import Lottie from 'lottie-react';
 import '../styles/about.css';
 import devDesk from "../assets/dev-desk.json";
-import cvFile from "../assets/AlamirewResume.pdf"; // Ensure your CV file is in the correct path
+import cvFile from "../assets/AlamirewResume.pdf";
 import { motion } from 'framer-motion';
 import { FaDownload, FaReadme, FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -9,10 +9,10 @@ export default function AboutSection() {
   return (
     <section className="about-section" id="about">
       <motion.div 
-       initial={{ y: 100, opacity: 0 }}
-  whileInView={{ y: 0, opacity: 1 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
-  viewport={{ once: true }}
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
       className="about-content">
         <div className="about-text">
           <h2>Who Am I!</h2>
@@ -25,27 +25,25 @@ export default function AboutSection() {
             With several completed projects under my experience and strong problem-solving skills, I strive to deliver
             impactful solutions for clients and employers.
           </p>
-          
-          {/* CV Download Button */}
           <div className='about-btn'>
           <div className="cv-download">
-        <Link to="/about-me" className="download-btn">
-  <FaReadme className="download-icon" />
-  About Me
-</Link>
-      </div>
+            <Link to="/about-me" className="download-btn">
+            <FaReadme className="download-icon" />
+            About Me
+          </Link>
+          </div>
         <div className="cv-download">
-  <a href={cvFile} download="AlamirewResume.pdf" className="download-btn">
-    <FaDownload className="download-icon" />
-    My Resume
-  </a>
-</div>
-</div>
-        </div>
-        <div className="about-animation">
-          <Lottie animationData={devDesk} loop autoplay />
-        </div>
+        <a href={cvFile} download="AlamirewResume.pdf" className="download-btn">
+        <FaDownload className="download-icon" />
+        My Resume
+      </a>
+      </div>
+      </div>
+      </div>
+      <div className="about-animation">
+      <Lottie animationData={devDesk} loop autoplay />
+      </div>
       </motion.div>
-    </section>
+      </section>
   );
 }

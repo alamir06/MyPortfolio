@@ -167,11 +167,11 @@
 
 
 /* Projects Section */
-.projects-sections {
+.project-section {
   margin-bottom: 3rem;
   background: none !important;
 }
-.projects-sections h3 {
+.project-section h3 {
     font-size: 1.8rem !important;
     color: var(--hero-title-color) !important;
     font-family: var(--font--family) !important;
@@ -180,25 +180,25 @@
     text-align: center !important;
 }
 
-.projects-grids {
+.project-cards{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
 }
 
-.project-card {
-  background: #fff;
+.project-cardeach {
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-}
+}  
 
-/* .project-card:hover {
-  transform: translateY(-5px);
+.project-cardeach:hover {
+  transform: translateY(-15px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-} */
+}
 
 .project-image {
   height: 200px;
@@ -211,6 +211,7 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  border-radius: 10px;
 }
 
 .project-card:hover .project-image img {

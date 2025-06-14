@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import '../styles/project.css';
-import { FaClipboardCheck, FaEye, FaEyeDropper, FaFolder } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { FaUsersViewfinder } from 'react-icons/fa6';
+import {motion} from "framer-motion";
 
 export default function ProjectCard({ id, title, description, imgSrc,link }) {
   const ref = useRef(null);
@@ -24,19 +23,23 @@ export default function ProjectCard({ id, title, description, imgSrc,link }) {
         visible ? 'visible' : 'hidden'
       }`}
     >
- <svg className="card-border" viewBox="0 0 100 100" preserveAspectRatio="none">
-  <rect x="1" y="1" width="98" height="98" rx="8" ry="8" />
-</svg>
+        <svg className="card-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect x="1" y="1" width="98" height="98" rx="8" ry="8" />
+        </svg>
       <div className="card-image-container">
         <img src={imgSrc} alt={title} className="project-img" />
         <div className="overlay">
-  
-<Link to={link} className="eye">
-  <h3 className="eye yellow-folder"><FaFolder /></h3>
-</Link>
-
-
-          </div>
+              <motion.button
+                  className="view-btn"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                 <Link 
+                 to={link} 
+                 className='view-project-link'
+                 >View Details </Link> 
+                </motion.button>
+                 </div>
         </div>
     </div>
   );

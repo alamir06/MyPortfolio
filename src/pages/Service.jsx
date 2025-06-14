@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-
-import '../styles/service.css'; // You'll create this next
+import '../styles/service.css';
 import { Player } from '@lottiefiles/react-lottie-player';
 import {ServiceData} from "../Data/ServiceData"
 import { FaArrowAltCircleRight } from 'react-icons/fa';
@@ -27,12 +26,17 @@ export default function Services() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2 }}
           >
-            <Player autoplay loop src={service.animation} className="service-animation" />
+            <Player 
+            autoplay 
+            loop 
+            src={service.animation} 
+            className="service-animation" 
+            />
             <h3>{service.title}</h3>
             <p>{service.description}</p>
-          <Link to={service.link} className="service-link">
-          <FaArrowAltCircleRight /> Explore More
-          </Link>
+            <Link to={service.link} className="service-link">
+            <FaArrowAltCircleRight /> Explore More
+            </Link>
           </motion.div>
         ))}
       </div>

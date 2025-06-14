@@ -5,6 +5,8 @@ import aa from '../../../assets/image/aa.jpg';
 import Footer from '../../components/FooterDetails/FooterDetails';
 import flower from '../../../assets/image/flower.jpg'; 
 import { GiBasket } from 'react-icons/gi';
+import bole from "../../../assets/image/bole.png";
+import Technsophia from "../../../assets/image/Technosophia.png";
 
 const SoftwareAIShowcase = () => {
   const [activeTab, setActiveTab] = useState('software');
@@ -32,21 +34,42 @@ const SoftwareAIShowcase = () => {
         ]
       },
       {
-        id: 2,
-        title: "Cooming Soon  ",
-        description: "Under Market research ",
-        technologies: ["nextjs", "AWS", "Docker", "prisma", "TailwindCSS","nodejs"],
-        // image: "/images/devops-system.jpg",
-        // github: "#",
-        // live: "#",
-        process: [
-          "Infrastructure requirements mapping",
-          "Terraform module development",
-          "Automated deployment workflows",
-          "Monitoring integration",
-          "Security hardening"
-        ]
-      }
+              id: 2,
+              title: "Customer Feedback monitoring System",
+              description: "Built with React, NestJs, and Postgress with Great Collaboration",
+              technologies: ["React", "NestJs", "Postgress", "📂"],
+              image: bole,
+              github: "#",
+              live: "https://cfmsui.technosophia.net/",
+              process: [
+                "Discuss with The client to understand the requirements",
+                "Market research and competitive analysis",
+                "UI/UX design in Figma",
+                "Frontend development with React",
+                "Backend API development with NestJs",
+                "Database integration with Postgress",
+                "Deployment on  Yegara hosting",
+                "Testing and bug fixing",
+              ]
+            },
+            {
+                    id: 3,
+                    title: "Technosophia IT Solutions ",
+                    description: "Built with React, NestJs, and Postgress with Great Collaboration",
+                    technologies: ["React", "NestJs", "Postgress", "📂","🙏"],
+                    image: Technsophia,
+                    github: "#",
+                    live: "https://technosophia.net/",
+                    process: [
+                      "discuss with The Technosophia Team to understand the requirements",
+                      "UI/UX design in Figma",
+                      "Frontend development with React",
+                      "Backend API development with NestJs for  Blog and Portfolio",
+                      "Database integration with Postgress for Blog",
+                      "Deployment on  Yegara hosting",
+                      "Testing and bug fixing",
+                    ]
+                  },
     ],
     ai: [
       {
@@ -153,23 +176,23 @@ const SoftwareAIShowcase = () => {
 
 
       {/* Projects */}
-      <div className="projects-sections">
+      <div className="projectss-sections">
         <h3>Featured {activeTab === 'software' ? 'Software' : 'AI'} Projects</h3>
-        <div className="projects-grid">
+        <div className="projectss-grid">
           {projects[activeTab].map(project => (
             <div 
               key={project.id} 
-              className="project-card"
+              className="projectss-card"
               onClick={() => setSelectedProject(project)}
             >
-              <div className="project-image">
+              <div className="projectss-image">
                 <img src={project.image} alt={project.title} />
                 <div className="image-overlay"></div>
               </div>
-              <div className="project-content">
-                <div className="project-header">
+              <div className="projectss-content">
+                <div className="projectss-header">
                   <h4>{project.title}</h4>
-                  <div className="project-links">
+                  <div className="projectss-links">
                     {project.github && <a href={project.github}><FiGithub /></a>}
                     {project.live && <a href={project.live}><FiExternalLink /></a>}
                   </div>
@@ -192,7 +215,7 @@ const SoftwareAIShowcase = () => {
 
       {/* Project Modal */}
       {selectedProject && (
-        <div className="project-modal">
+        <div className="projectss-modal">
           <div className="modal-content">
             <button className="close-btn" onClick={() => setSelectedProject(null)}>
               <FiX />

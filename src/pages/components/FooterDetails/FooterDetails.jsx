@@ -16,10 +16,7 @@ const Footer = () => {
     <div className="footer-wrapper">
       <footer className="footer">
          <hr className="footer-divider" />
-
-   
-       
-        <div className="footer-description">
+          <div className="footer-description">
           <p>
            Feel free to reach out to me for collaboration or just a friendly chat!
           </p>
@@ -32,9 +29,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank"><FaLinkedinIn /></a>
           <a href="https://github.com/alamir06" target="_blank"><FaGithub /></a>
          {/* <a href="tel:+251921991810"><FaPhone /></a> */}
-
         </div>
-
         <div className="footer-bottom">
           <p>
             @2025 :&nbsp;Alamirew wagaw

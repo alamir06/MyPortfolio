@@ -1,12 +1,9 @@
 import { motion } from 'framer-motion';
-import Lottie from 'lottie-react';
 import { FaEye, FaChevronDown,FaGithub, FaLinkedin, FaTelegram, FaYoutube, FaInstagram } from 'react-icons/fa';
-import Animtion from '../assets/Animation.json';
 import '../styles/home.css';
 import { useEffect, useState } from 'react';
 import { FloatingMessage } from './FloatingMessage';
 import { CustomCursor } from './CustomeCursor';
-
 
 const messages = [
   "I'm a Software Engineer",
@@ -15,6 +12,7 @@ const messages = [
   "Full-Stack Developer",
   "Tech Explorer",
 ];
+
 const stairLetterPositions = [
   { top: -90, left: 470 },
   { top: -50, left: 430 },
@@ -61,19 +59,13 @@ export default function Home() {
     <div className="page relative">
       <section className="hero">
            <CustomCursor />
-           {/* <FloatingMessage /> */}
-      
-        <div className="lottie-bg">
-          {/* <Lottie animationData={Animtion} loop autoplay /> */}
-          
+           <div className="lottie-bg">
         </div>
-
-        <div className="hero-bg">
+      <div className="hero-bg">
           <div className="circle1"></div>
           <div className="circle2"></div>
            <div className="circle3"></div>
         </div>
-
      <div
       className={`circle-flip-wrapper ${flipped ? 'flipped' : ''}`}
       onMouseEnter={() => setFlipped(true)}
@@ -141,16 +133,16 @@ export default function Home() {
           </div>
         ))}
       </div>
-           <a
-            href="#projects"
-            className="cta-button"
-          >
-            <FaEye className="text-xl"  />
-            My Work
-          </a>
-        </motion.div>
+        <a
+        href="#projects"
+        className="cta-button"
+      >
+        <FaEye className="text-xl"  />
+        My Work
+      </a>
+      </motion.div>
         </div>
-</div>
+      </div>
         <div className="scroll-indicator">
           <FaChevronDown />
                <div className='nav-social'>

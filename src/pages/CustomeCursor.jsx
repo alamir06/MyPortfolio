@@ -11,7 +11,6 @@ export  function CustomCursor() {
         cursorRef.current.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
       }
     };
-
     document.addEventListener('mousemove', moveCursor);
     return () => document.removeEventListener('mousemove', moveCursor);
   }, []);

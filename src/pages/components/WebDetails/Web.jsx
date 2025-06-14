@@ -54,13 +54,13 @@ const DevelopmentShowcase = () => {
 
 
       {/* Projects */}
-      <div className="projects-sections">
+      <div className="project-section">
         <h3>Featured {activeTab === 'web' ? 'Web' : 'Mobile'} Projects</h3>
-        <div className="projects-grid">
+        <div className="project-cards">
           {projects[activeTab].map(project => (
             <div 
               key={project.id} 
-              className="project-card"
+              className="project-cardeach"
               onClick={() => setSelectedProject(project)}
             >
               <div className="project-image">
