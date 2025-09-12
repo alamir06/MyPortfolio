@@ -45,6 +45,26 @@ body.dark-mode .experience-section h2 {
   border: 3px solid white;
   box-shadow: 0 0 0 2px #4f46e5;
 }
+.time-org{
+  display: flex;
+  gap: 10px;
+}
+.time-org {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5rem; /* space between items */
+}
+
+.time-item {
+  text-align: start;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 40px;
+  background-color: var(--hero-title-color);
+}
 
 .timeline-content {
   background: #f9f9f9;

@@ -89,13 +89,13 @@ export default function Navbar() {
           ))}
           <div className="mobile-icons">
             <a 
-            href="https://github.com/yourusername" 
+            href="https://github.com/alamir06" 
             target="_blank" 
             rel="noreferrer">
             <FaGithub />
             </a>
             <a 
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/alamirewwagaw/"
             target="_blank"
             rel="noreferrer">
               <FaLinkedin />

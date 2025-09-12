@@ -3,7 +3,7 @@ import { FaChurch, FaCode, FaReadme, FaTractor } from "react-icons/fa";
  export const skills = [
     { name: 'Frontend Development', percent: 85, color: '#61DAFB' },
     { name: 'Backend Developer', percent: 90, color: '#F0DB4F' },
-    { name: 'UI/UX Design', percent: 70, color: '#FF4081' },
+    { name: 'UI/UX Design', percent: 78, color: '#FF4081' },
     { name: 'FullStack Development', percent: 87.5, color: '#68A063' },
     { name: 'Project Management', percent: 85, color: '#000000' },
     { name: 'Technology Consulting', percent: 87, color: '#4E71FF' },

@@ -39,6 +39,7 @@ export default function ProjectsSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
+        
         {filteredProjects.map((project, index) => (
           <ProjectCard
             key={index}

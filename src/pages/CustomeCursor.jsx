@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { FaAccessibleIcon, FaCircle, FaRegCommentDots } from 'react-icons/fa';
-import { FaArrowDown91 } from 'react-icons/fa6';
+import { FaCode } from 'react-icons/fa';
 
 export  function CustomCursor() {
   const cursorRef = useRef(null);
@@ -17,7 +16,7 @@ export  function CustomCursor() {
 
   return (
     <div className="custom-cursor" ref={cursorRef}>
-      <FaAccessibleIcon className="custom-icon" />
+      <FaCode className="custom-icon" />
     </div>
   );
 }

@@ -28,7 +28,7 @@ import portfolio from "../assets/image/portfolio.png";
         description: "Built with React,CSS,Canva with Great Commitment",
         technologies: ["React", "Css", "Canva", "📂","🙏"],
         image: portfolio,
-        github: "#",
+        github: "https://github.com/alamir06/MyPortfolio",
         live: "https://alamirew.technosophia.net/",
         process: [
           "Deep think and analysis of my skill",

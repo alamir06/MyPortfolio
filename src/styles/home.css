@@ -493,21 +493,18 @@
   .hero-title {
     font-size: 2rem;
   }
-
   .cta-button {
     font-size: 0.8rem;
     padding: 0.5rem 1rem;
   }
-
   .circle-flip-wrapper {
     width: 150px;
     height: 150px;
   }
-
   .back-content {
     font-size: 0.65rem;
   }
-    .timeline-dot{
+  .timeline-dot{
   display: none;
 }
 }

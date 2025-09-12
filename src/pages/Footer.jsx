@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
         <div className="footer-bottom">
           <p>
-            @2025 :&nbsp;Alamirew wagaw
+            <span>@</span>2025 &nbsp;<span>A</span>lamirew <span>W</span>.
           </p>
         </div>
       </footer>

@@ -23,6 +23,10 @@ export default function ProjectCard({ id, title, description, imgSrc,link }) {
         visible ? 'visible' : 'hidden'
       }`}
     >
+      {/* <div className="drop-wrapper">
+    <span className="drop from-top-left"></span>
+    <span className="drop from-top-right"></span>
+  </div> */}
         <svg className="card-border" viewBox="0 0 100 100" preserveAspectRatio="none">
           <rect x="1" y="1" width="98" height="98" rx="8" ry="8" />
         </svg>

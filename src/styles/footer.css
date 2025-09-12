@@ -81,7 +81,11 @@
   font-size: 0.9rem;
   font-family: var(--font--family);
 }
-
+.footer-bottom span{
+  font-weight: bold;
+  color: var(--hero-title-color);
+  /* font-size: 1.5rem; */
+}
 /* Responsive font sizing */
 @media (max-width: 1024px) {
   .footer-link a {
