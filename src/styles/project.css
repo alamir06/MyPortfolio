@@ -11,13 +11,10 @@
 
 .projects-section {
   padding: 3rem 2rem;
-  background: #f9f9f9;
+  background: var(--bg-color);
   text-align: center;
   min-height: 100vh;
-}
-
-body.dark-mode .projects-section {
- background:var(--bg-color) !important;
+  transition: background-color 0.3s ease;
 }
 
 .projects-title {
@@ -26,6 +23,7 @@ body.dark-mode .projects-section {
   color: var(--hero-title-color);
   margin-bottom: 3rem;
   font-weight: 800;
+  transition: color 0.3s ease;
 }
 
 .tabs {
@@ -33,7 +31,7 @@ body.dark-mode .projects-section {
   justify-content: center;
   margin-bottom: 2rem;
   gap: 1.6vw;
- text-align: center;
+  text-align: center;
   flex-wrap: wrap;
 }
 
@@ -48,30 +46,30 @@ body.dark-mode .projects-section {
   font-family: var(--font--family);
   gap: 20px;
   padding: 12px 24px;
- color: var(--hero-title-color);
-  background: linear-gradient(to right, #121212, #444);
+  color: var(--text-color);
+  background: var(--bg-color);
+  border: 2px solid var(--hero-title-color);
   text-decoration: none;
   font-weight: 600;
-  border-radius: 9999px;
+  border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   text-align: center;
 }
 
 .tab-button:hover {
- background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
- /* border-color: #00dfd8; */
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 223, 216, 0.3);
+  background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
+  color: var(--cta-text-color);
+  border-color: transparent;
 }
 
 .tab-button.active {
   background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
+  color: var(--cta-text-color);
   transform: translateY(-2px);
   font-weight: bold;
-  border-color: #00dfd8;
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 223, 216, 0.3);
+  border-color: transparent;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
 }
 
 .projects-container {
@@ -95,8 +93,9 @@ body.dark-mode .projects-section {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
+
 .project-card::before {
   content: '';
   position: absolute;
@@ -109,8 +108,6 @@ body.dark-mode .projects-section {
   z-index: 1;
 }
 
-
-
 .project-card:hover {
   transform: translateY(-5px);
   animation: slideFadeIn 0.5s ease-out forwards;
@@ -120,8 +117,6 @@ body.dark-mode .projects-section {
   opacity: 1;
   transform: scale(1);
 }
-
-
 
 /* Optional smooth corner fade-in */
 @keyframes slideFadeIn {
@@ -168,7 +163,7 @@ body.dark-mode .projects-section {
   height: 100%;
   border-radius: 1rem;
   overflow: hidden;
-  background-color: var(--card-bg);
+  background-color: var(--bg-color);
   transition: box-shadow 0.3s ease, border 0.3s ease;
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
@@ -204,35 +199,37 @@ body.dark-mode .projects-section {
 .card-image-container .overlay {
   opacity: 1;
 }
+
 .yellow-folder {
-  color: #facc15 !important; /* Tailwind's yellow-400 (classic folder yellow) */
-  font-size: 2rem; /* Adjust as needed */
+  color: #facc15 !important;
+  font-size: 2rem;
   transition: transform 0.3s ease;
 }
 
 .yellow-folder:hover {
   transform: scale(1.1);
-  color: #fbbf24; /* Slightly darker yellow on hover */
+  color: #fbbf24;
 }
+
 .eye:hover {
-  -webkit-text-fill-color: #ffffff; /* Actual solid color on hover */
+  color: #ffffff;
 }
+
 .overlay h3 {
   position: absolute;
   top: 76%;
   left: 258px;
   margin-bottom: 0.5rem;
-  color: var( --hero-title-color);
+  color: var(--hero-title-color);
   font-size: 30px;
   font-weight: 600;
   transition: all 0.3s ease;
   cursor: pointer;
-
 }
+
 .overlay h3:hover {
-  -webkit-text-fill-color: #ffffff; /* Actual solid color on hover */
+  color: #ffffff;
 }
-
 
 .project-info {
   margin-top: 1rem;
@@ -242,41 +239,36 @@ body.dark-mode .projects-section {
 .project-info h3 {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--hero-name-color);
+  transition: color 0.3s ease;
 }
 
 .project-info p {
   font-size: 0.95rem;
-  color: #4b5563;
+  color: var(--text-color);
   line-height: 1.6;
-}
-
-body.dark-mode .project-info h3 {
-  color: #ffffff;
-}
-
-body.dark-mode .project-info p {
-  color: #ccc;
+  transition: color 0.3s ease;
 }
 
 .view-btn {
   color: var(--hero-title-color) !important;
-  background: linear-gradient(to right, #121212, #444) !important;
-  border: none !important;
+  background: var(--bg-color) !important;
+  border: 2px solid var(--hero-title-color) !important;
   padding: 0.3rem 1.5rem !important;
   border-radius: 50px !important;
   font-weight: 600 !important;
   cursor: pointer !important;
-  width: 100% !important ;
+  width: 100% !important;
   transition: all 0.3s ease !important;
   position: absolute !important;
   top: 270px !important;
-  text-decoration: none !important; /* Removes underline */
-  display: inline-block !important; /* For proper button sizing */
+  text-decoration: none !important;
+  display: inline-block !important;
 }
+
 .view-btn .view-project-link {
   text-decoration: none;
-  color: var(--hero-title-color); /* Match your button text color */
+  color: var(--hero-title-color);
   display: block;
   width: 100%;
   height: 100%;
@@ -284,21 +276,30 @@ body.dark-mode .project-info p {
   font-family: var(--font--family) !important;
   font-weight: bold;
   font-size: 1rem;
+  transition: color 0.3s ease;
 }
+
 .view-btn:hover {
   background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end)) !important;
+  color: var(--cta-text-color) !important;
+  border-color: transparent !important;
   transform: scale(1.1) !important;
-  box-shadow: 0 8px 20px rgba(0, 223, 216, 0.3) !important;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3) !important;
+}
+
+.view-btn:hover .view-project-link {
+  color: var(--cta-text-color) !important;
 }
 
 .view-btn.active {
   background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end)) !important;
+  color: var(--cta-text-color) !important;
   transform: translateY(-2px) !important;
   font-weight: bold !important;
-  border-color: #00dfd8 !important;
-  transform: scale(1.1) !important;
-  box-shadow: 0 8px 20px rgba(0, 223, 216, 0.3) !important;
+  border-color: transparent !important;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3) !important;
 }
+
 .drop-wrapper {
   position: absolute;
   top: 100;
@@ -316,6 +317,7 @@ body.dark-mode .project-info p {
   background-color: var(--hero-title-color);
   border-radius: 50%;
   opacity: 0;
+  transition: background-color 0.3s ease;
 }
 
 .from-top-left {
@@ -328,12 +330,11 @@ body.dark-mode .project-info p {
   top: 90px;
   right: 1px;
   animation: dropFromTopRight 3s infinite ease-in-out;
-  /* animation-delay: 1s; */
 }
 
 /* Keyframes for flowing down to bottom corners */
 @keyframes dropFromTopLeft {
-   0% {
+  0% {
     transform: translateY(0) scale(1);
     opacity: 1;
   }
@@ -341,7 +342,6 @@ body.dark-mode .project-info p {
     transform: translateY(30px) scale(1.2);
     opacity: 0.8;
   }
-  
   100% {
     transform: translateY(60px) scale(0.8);
     opacity: 0;
@@ -363,8 +363,6 @@ body.dark-mode .project-info p {
   }
 }
 
-
-
 /* Responsive */
 @media (max-width: 768px) {
   .project-card {
@@ -381,21 +379,29 @@ body.dark-mode .project-info p {
     height: 100%;
   }
   
-.projects-title {
-  font-size: 3rem;
-}
-.view-btn {
-  padding: 0.1rem 0.5rem !important;
-  position: absolute !important;
-  top:160px !important;
-}
-.view-btn .view-project-link {
-  text-decoration: none;
-  color: var(--hero-title-color); /* Match your button text color */
-  display: block;
-  width: 100%;
-  height: 100%;
-  font-family: var(--font--family) !important;
-  font-weight: bold;
-}
+  .projects-title {
+    font-size: 3rem;
+  }
+  
+  .view-btn {
+    padding: 0.1rem 0.5rem !important;
+    position: absolute !important;
+    top: 160px !important;
+  }
+  
+  .view-btn .view-project-link {
+    text-decoration: none;
+    color: var(--hero-title-color);
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font--family) !important;
+    font-weight: bold;
+  }
+  
+  .overlay h3 {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+  }
 }

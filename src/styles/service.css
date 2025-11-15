@@ -13,6 +13,7 @@
   padding: 2rem 2rem;
   background: var(--bg-color);
   text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .section-titles {
@@ -21,6 +22,7 @@
   color: var(--hero-title-color);
   margin-bottom: 3rem;
   font-weight: 800;
+  transition: color 0.3s ease;
 }
 
 .services-grid {
@@ -32,16 +34,17 @@
 
 .service-card {
   position: relative;
-  background: var(--card-bg, rgba(255, 255, 255, 0.05));
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 1.5rem;
   padding: 2rem;
   width: 300px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+  transition: all 0.4s ease;
   border: 2px solid transparent;
   animation: fadeInUp 0.8s ease forwards;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
 }
 
 .service-card:hover {
@@ -78,17 +81,6 @@
   transition: color 0.3s ease, opacity 0.3s ease;
 }
 
-.dark-mode .service-card {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.dark-mode .service-card p {
-  color: #d1d5db;
-}
-
-.dark-mode .service-card h3 {
-  color: var(--hero-title-color);
-}
 .service-link {
   position: absolute;
   bottom: 1rem;
@@ -96,50 +88,55 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #fff;
+  color: var(--cta-text-color);
   padding: 0.4rem 0.8rem;
   border-radius: 8px;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   text-decoration: none;
   opacity: 0;
   transform: translateX(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: all 0.4s ease;
+  font-family: var(--font--family);
+  font-weight: 600;
 }
+
 .service-card:hover .service-link {
   opacity: 1;
   transform: translateX(0);
 }
 
-.service-link:hover {
-  background: darken(var(--color), 10%);
-}
+
+
+/* Remove all dark-mode specific overrides since theme variables handle this */
+/* The theme variables will automatically switch between light/dark modes */
+
 /* ========== Responsive Enhancements ========== */
 @media (max-width: 1200px) {
   .section-titles {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
-   .service-card {
-    width: 260px;
-    padding: 1.5rem;
+  
+  .service-card {
+    width: 280px;
+    padding: 1.8rem;
   }
+  
   .service-animation {
-  width: 100%;
-  max-height: 350px;
-  margin-bottom: 1.5rem;
-  transition: transform 0.3s ease;
-}
+    max-height: 180px;
+  }
+  
   .service-card h3 {
     font-size: 1.5rem;
   }
 
   .service-card p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 992px) {
   .section-titles {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .service-card {
@@ -158,22 +155,55 @@
 
 @media (max-width: 768px) {
   .section-titles {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   .service-card {
     width: 100%;
-    max-width: 90%;
+    max-width: 400px;
+    padding: 1.8rem;
   }
 
   .services-section {
     padding: 3rem 1.5rem;
   }
+
+  .services-grid {
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
   .section-titles {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .service-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .section-titles {
+    font-size: 2.2rem;
   }
 
   .service-card {
@@ -185,6 +215,10 @@
   }
 
   .service-card p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  .services-section {
+    padding: 2rem 1rem;
   }
 }

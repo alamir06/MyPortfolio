@@ -1,12 +1,12 @@
-/* Base styles - light mode */
+/* About Section - Using Theme Variables */
 .about-section {
   padding: 3rem 2rem;
-  background:var(--bg-color) !important;
+  background: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: background 0.4s ease, color 0.4s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .about-content {
@@ -18,36 +18,35 @@
   gap: 2.5rem;
   flex-wrap: wrap;
 }
-.about-text h2{
-  color: var(--hero-title-color) !important;
-}
+
 .about-text {
   flex: 1;
-  background: rgba(255, 255, 255, 0.03) !important;
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-radius: 1.5rem;
   padding: 2.5rem;
-  color: #f0f0f0;
+  color: var(--text-color);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   min-width: 300px;
+  border: 1px solid rgba(99, 102, 241, 0.1);
 }
 
 .about-text:hover {
   transform: scale(1.03);
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  border-color: rgba(99, 102, 241, 0.2);
 }
 
 .about-btn {
   display: flex;
-  gap: 1vw !important;
+  gap: 1vw;
   flex-wrap: wrap;
 }
 
 .cv-download {
   text-align: center;
   margin-top: 2rem;
-  color: var(--hero-title-color) !important;
 }
 
 .download-btn {
@@ -56,25 +55,31 @@
   font-family: var(--font--family);
   gap: 12px;
   padding: 12px 24px;
-  color: var(--hero-title-color) !important;
-  background: linear-gradient(to right, #121212, #444);
+  color: var(--hero-title-color);
+  background: var(--bg-color);
+  border: 2px solid var(--hero-title-color);
   text-decoration: none;
   font-weight: 600;
-  border-radius: 9999px;
+  border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
 
 .download-btn:hover {
   background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
-  border-color: #00dfd8;
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 223, 216, 0.3);
+  color: var(--cta-text-color);
+  border-color: transparent;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
 }
 
 .download-icon {
   font-size: 20px;
   animation: bounce 2.5s infinite;
+  transition: color 0.3s ease;
+}
+
+.download-btn:hover .download-icon {
+  color: var(--cta-text-color);
 }
 
 /* Subtle bounce animation */
@@ -98,7 +103,7 @@
 
 .about-animation .lottie {
   max-width: 90%;
-  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
 }
 
@@ -109,49 +114,34 @@
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--hero-title-color);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease;
 }
 
 .about-text p {
   font-size: 1.1rem;
-  color: #e1e1e1;
+  color: var(--text-color);
   line-height: 1.7;
   margin-bottom: 1.25rem;
+  transition: color 0.3s ease;
 }
 
-/* Dark mode overrides */
-body.dark-mode .about-section {
-  background: linear-gradient(135deg, #0f0f0f, #2a2a2a);
-}
-
-body.dark-mode .about-text {
-  background: rgba(30, 30, 30, 0.8);
-  color: #eeeeee;
-}
-
-body.dark-mode .about-text h2 {
-  color: #ffffff;
-}
-
-body.dark-mode .about-text p {
-  color: #cccccc;
-}
+/* Remove all dark-mode specific overrides since theme variables handle this */
+/* The theme variables will automatically switch between light/dark modes */
 
 /* Responsive Typography and Layout */
 @media (max-width: 1024px) {
   .about-text h2 {
-    font-size: 4rem;
+    font-size: 2.8rem;
   }
 
   .about-text p {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .download-btn {
     padding: 10px 20px;
     font-size: 0.95rem;
-    align-items: center;
-    text-align: center;
   }
 }
 
@@ -160,14 +150,44 @@ body.dark-mode .about-text p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 2rem;
   }
 
   .about-text {
     padding: 2rem;
+    text-align: center;
   }
 
   .about-text h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .download-btn {
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+
+  .about-btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-text {
+    padding: 1.5rem;
+    min-width: auto;
+  }
+
+  .about-text h2 {
+    font-size: 2.2rem;
   }
 
   .about-text p {
@@ -175,19 +195,26 @@ body.dark-mode .about-text p {
   }
 
   .download-btn {
-    font-size: 0.9rem;
-    text-align: center;
-    align-items: center;
+    font-size: 0.85rem;
+    padding: 10px 18px;
+  }
+
+  .about-btn {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .about-btn .download-btn {
+    width: 100%;
+    justify-content: center;
   }
 }
 
-@media (max-width: 480px) {
-  .about-section {
-    padding: 3rem 1rem;
-  }
-
+/* Extra small devices */
+@media (max-width: 360px) {
   .about-text h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .about-text p {
@@ -195,12 +222,7 @@ body.dark-mode .about-text p {
   }
 
   .download-btn {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     padding: 8px 16px;
-  }
-
-  .about-btn {
-    flex-direction: column;
-    gap: 1rem !important;
   }
 }
