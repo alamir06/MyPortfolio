@@ -64,6 +64,18 @@
   transition: 0.5s;
   color: var(--hero-title-color);
 }
+.nav-links a[href*="github"]:hover .icon,
+.mobile-icons a[href*="github"]:hover svg {
+  color: #171515;
+}
+body.dark-mode .nav-links a[href*="github"]:hover .icon,
+body.dark-mode .mobile-icons a[href*="github"]:hover svg {
+  color: #ffffff;
+}
+.nav-links a[href*="linkedin"]:hover .icon,
+.mobile-icons a[href*="linkedin"]:hover svg {
+  color: #0077b5;
+}
 .theme-toggle {
   background: none;
   border: none;

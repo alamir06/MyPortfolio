@@ -1,12 +1,23 @@
 import { FaChurch, FaCode, FaReadme, FaTractor } from "react-icons/fa";
 
- export const skills = [
+  export const skills = [
     { name: 'Frontend Development', percent: 85, color: '#61DAFB' },
     { name: 'Backend Developer', percent: 90, color: '#F0DB4F' },
     { name: 'UI/UX Design', percent: 78, color: '#FF4081' },
     { name: 'FullStack Development', percent: 87.5, color: '#68A063' },
     { name: 'Project Management', percent: 85, color: '#000000' },
     { name: 'Technology Consulting', percent: 87, color: '#4E71FF' },
+  ];
+
+  export const techSkills = [
+    { name: 'React', percent: 90, color: '#61DAFB' },
+    { name: 'TypeScript', percent: 85, color: '#007ACC' },
+    { name: 'TailwindCSS', percent: 95, color: '#38BDF8' },
+    { name: 'Node.js', percent: 85, color: '#339933' },
+    { name: 'NestJS', percent: 80, color: '#E0234E' },
+    { name: 'PostgreSQL', percent: 85, color: '#336791' },
+    { name: 'Python', percent: 75, color: '#3776AB' },
+    { name: 'Docker', percent: 70, color: '#2496ED' },
   ];
   
 export const favorites = [
@@ -18,6 +29,7 @@ export const favorites = [
     color: "#FF6B6B",
     year: "2013 - Present", 
   },
+  
   { id:2,
     color: "#BB86FC",
     icon: <FaReadme />,

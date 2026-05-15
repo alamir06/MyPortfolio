@@ -106,22 +106,6 @@ export default function Home() {
             Software Engineer
           </h2>
 
-{/* 
-<div className="staircase-word">
-  {'Software'.split('').map((char, index) => (
-    <span
-      key={index}
-      className="stair-letter"
-      style={{
-        top: `${stairLetterPositions[index].top}px`,
-        left: `${stairLetterPositions[index].left}px`,
-      }}
-    >
-      {char}
-    </span>
-  ))}
-</div> */}
-
       <div className="process-flow">
         {steps.map((step, index) => (
           <div
@@ -135,9 +119,10 @@ export default function Home() {
       </div>
         <a
         href="#projects"
-        className="cta-button"
+        className="download-btn"
+        style={{ marginTop: '2rem' }}
       >
-        <FaEye className="text-xl"  />
+        <FaEye className="download-icon text-xl"  />
         My Work
       </a>
       </motion.div>
@@ -146,11 +131,11 @@ export default function Home() {
         <div className="scroll-indicator">
           <FaChevronDown />
                <div className='nav-social'>
-                  <a href='https://t.me/alamir_tel'><FaTelegram /></a>  
-                  <a href='https://www.instagram.com/alam_irew/'><FaInstagram /></a>
+                  <a href='https://t.me/alamir_tel' target="_blank"><FaTelegram /></a>  
+                  <a href='https://www.instagram.com/alamire06/' target="_blank"><FaInstagram /></a>
                   <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank"><FaLinkedin /></a>
                   <a href="https://github.com/alamir06" target="_blank"><FaGithub /></a>
-                  <a href="https://www.youtube.com/@Alak_studio8495" target="_blank"><FaYoutube /></a> 
+                  <a href="https://www.youtube.com/@Akal_Tech" target="_blank"><FaYoutube /></a> 
                   </div>
         </div>
       </section>
