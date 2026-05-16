@@ -67,8 +67,7 @@ const cardVariants = {
           <div className="profile-text">
             <h2>Hello, I'm <span className="highlight">[Alamirew Wagaw]</span></h2>
             <p>
-              I'm a passionate developer with a love for creating beautiful, functional digital experiences. 
-              With over [1] years in the industry, I've worked on projects ranging from small business websites 
+             <span className="highlight">A</span> passionate developer with a love for creating beautiful, functional digital experiences.  I've worked on projects ranging from small business websites 
               to large-scale enterprise applications.
               I specialize in full-stack development,
               blending design with functionality to create high-performing digital experiences.
@@ -78,7 +77,7 @@ const cardVariants = {
             <p>
               My journey in technology has been driven by a desire to learn and grow. 
               I thrive on challenges and enjoy collaborating with others to bring innovative ideas to life.
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+              When I'm not coding, I  find myself exploring new technologies, contributing to open-source projects, 
               or enjoying my other passions listed below.
             </p>
           </div>
@@ -91,7 +90,7 @@ const cardVariants = {
     <section className={`education-timelines`}>
       <div className="containers">
         <h2 className="section-titles">My Favorite activities</h2>
-        <p className="section-subtitles">In almost My Every day Journey</p>
+        <p className="section-subtitles"> <span className="highlight">In</span> Almost My Every Day Journey</p>
          <div className="timeline-containers">
           <div className="timeline-lines"></div>
   
@@ -104,9 +103,13 @@ const cardVariants = {
             >
               <div 
                 className="timeline-icons" 
-                style={{ backgroundColor: item.color }}
+                style={{ backgroundColor: item.color, overflow: 'hidden' }}
               >
-                {item.icon}
+                {item.image ? (
+                  <img src={item.image} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                ) : (
+                  item.icon
+                )}
               </div>
             
             <motion.div
@@ -137,7 +140,7 @@ const cardVariants = {
                 fontWeight: 'bold',
                 paddingLeft: '8px'
               }}>
-              {100 - index * 25}%
+              {/* {100 - index * 25}% */}
             </span>
           </div>
           </div>
