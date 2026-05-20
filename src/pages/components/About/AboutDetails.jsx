@@ -8,7 +8,7 @@ import myImage3 from "../../../assets/alamir3.jpg"
 import myImage4 from "../../../assets/alamir4.jpg"
 import myImage5 from "../../../assets/alamir5.jpg"
 import myImage7 from "../../../assets/alamir7.jpg"
-import { skills, techSkills } from '../../../Data/AboutDetails';
+import { skills, groupedTechSkills } from '../../../Data/AboutDetails';
 import { favorites } from '../../../Data/AboutDetails';
 import {motion} from "framer-motion"
 
@@ -175,20 +175,32 @@ const cardVariants = {
 
         <section className="digital-skills-section">
           <h3 className="about-title">Digital Skills</h3>
-          <div className="digital-skills-box">
-            {techSkills.map((tech, index) => (
-              <div className="digital-skill-item" key={index} style={{ '--color': tech.color }}>
-                <div className="digital-skill-header">
-                  <span>{tech.name}</span>
-                  <span className="digital-skill-percent">{tech.percent}%</span>
-                </div>
-                <div className="digital-skill-bar-container">
-                  <div 
-                    className="digital-skill-bar-fill" 
-                    style={{ 
-                      width: `${tech.percent}%`
-                    }}
-                  ></div>
+          <div className="digital-skills-container">
+            {groupedTechSkills.map((group, groupIndex) => (
+              <div className="digital-skills-category" key={groupIndex}>
+                <h4 className="category-title">{group.category}</h4>
+                <div className="digital-skills-box">
+                  {group.skills.map((tech, index) => (
+                    <div className="digital-skill-item" key={index} style={{ '--color': tech.color }}>
+                      <div className="digital-skill-header">
+                        <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                          <span style={{ color: tech.color, display: 'flex', alignItems: 'center', fontSize: '1.2rem' }}>
+                            {tech.icon}
+                          </span>
+                          {tech.name}
+                        </span>
+                        <span className="digital-skill-percent">{tech.percent}%</span>
+                      </div>
+                      <div className="digital-skill-bar-container">
+                        <div 
+                          className="digital-skill-bar-fill" 
+                          style={{ 
+                            width: `${tech.percent}%`
+                          }}
+                        ></div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}

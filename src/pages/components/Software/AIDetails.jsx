@@ -3,48 +3,46 @@ import { FiGithub, FiExternalLink, FiX, FiCode } from 'react-icons/fi';
 import './software.css'; 
 import Footer from '../../components/FooterDetails/FooterDetails';
 import ExperienceNote from '../Consulting/Consulting';
-import { projects, methodology } from '../../../Data/SoftwareDetails';
+import { projects, methodology } from '../../../Data/AIDetails';
 import ProjectCarousel from '../ProjectCarousel/ProjectCarousel';
 
-const SoftwareAIShowcase = () => {
+const AIDetailsShowcase = () => {
   const [selectedProject, setSelectedProject] = useState(null);
-  const activeTab = 'software';
+  const activeTab = 'ai';
 
   return (
     <div className="software-ai-showcase">
       <div className="showcase-header">
-        <h2>Software Development Approach</h2>
-        <p>End-to-end solutions from system architecture to full-stack applications</p>
+        <h2>Machine Learning & AI Development</h2>
+        <p>Intelligent systems powered by data-driven algorithms</p>
       </div>
 
-      {/* Methodology */}
-<div className="methodology-section">
-  <div className="methodology-flow">
-    {methodology[activeTab].map((step, index) => (
-      <React.Fragment key={index}>
-        <div className="methodology-step">
-          <div className="step-icon">{step.icon}</div>
-          <div className="step-text">
-            <h4>{step.title}</h4>
-            <ul className="step-description-list">
-              {step.description.map((desc, i) => (
-                <li key={i}>{desc}</li>
-              ))}
-            </ul>
-          </div>
+      <div className="methodology-section">
+        <h3>My AI Development Approach</h3>
+        <div className="methodology-flow">
+          {methodology[activeTab].map((step, index) => (
+            <React.Fragment key={index}>
+              <div className="methodology-step">
+                <div className="step-icon">{step.icon}</div>
+                <div className="step-text">
+                  <h4>{step.title}</h4>
+                  <ul className="step-description-list">
+                    {step.description.map((desc, i) => (
+                      <li key={i}>{desc}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              {index < methodology[activeTab].length - 1 && (
+                <div className="step-arrow">➔</div>
+              )}
+            </React.Fragment>
+          ))}
         </div>
-        {index < methodology[activeTab].length - 1 && (
-          <div className="step-arrow">➔</div>
-        )}
-      </React.Fragment>
-    ))}
-  </div>
-</div>
+      </div>
 
-
-      {/* Projects */}
       <div className="project-section">
-        <h3>Featured Application/Software Projects</h3>
+        <h3>Featured AI Projects</h3>
         <div className="project-cards">
           {projects[activeTab].map(project => (
             <div 
@@ -133,4 +131,4 @@ const SoftwareAIShowcase = () => {
   );
 };
 
-export default SoftwareAIShowcase;
+export default AIDetailsShowcase;

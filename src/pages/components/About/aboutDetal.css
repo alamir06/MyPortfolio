@@ -613,6 +613,27 @@
   margin: 4rem 0;
 }
 
+.digital-skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .digital-skills-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.category-title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--hero-title-color);
+  margin-bottom: 1.5rem;
+  font-family: var(--font-family);
+}
+
 .digital-skills-box {
   background: var(--bg-color);
   border: 1px solid var(--hero-title-color);

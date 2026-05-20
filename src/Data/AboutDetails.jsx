@@ -1,4 +1,5 @@
-import { FaChurch, FaCode, FaReadme, FaTractor } from "react-icons/fa";
+import { FaChurch, FaCode, FaReadme, FaTractor, FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaPython, FaGithub, FaAws, FaReact, FaNodeJs, FaDocker } from "react-icons/fa";
+import { SiDjango, SiMongodb, SiMysql, SiExpress, SiCloudinary, SiMantine, SiTypescript, SiTailwindcss, SiNestjs, SiPostgresql } from "react-icons/si";
 import imgCoding from '../assets/alamir2.jpg';
 import imgReading from '../assets/alamir1.jpg';
 import imgChurch from '../assets/alamir3.jpg';
@@ -13,15 +14,42 @@ import imgTraveling from '../assets/alamir4.jpg';
     { name: 'Technology Consulting', percent: 87, color: '#4E71FF' },
   ];
 
-  export const techSkills = [
-    { name: 'React', percent: 90, color: '#61DAFB' },
-    { name: 'TypeScript', percent: 85, color: '#007ACC' },
-    { name: 'TailwindCSS', percent: 95, color: '#38BDF8' },
-    { name: 'Node.js', percent: 85, color: '#339933' },
-    { name: 'NestJS', percent: 80, color: '#E0234E' },
-    { name: 'PostgreSQL', percent: 85, color: '#336791' },
-    { name: 'Python', percent: 75, color: '#3776AB' },
-    { name: 'Docker', percent: 70, color: '#2496ED' },
+  export const groupedTechSkills = [
+    {
+      category: 'Frontend',
+      skills: [
+        { name: 'HTML', percent: 95, color: '#E34F26', icon: <FaHtml5 /> },
+        { name: 'Manual Css', percent: 90, color: '#1572B6', icon: <FaCss3Alt /> },
+        { name: 'JavaScript', percent: 85, color: '#F7DF1E', icon: <FaJs /> },
+        { name: 'React', percent: 90, color: '#61DAFB', icon: <FaReact /> },
+        { name: 'Bootstrap', percent: 80, color: '#7952B3', icon: <FaBootstrap /> },
+        { name: 'Mantine UI', percent: 75, color: '#339AF0', icon: <SiMantine /> },
+        { name: 'TailwindCSS', percent: 95, color: '#38BDF8', icon: <SiTailwindcss /> },
+        { name: 'TypeScript', percent: 85, color: '#007ACC', icon: <SiTypescript /> },
+      ]
+    },
+    {
+      category: 'Backend',
+      skills: [
+        { name: 'Node.js', percent: 85, color: '#339933', icon: <FaNodeJs /> },
+        { name: 'Expressjs', percent: 85, color: '#000000', icon: <SiExpress /> },
+        { name: 'NestJS', percent: 80, color: '#E0234E', icon: <SiNestjs /> },
+        { name: 'PostgreSQL', percent: 85, color: '#336791', icon: <SiPostgresql /> },
+        { name: 'Python', percent: 75, color: '#3776AB', icon: <FaPython /> },
+        { name: 'Django', percent: 70, color: '#092E20', icon: <SiDjango /> },
+        { name: 'Mongo Db', percent: 80, color: '#47A248', icon: <SiMongodb /> },
+        { name: 'MySQL', percent: 85, color: '#4479A1', icon: <SiMysql /> },
+         ]
+    },
+    {
+      category: 'DevOps',
+      skills: [
+        { name: 'Github', percent: 85, color: '#181717', icon: <FaGithub /> },
+        { name: 'AWS', percent: 70, color: '#232F3E', icon: <FaAws /> },
+        { name: 'Cloudinary', percent: 75, color: '#3448C5', icon: <SiCloudinary /> },
+        { name: 'Docker', percent: 70, color: '#2496ED', icon: <FaDocker /> },
+      ]
+    }
   ];
   
 export const favorites = [

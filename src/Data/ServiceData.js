@@ -4,21 +4,21 @@ import consultingAnimation from '../assets/consulting.json';
 
 export const ServiceData = [
   {
-    title: 'Web & Mobile Development',
-    description: 'Building responsive and optimized web apps  and Creating  cross-platform mobile app modern technologies.',
+    title: 'Website Development',
+    description: 'Building responsive and optimized web applications.',
     animation: webAnimation,
     link: '/web',
   },
   {
-    title: 'Software & AI Development',
-    description: 'Delivering full-stack solutions and Developing intelligent systems powered by machine learning and deep learning.',
+    title: 'Software Development',
+    description: 'Delivering full-stack solutions and handling mobile app development.',
     animation: mobileAnimation,
     link: '/software',
   },
   {
-    title: 'Project Management & Tech Consulting',
-    description: 'Leading full project lifecycles from  planning to deployment and Offering expert guidance to shape your technology strategy.',
+    title: 'ML/AI Development',
+    description: 'Developing intelligent systems powered by data-driven algorithms.',
     animation: consultingAnimation,
-    link: '/consulting',
+    link: '/ai',
   },
 ];

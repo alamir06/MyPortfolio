@@ -1,67 +1,55 @@
 import React, { useState } from 'react';
-import { FiCode, FiSmartphone, FiGlobe, FiGithub, FiExternalLink, FiX } from 'react-icons/fi';
+import { FiGlobe, FiSmartphone, FiGithub, FiExternalLink, FiX, FiCode } from 'react-icons/fi';
 import './web.css'
 import { projects, methodology } from '../../../Data/WebDetails'; // Adjust the import path as necessary
 import Footer from '../../components/FooterDetails/FooterDetails';
-const DevelopmentShowcase = () => {
-  const [activeTab, setActiveTab] = useState('web');
-  const [selectedProject, setSelectedProject] = useState(null);
+import ProjectCarousel from '../ProjectCarousel/ProjectCarousel';
+import ExperienceNote from '../Consulting/Consulting';
 
+const DevelopmentShowcase = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const activeTab = 'web';
 
   return (
     <div className="dev-showcase">
       {/* Header */}
       <div className="showcase-header">
-        <h2>My Development Process</h2>
+        <h2>Website Development Approach</h2>
         <p>From concept to deployment, here's how I build digital experiences</p>
       </div>
 
-      {/* Tab Navigation */}
-      <div className="tab-nav">
-        <button 
-          className={`tab-btn ${activeTab === 'web' ? 'active' : ''}`}
-          onClick={() => setActiveTab('web')}
-        >
-          <FiGlobe className="tab-icon" />
-          Web Development
-        </button>
-        <button 
-          className={`tab-btn ${activeTab === 'mobile' ? 'active' : ''}`}
-          onClick={() => setActiveTab('mobile')}
-        >
-          <FiSmartphone className="tab-icon" />
-          Mobile Development
-        </button>
-      </div>
-
       {/* Methodology */}
-  <div className="methodology-section">
-  <h3>My {activeTab === 'web' ? 'Web' : 'Mobile'} Development Approach</h3>
-  <div className="methodology-grid">
-    {methodology[activeTab].map((step, index) => (
-      <div key={index} className="mesob-wrapper">
-        <div className="mesob-base" />
-        <div className="methodology-card">
-          <div className="step-icon">{step.icon}</div>
-          <h4>{step.title}</h4>
-          <p>{step.description}</p>
+      <div className="methodology-section">
+        <div className="methodology-flow">
+          {methodology[activeTab].map((step, index) => (
+            <React.Fragment key={index}>
+              <div className="methodology-step">
+                <div className="step-icon">{step.icon}</div>
+                <div className="step-text">
+                  <h4>{step.title}</h4>
+                  <ul className="step-description-list">
+                    {step.description.map((desc, i) => (
+                      <li key={i}>{desc}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              {index < methodology[activeTab].length - 1 && (
+                <div className="step-arrow">➔</div>
+              )}
+            </React.Fragment>
+          ))}
         </div>
       </div>
-    ))}
-  </div>
-</div>
-
-
 
       {/* Projects */}
       <div className="project-section">
-        <h3>Featured {activeTab === 'web' ? 'Web' : 'Mobile'} Projects</h3>
+        <h3>Featured Projects</h3>
         <div className="project-cards">
           {projects[activeTab].map(project => (
             <div 
               key={project.id} 
               className="project-cardeach"
-              onClick={() => setSelectedProject(project)}
             >
               <div className="project-image">
                 <img src={project.image} alt={project.title} />
@@ -81,8 +69,8 @@ const DevelopmentShowcase = () => {
                     <span key={idx}>{tech}</span>
                   ))}
                 </div>
-                <button className="view-process-btn">
-                  View development process
+                <button className="download-btn" style={{ marginTop: '1rem', width: '100%', justifyContent: 'center' }} onClick={() => setSelectedProject(project)}>
+                  View Project Details
                   <FiCode />
                 </button>
               </div>
@@ -101,38 +89,48 @@ const DevelopmentShowcase = () => {
             
             <h3>{selectedProject.title}</h3>
             
-            <div className="modal-image">
-              <img src={selectedProject.image} alt={selectedProject.title} />
+            <div className="modal-image" style={{ position: 'relative', width: '100%', aspectRatio: '16/9', maxHeight: '400px', overflow: 'hidden', borderRadius: '0.5rem' }}>
+              <ProjectCarousel images={selectedProject.images || [selectedProject.image]} />
             </div>
             
-            <h4>Development Process</h4>
-            <ul className="process-steps">
-              {selectedProject.process.map((step, index) => (
-                <li key={index}>
-                  <span className="step-number">{index + 1}</span>
-                  {step}
-                </li>
+            <p style={{ marginTop: '1.5rem', marginBottom: '1.5rem', color: 'var(--text-color)', textAlign: 'center' }}>{selectedProject.description}</p>
+            
+            {selectedProject.features && selectedProject.features.length > 0 && (
+              <div style={{ marginBottom: '2rem', textAlign: 'left', background: 'rgba(0,0,0,0.03)', padding: '1.5rem', borderRadius: '1rem', border: '1px solid rgba(0,0,0,0.05)' }}>
+                <h4 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--hero-title-color)' }}>Key Functionalities:</h4>
+                <ul style={{ paddingLeft: '1.5rem', color: 'var(--text-color)', listStyleType: 'disc', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  {selectedProject.features.map((feature, idx) => (
+                    <li key={idx} style={{ lineHeight: '1.5' }}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <div className="tech-tags" style={{ justifyContent: 'center', marginBottom: '2rem' }}>
+              {selectedProject.technologies.map((tech, idx) => (
+                <span key={idx}>{tech}</span>
               ))}
-            </ul>
+            </div>
             
             <div className="modal-footer">
               {selectedProject.github && (
-                <a href={selectedProject.github} className="github-btn">
+                <a href={selectedProject.github} className="download-btn" target="_blank" rel="noreferrer">
                   <FiGithub /> View Code
                 </a>
               )}
               {selectedProject.live && (
-                <a href={selectedProject.live} className="live-btn">
-                  <FiExternalLink /> Live View
+                <a href={selectedProject.live} className="download-btn" target="_blank" rel="noreferrer">
+                  <FiExternalLink /> Live Demo
                 </a>
               )}
             </div>
           </div>
         </div>
       )}
-          <Footer />
-    </div>
 
+      <ExperienceNote />
+      <Footer />
+    </div>
   );
 };
 
