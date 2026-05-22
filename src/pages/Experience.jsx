@@ -13,7 +13,7 @@ export default function ExperienceSection() {
         {ExperienceList.map((exp, index) => (
           <motion.div
             key={`exp-${index}`}
-            className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}
+            className="timeline-item"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
