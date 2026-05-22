@@ -1,5 +1,3 @@
-// components/ExperienceNote.jsx
-import React from "react";
 import { motion } from "framer-motion";
 import "./consulting.css";
 

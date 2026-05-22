@@ -5,8 +5,6 @@ import {
    FaLinkedin,
    FaSun,
    FaMoon, 
-   FaTelegram, 
-   FaYoutube 
   } from 'react-icons/fa';
 import { FiMenu, FiX } from 'react-icons/fi';
 import '../styles/navbar.css';

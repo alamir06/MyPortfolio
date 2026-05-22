@@ -35,7 +35,7 @@ export default function Services() {
             <h3>{service.title}</h3>
             <p>{service.description}</p>
             <Link to={service.link} className="service-link">
-            <FaArrowAltCircleRight /> Explore More
+            Explore More <FaArrowAltCircleRight />
             </Link>
           </motion.div>
         ))}

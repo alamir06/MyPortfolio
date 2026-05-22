@@ -3,17 +3,18 @@ import '../styles/project.css';
 import { Link } from 'react-router-dom';
 import {motion} from "framer-motion";
 
-export default function ProjectCard({ id, title, description, imgSrc,link }) {
+export default function ProjectCard({ id, title, imgSrc,link }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    const currentRef = ref.current;
     const observer = new IntersectionObserver(
       ([entry]) => setVisible(entry.isIntersecting),
       { threshold: 0.3 }
     );
-    if (ref.current) observer.observe(ref.current);
-    return () => ref.current && observer.unobserve(ref.current);
+    if (currentRef) observer.observe(currentRef);
+    return () => currentRef && observer.unobserve(currentRef);
   }, []);
 
   return (

@@ -3,7 +3,7 @@ import '../styles/about.css';
 import devDesk from "../assets/dev-desk.json";
 import cvFile from "../assets/AlamirewResume.pdf";
 import { motion } from 'framer-motion';
-import { FaDownload, FaReadme, FaUser } from 'react-icons/fa';
+import { FaDownload, FaReadme } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 export default function AboutSection() {
   return (

@@ -1,4 +1,4 @@
-import { FaChurch, FaCode, FaReadme, FaTractor, FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaPython, FaGithub, FaAws, FaReact, FaNodeJs, FaDocker } from "react-icons/fa";
+import { FaChurch, FaCode, FaReadme, FaTractor, FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaPython, FaGithub, FaAws, FaReact, FaNodeJs, FaDocker, FaGraduationCap, FaCertificate } from "react-icons/fa";
 import { SiDjango, SiMongodb, SiMysql, SiExpress, SiCloudinary, SiMantine, SiTypescript, SiTailwindcss, SiNestjs, SiPostgresql } from "react-icons/si";
 import imgCoding from '../assets/alamir2.jpg';
 import imgReading from '../assets/alamir1.jpg';
@@ -89,6 +89,6 @@ export const favorites = [
     image: imgTraveling,
     icon: <FaTractor />, 
     title: 'Traveling',
-    description: ' Traveling is one of my greatest passions! It opens my mind, refreshes my spirit, and connects me with diverse cultures. I love discovering new places, whether it`s a quiet rural village, a bustling city, or a breathtaking natural landscape. Each trip teaches me something valuable, from historical insights to everyday local customs. I enjoy meeting new people along the way and listening to their stories, which often broaden my perspective. Traveling also fuels my creativity and helps me appreciate the beauty in simplicity. Every journey becomes a memory that shapes who I am and how I see the world.'
+    description: 'Traveling is one of my favorite ways to grow, reflect, and explore new ideas. I enjoy diving into books that expand my knowledge, whether it`s about technology, leadership,Church or personal development. Libraries and quiet corners are my comfort zones, where I can get lost in the pages for hours. Reading helps me stay curious and fuels my imagination and creativity. It also sharpens my focus and deepens my understanding of the world around me. For me, books are not just stories—they’re gateways to growth and lifelong learning.'
   },
  ]

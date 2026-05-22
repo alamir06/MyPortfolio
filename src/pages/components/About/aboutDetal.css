@@ -35,11 +35,10 @@
   box-shadow: var(--shadow);
   width: 100%;
   max-width: 1200px;
-  margin: 0rem 2rem 2rem 2rem !important;
+  margin: 0 auto 2rem auto !important;
   transition: var(--transition);
   z-index: 1;
   background: var(--bg-color) !important;
-  margin-top: 0rem !important;
 }
 
 

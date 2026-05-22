@@ -40,14 +40,14 @@
 
 .about-btn {
   display: flex;
-  gap: 1vw;
+  gap: 1.5rem;
   flex-wrap: wrap;
-  border: 1;
+  margin-top: 2rem;
+  align-items: center;
 }
 
 .cv-download {
-  text-align: center;
-  margin-top: 2rem;
+  display: flex;
 }
 
 .download-btn {
@@ -69,21 +69,30 @@
   transition: color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.download-btn::before {
+.download-btn::before, .download-btn::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
   z-index: -1;
+  opacity: 0.3;
   transition: transform 0.4s ease-out;
-  transform-origin: left;
   transform: scaleX(0);
 }
 
-.download-btn:hover::before {
+.download-btn::before {
+  left: 0;
+  transform-origin: left;
+}
+
+.download-btn::after {
+  right: 0;
+  transform-origin: right;
+}
+
+.download-btn:hover::before, .download-btn:hover::after {
   transform: scaleX(1);
 }
 
@@ -129,7 +138,7 @@
 }
 
 .about-text h2 {
-  font-size: 3.2rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
   font-weight: 800;
   font-family: var(--font--family);
   line-height: 1.2;
@@ -152,10 +161,6 @@
 
 /* Responsive Typography and Layout */
 @media (max-width: 1024px) {
-  .about-text h2 {
-    font-size: 2.8rem;
-  }
-
   .about-text p {
     font-size: 1.05rem;
   }
@@ -177,10 +182,6 @@
   .about-text {
     padding: 2rem;
     text-align: center;
-  }
-
-  .about-text h2 {
-    font-size: 2.5rem;
   }
 
   .about-text p {
@@ -207,10 +208,6 @@
     min-width: auto;
   }
 
-  .about-text h2 {
-    font-size: 2.2rem;
-  }
-
   .about-text p {
     font-size: 0.95rem;
   }
@@ -226,6 +223,10 @@
     width: 100%;
   }
 
+  .cv-download {
+    width: 100%;
+  }
+
   .about-btn .download-btn {
     width: 100%;
     justify-content: center;
@@ -234,10 +235,6 @@
 
 /* Extra small devices */
 @media (max-width: 360px) {
-  .about-text h2 {
-    font-size: 2rem;
-  }
-
   .about-text p {
     font-size: 0.9rem;
   }

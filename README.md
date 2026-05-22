@@ -1,4 +1,4 @@
-# Personal Developer Portfolio
+# MY Personal Developer Portfolio
 
 Welcome to the repository for my Personal Developer Portfolio! This application is designed to showcase my expertise across multiple disciplines, including **Website Development**, **Software Engineering**, and **Artificial Intelligence/Machine Learning**. 
 

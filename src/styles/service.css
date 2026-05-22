@@ -3,6 +3,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -17,7 +18,7 @@
 }
 
 .section-titles {
-  font-size: 3.6rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
   font-family: var(--font--family);
   color: var(--hero-title-color);
   margin-bottom: 3rem;
@@ -34,10 +35,12 @@
 
 .service-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 1.5rem;
   padding: 2rem;
-  width: 300px;
+  width: 308px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
   border: 2px solid transparent;
@@ -48,9 +51,8 @@
 }
 
 .service-card:hover {
-  transform: translateY(-12px) scale(1.02);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
-  border: 2px solid var(--hero-title-color);
+  border: 1px solid var(--hero-title-color);
 }
 
 .service-animation {
@@ -82,9 +84,8 @@
 }
 
 .service-link {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  margin-top: 0rem;
+  align-self: flex-end;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -93,38 +94,30 @@
   border-radius: 8px;
   font-size: 0.75rem;
   text-decoration: none;
-  opacity: 0;
-  transform: translateX(20px);
+  opacity: 1;
+  transform: translateX(0);
   transition: all 0.4s ease;
   font-family: var(--font--family);
   font-weight: 600;
 }
 
-.service-card:hover .service-link {
-  opacity: 1;
-  transform: translateX(0);
+.service-link:hover {
+  background: rgba(var(--cta-text-color), 0.1);
+  transform: scale(1);
+  color: var(--hero-title-color);
 }
 
-
-
-/* Remove all dark-mode specific overrides since theme variables handle this */
-/* The theme variables will automatically switch between light/dark modes */
-
-/* ========== Responsive Enhancements ========== */
 @media (max-width: 1200px) {
-  .section-titles {
-    font-size: 3.2rem;
-  }
-  
+
   .service-card {
     width: 280px;
     padding: 1.8rem;
   }
-  
+
   .service-animation {
     max-height: 180px;
   }
-  
+
   .service-card h3 {
     font-size: 1.5rem;
   }
@@ -135,9 +128,6 @@
 }
 
 @media (max-width: 992px) {
-  .section-titles {
-    font-size: 3rem;
-  }
 
   .service-card {
     width: 260px;
@@ -154,9 +144,6 @@
 }
 
 @media (max-width: 768px) {
-  .section-titles {
-    font-size: 2.8rem;
-  }
 
   .service-card {
     width: 100%;
@@ -175,7 +162,6 @@
 
 @media (max-width: 480px) {
   .section-titles {
-    font-size: 2.5rem;
     margin-bottom: 2rem;
   }
 
@@ -196,15 +182,10 @@
   .service-link {
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
-    bottom: 1rem;
-    right: 1rem;
   }
 }
 
 @media (max-width: 360px) {
-  .section-titles {
-    font-size: 2.2rem;
-  }
 
   .service-card {
     padding: 1.2rem;

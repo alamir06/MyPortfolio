@@ -69,21 +69,30 @@
   cursor: pointer;
 }
 
-.tab-btn::before {
+.tab-btn::before, .tab-btn::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
   z-index: -1;
+  opacity: 0.3;
   transition: transform 0.4s ease-out;
-  transform-origin: left;
   transform: scaleX(0);
 }
 
-.tab-btn:hover::before, .tab-btn.active::before {
+.tab-btn::before {
+  left: 0;
+  transform-origin: left;
+}
+
+.tab-btn::after {
+  right: 0;
+  transform-origin: right;
+}
+
+.tab-btn:hover::before, .tab-btn.active::before, .tab-btn:hover::after, .tab-btn.active::after {
   transform: scaleX(1);
 }
 
@@ -316,21 +325,30 @@
   margin-top: 10px;
 }
 
-.view-process-btn::before {
+.view-process-btn::before, .view-process-btn::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
   z-index: -1;
+  opacity: 0.3;
   transition: transform 0.4s ease-out;
-  transform-origin: left;
   transform: scaleX(0);
 }
 
-.view-process-btn:hover::before {
+.view-process-btn::before {
+  left: 0;
+  transform-origin: left;
+}
+
+.view-process-btn::after {
+  right: 0;
+  transform-origin: right;
+}
+
+.view-process-btn:hover::before, .view-process-btn:hover::after {
   transform: scaleX(1);
 }
 
@@ -452,12 +470,15 @@
 .modal-footer {
   display: flex;
   gap: 1rem;
-  justify-content: flex-end;
+  justify-content: center;
+  width: 100%;
 }
 
 .github-btn, .live-btn {
+  flex: 1;
   position: relative;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
   font-family: var(--font--family);
   gap: 8px;
@@ -476,21 +497,30 @@
   cursor: pointer;
 }
 
-.github-btn::before, .live-btn::before {
+.github-btn::before, .live-btn::before, .github-btn::after, .live-btn::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
   z-index: -1;
+  opacity: 0.3;
   transition: transform 0.4s ease-out;
-  transform-origin: left;
   transform: scaleX(0);
 }
 
-.github-btn:hover::before, .live-btn:hover::before {
+.github-btn::before, .live-btn::before {
+  left: 0;
+  transform-origin: left;
+}
+
+.github-btn::after, .live-btn::after {
+  right: 0;
+  transform-origin: right;
+}
+
+.github-btn:hover::before, .live-btn:hover::before, .github-btn:hover::after, .live-btn:hover::after {
   transform: scaleX(1);
 }
 
@@ -498,6 +528,22 @@
   color: var(--cta-text-color);
   border-color: transparent;
   box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+}
+
+/* Custom Scrollbar for modal */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* Dark Mode Support */
@@ -528,6 +574,16 @@
   .modal-content {
     background: #2d3748;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .modal-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .modal-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .modal-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
   }
   
   .tech-tags span {

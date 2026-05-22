@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import TrackVisibility from 'react-on-screen';
 import myImage from "../assets/contact-img.svg";
@@ -49,7 +49,7 @@ export function Contact() {
       setFormDetails(formInitialDetails);
       setStatus({ success: true, message: "Message sent successfully!" });
 
-    } catch (error) {
+    } catch {
       setStatus({ success: false, message: 'Something went wrong. Please try again later.' });
     } finally {
       setIsSubmitting(false);

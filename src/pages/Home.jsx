@@ -13,16 +13,7 @@ const messages = [
   "Tech Explorer",
 ];
 
-const stairLetterPositions = [
-  { top: -90, left: 470 },
-  { top: -50, left: 430 },
-  { top: 100, left: 300 },
-  { top: 150, left: 240 },
-  { top: 200, left: 180 },
-  { top: 250, left: 120 },
-  { top: 300, left: 60 },
-  { top: 350, left: 0 },
-];
+
 const steps = [
   'Understand Problem',
   'Requirement Gathering',

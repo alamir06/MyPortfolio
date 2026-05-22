@@ -181,7 +181,7 @@
 }  
 
 .project-cardeach:hover {
-  transform: translateY(-15px);
+  transform: translateY(-5px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
@@ -200,7 +200,7 @@
 }
 
 .project-cardeach:hover .project-image img {
-  transform: scale(1.05);
+  transform: scale(1);
 }
 
 .image-overlay {
@@ -290,21 +290,30 @@
   margin-top: 10px;
 }
 
-.view-process-btn::before {
+.view-process-btn::before, .view-process-btn::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   background: linear-gradient(to right, var(--cta-gradient-start), var(--cta-gradient-end));
   z-index: -1;
+  opacity: 0.3;
   transition: transform 0.4s ease-out;
-  transform-origin: left;
   transform: scaleX(0);
 }
 
-.view-process-btn:hover::before {
+.view-process-btn::before {
+  left: 0;
+  transform-origin: left;
+}
+
+.view-process-btn::after {
+  right: 0;
+  transform-origin: right;
+}
+
+.view-process-btn:hover::before, .view-process-btn:hover::after {
   transform: scaleX(1);
 }
 
@@ -441,14 +450,16 @@
 
 .modal-footer {
   display: flex;
-  gap: 1.25rem;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
 }
 
 .github-btn, .live-btn {
+  flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
@@ -476,6 +487,22 @@
 .live-btn:hover {
   background: #4338ca;
   transform: translateY(-2px);
+}
+
+/* Custom Scrollbar for modal */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* Dark Mode Support */
@@ -568,6 +595,16 @@
   
   .modal-content h4::before {
     background: #818cf8;
+  }
+  
+  .modal-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .modal-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .modal-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
   }
 }
 

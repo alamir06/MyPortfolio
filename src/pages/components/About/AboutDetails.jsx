@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaHeart, FaCode, FaGamepad, FaMusic, FaTractor, FaTelegram, FaYoutube, FaPhone, FaChurch, FaSchool, FaBook, FaUniversity, FaGraduationCap } from 'react-icons/fa';
 import './aboutDetal.css'; 
 import myImage1 from "../../../assets/alamir1.jpg"
@@ -8,8 +8,7 @@ import myImage3 from "../../../assets/alamir3.jpg"
 import myImage4 from "../../../assets/alamir4.jpg"
 import myImage5 from "../../../assets/alamir5.jpg"
 import myImage7 from "../../../assets/alamir7.jpg"
-import { skills, groupedTechSkills } from '../../../Data/AboutDetails';
-import { favorites } from '../../../Data/AboutDetails';
+import { skills, groupedTechSkills, favorites } from '../../../Data/AboutDetails';
 import {motion} from "framer-motion"
 
 const images = [myImage1, myImage2, myImage3, myImage4,myImage5,myImage6,myImage7];
@@ -22,7 +21,7 @@ const AboutMe = () => {
       setCurrentImgIndex((prev) => (prev + 1) % images.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, [images.length]);
+  }, []);
  
 const cardVariants = {
   hidden: { opacity: 0, y: 60 },
@@ -87,7 +86,8 @@ const cardVariants = {
     <path d="M0,100 C40,0 60,0 100,100" stroke="#ccc" strokeWidth="2" fill="none" />
   </svg>
 </div>
-    <section className={`education-timelines`}>
+    
+   <section className={`education-timelines`}>
       <div className="containers">
         <h2 className="section-titles">My Favorite activities</h2>
         <p className="section-subtitles"> <span className="highlight">In</span> Almost My Every Day Journey</p>

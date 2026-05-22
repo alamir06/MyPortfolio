@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FiGithub, FiExternalLink, FiX, FiCode } from 'react-icons/fi';
 import './software.css'; 
 import Footer from '../../components/FooterDetails/FooterDetails';
@@ -9,6 +9,16 @@ import ProjectCarousel from '../ProjectCarousel/ProjectCarousel';
 const SoftwareAIShowcase = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const activeTab = 'software';
+
+  useEffect(() => {
+    const projectSection = document.querySelector('.project-section');
+    if (projectSection) {
+      const topOffset = projectSection.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo(0, topOffset);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, []);
 
   return (
     <div className="software-ai-showcase">
@@ -40,9 +50,7 @@ const SoftwareAIShowcase = () => {
     ))}
   </div>
 </div>
-
-
-      {/* Projects */}
+{/* Projects */}
       <div className="project-section">
         <h3>Featured Application/Software Projects</h3>
         <div className="project-cards">
@@ -89,37 +97,37 @@ const SoftwareAIShowcase = () => {
             
             <h3>{selectedProject.title}</h3>
             
-            <div className="modal-image" style={{ position: 'relative', width: '100%', aspectRatio: '16/9', maxHeight: '400px', overflow: 'hidden', borderRadius: '0.5rem' }}>
+            <div className="modal-image" style={{ position: 'relative', width: '100%', aspectRatio: '16/9', maxHeight: '400px', overflow: 'hidden', borderRadius: '0.5rem', marginBottom: '1rem' }}>
               <ProjectCarousel images={selectedProject.images || [selectedProject.image]} />
             </div>
             
-            <p style={{ marginTop: '1.5rem', marginBottom: '1.5rem', color: 'var(--text-color)', textAlign: 'center' }}>{selectedProject.description}</p>
+            <p style={{ marginTop: '0.5rem', marginBottom: '1rem', color: 'var(--text-color)', textAlign: 'center' }}>{selectedProject.description}</p>
             
             {selectedProject.features && selectedProject.features.length > 0 && (
-              <div style={{ marginBottom: '2rem', textAlign: 'left', background: 'rgba(0,0,0,0.03)', padding: '1.5rem', borderRadius: '1rem', border: '1px solid rgba(0,0,0,0.05)' }}>
-                <h4 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--hero-title-color)' }}>Key Functionalities:</h4>
-                <ul style={{ paddingLeft: '1.5rem', color: 'var(--text-color)', listStyleType: 'disc', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <div style={{ marginBottom: '1rem', textAlign: 'left', background: 'rgba(0,0,0,0.03)', padding: '1.25rem', borderRadius: '1rem', border: '1px solid rgba(0,0,0,0.05)' }}>
+                <h4 style={{ fontSize: '1.2rem', marginBottom: '0.75rem', color: 'var(--hero-title-color)', marginTop: 0 }}>Project Overview:</h4>
+                <div style={{ color: 'var(--text-color)', display: 'flex', flexDirection: 'column', gap: '0.75rem', textAlign: 'justify' }}>
                   {selectedProject.features.map((feature, idx) => (
-                    <li key={idx} style={{ lineHeight: '1.5' }}>{feature}</li>
+                    <p key={idx} style={{ lineHeight: '1.5', fontSize: '0.95rem', margin: 0 }}>{feature}</p>
                   ))}
-                </ul>
+                </div>
               </div>
             )}
 
-            <div className="tech-tags" style={{ justifyContent: 'center', marginBottom: '2rem' }}>
+            <div className="tech-tags" style={{ justifyContent: 'center', marginBottom: '1rem' }}>
               {selectedProject.technologies.map((tech, idx) => (
                 <span key={idx}>{tech}</span>
               ))}
             </div>
             
             <div className="modal-footer">
-              {selectedProject.github && (
-                <a href={selectedProject.github} className="download-btn" target="_blank" rel="noreferrer">
+              {selectedProject.github && selectedProject.github !== "#" && (
+                <a href={selectedProject.github} className="github-btn" target="_blank" rel="noreferrer">
                   <FiGithub /> View Code
                 </a>
               )}
-              {selectedProject.live && (
-                <a href={selectedProject.live} className="download-btn" target="_blank" rel="noreferrer">
+              {selectedProject.live && selectedProject.live !== "#" && (
+                <a href={selectedProject.live} className="live-btn" target="_blank" rel="noreferrer">
                   <FiExternalLink /> Live Demo
                 </a>
               )}
