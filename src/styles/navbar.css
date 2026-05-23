@@ -239,8 +239,8 @@ body.dark-mode .navbar.scrolled {
     background-color: #1e1e1e;
   }
   .brand-name {
-  font-size: 1.5rem;
-}
+    font-size: 1.1rem;
+  }
 
   .mobile-link {
     border-color: #333;

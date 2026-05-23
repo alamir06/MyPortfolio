@@ -142,3 +142,26 @@ body.dark-mode .timeline-content p {
     padding: 12px;
   }
 }
+
+.experience-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.column-title {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: var(--hero-title-color) !important;
+  font-family: var(--font--family);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .experience-layout {
+    grid-template-columns: 1fr;
+  }
+}

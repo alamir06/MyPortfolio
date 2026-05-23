@@ -2,8 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import TrackVisibility from 'react-on-screen';
 import myImage from "../assets/contact-img.svg";
+import { FiSend } from 'react-icons/fi';
 import '../styles/contact.css';
-import emailjs from "emailjs-com"; 
 
 export function Contact() {
 
@@ -34,21 +34,29 @@ export function Contact() {
     setButtonText("Sending...");
 
     try {
-      const formdata = {
-        ...formDetails,
-        date: new Date().toLocaleDateString(),
-      };
+      const response = await fetch("https://formsubmit.co/ajax/akliluarse@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: `New Portfolio Contact from ${formDetails.firstName} ${formDetails.lastName}`,
+          _template: "box",
+          _replyto: formDetails.email,
+          Name: `${formDetails.firstName} ${formDetails.lastName}`,
+          Email: formDetails.email,
+          Phone: formDetails.phone || "Not provided",
+          Message: formDetails.message
+        })
+      });
 
-      await emailjs.send(
-        "service_bt8akmv",
-        "template_cw16xxp",
-        formdata,
-        "dJ-CgSLg7T8xrYpwl"
-      );
-
-      setFormDetails(formInitialDetails);
-      setStatus({ success: true, message: "Message sent successfully!" });
-
+      if (response.ok) {
+        setFormDetails(formInitialDetails);
+        setStatus({ success: true, message: "Message sent successfully!" });
+      } else {
+        setStatus({ success: false, message: 'Failed to send message. Please try again later.' });
+      }
     } catch {
       setStatus({ success: false, message: 'Something went wrong. Please try again later.' });
     } finally {
@@ -139,8 +147,8 @@ export function Contact() {
             </div>
 
             <div className="form-group">
-              <button type="submit" disabled={isSubmitting}>
-                <span>{isSubmitting ? 'Submitting...' : buttonText}</span>
+              <button type="submit" disabled={isSubmitting} className="contact-submit-btn">
+                <span>{isSubmitting ? 'Sending...' : buttonText}</span>
               </button>
 
               {status.message && (

@@ -1,8 +1,7 @@
 import React from 'react';
 import { FiCpu, FiCode, FiLayers, FiCheckCircle, FiSend, FiTool } from 'react-icons/fi';
 import { GiBasket } from 'react-icons/gi';
-import { SiTypescript, SiNestjs, SiTypeorm, SiPostgresql, SiDocker, SiReact } from 'react-icons/si';
-import aa from '../assets/image/aa.jpg'; 
+import { SiTypescript, SiNestjs, SiTypeorm, SiPostgresql, SiDocker, SiReact, SiTailwindcss, SiJest } from 'react-icons/si';
 import bole from "../assets/image/bole.png";
 import bole2 from "../assets/image/bole2.png";
 import code from "../assets/image/code.png";
@@ -23,26 +22,31 @@ import pharmacy2 from "../assets/image/pharmacy2.png";
 import pharmacy3 from "../assets/image/pharmacy3.png";
 import pharmacy4 from "../assets/image/pharmacy4.png";
 import pharmacy5 from "../assets/image/pharmacy5.png";
+import gpiismsMain from "../assets/image/gpiismsMain.jpg";
 import { FaChartPie, FaCreditCard, FaDatabase, FaLock, FaNodeJs, FaReact, FaServer } from 'react-icons/fa';
 
 export const projects = {
   software: [
     {
       id: 1,
-      title: "Hotel StreamLine Platform",
-      description: "Scalable business management solution with microservices architecture",
+      title: "Hotel StreamLine Management System",
+      description: "An integrated platform for managing accounts, agents, incidents, reports, and Dual Interface.",
       technologies: [
-        <><SiTypescript color="#3178C6" /> TypeScript</>,
-        <><SiNestjs color="#E0234E" /> NestJs</>,
-        <><SiTypeorm color="#262627" /> TypeORM</>,
+        <><FaReact color="#61DAFB" /> Next.js</>,
+        <><FaNodeJs color="#339933" /> NestJS</>,
+        <><SiTailwindcss color="#38BDF8" /> Tailwind CSS</>,
         <><SiPostgresql color="#4169E1" /> PostgreSQL</>,
+        <><FaDatabase color="#336791" /> TypeORM</>,
+        <><SiJest color="#C21325" /> Jest</>,
         <><SiDocker color="#2496ED" /> Docker</>
       ],
-      image: aa,
-      features: ["Real-time room booking and management", "Integrated payment gateway", "Admin dashboard for staff scheduling and reporting"],
-      images: [aa, code],
-      github: "https://github.com/Timewize-Systems/gpiisms-dev_api",
-      live: "https://github.com/Timewize-Systems/gpiisms-dev_api"
+      image: gpiismsMain,
+      features: [
+        "A comprehensive, dual-interface platform designed to streamline incident management and reporting for the Ghana Police Service. It features a public-facing application that allows citizens to easily report incidents, submit complaints, and share multimedia evidence, alongside a dedicated admin portal for dispatchers and law enforcement to efficiently manage, track, and respond to these submissions. The system is built on a robust, modular backend architecture using NestJS and TypeORM, ensuring secure, scalable, and maintainable operations. It supports role-based access control, real-time data synchronization, and seamless integration with Telegram for instant notifications. The frontend is developed with Next.js and Tailwind CSS, providing a responsive, intuitive, and accessible user experience across all devices."
+      ],
+      images: [gpiismsMain, code],
+      github: "https://github.com/Timewize-Systems/gpiisms-ui",
+      live: "https://gpiisms.technosophia.net/"
     },
     {
       id: 2,

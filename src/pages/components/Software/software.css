@@ -611,7 +611,11 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .showcase-header h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+  
+  .project-section h3 {
+    font-size: 1.4rem !important;
   }
   
   .showcase-header p {
@@ -623,8 +627,14 @@
     font-size: 0.95rem;
   }
   
-  .projects-grid {
+  .projects-grid,
+  .project-cards {
     grid-template-columns: 1fr;
+  }
+
+  .project-cardeach {
+    width: 92%;
+    margin-left: 1rem;
   }
   
   .modal-image {
@@ -656,7 +666,7 @@
   }
   
   .modal-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   
   .modal-content h4 {
