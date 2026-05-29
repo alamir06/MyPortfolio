@@ -1,6 +1,6 @@
 /* About Section - Using Theme Variables */
 .about-section {
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 1rem 2rem;
   background: var(--bg-color);
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-radius: 1.5rem;
-  padding: 2.5rem;
+  padding:1rem 2rem 2rem 2rem;
   color: var(--text-color);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
@@ -186,6 +186,8 @@
 
   .about-text p {
     font-size: 1rem;
+    text-align: justify;
+    letter-spacing: -0.01em;
   }
 
   .download-btn {

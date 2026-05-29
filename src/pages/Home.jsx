@@ -4,24 +4,9 @@ import '../styles/home.css';
 import { useEffect, useState } from 'react';
 import { FloatingMessage } from './FloatingMessage';
 import { CustomCursor } from './CustomeCursor';
-
-const messages = [
-  "I'm a Software Engineer",
-  "UI/UX Desinger",
-  "Open Source Contributor",
-  "Full-Stack Developer",
-  "Tech Explorer",
-];
+import { messages, steps } from '../Data/HomeData';
 
 
-const steps = [
-  'Understand Problem',
-  'Requirement Gathering',
-  'Design',
-  'Implementation',
-  'Deployment',
-  'Maintenance',
-];
 
 export default function Home() {
   const [flipped, setFlipped] = useState(false);
@@ -122,13 +107,13 @@ export default function Home() {
         <div className="scroll-indicator">
           <FaChevronDown />
                <div className='nav-social'>
-                  <a href='https://t.me/alamir_tel' target="_blank"><FaTelegram /></a>  
-                  <a href='https://www.instagram.com/alamire06/' target="_blank"><FaInstagram /></a>
-                  <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank"><FaLinkedin /></a>
-                  <a href="https://github.com/alamir06" target="_blank"><FaGithub /></a>
-                  <a href="https://www.youtube.com/@Akal_Tech" target="_blank"><FaYoutube /></a> 
+                  <a href='https://t.me/alamir_tel' target="_blank" data-tooltip='Telegram'><FaTelegram /></a>  
+                  <a href='https://www.instagram.com/alamire06/' target="_blank" data-tooltip='Instagram'><FaInstagram /></a>
+                  <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank" data-tooltip='LinkedIn'><FaLinkedin /></a>
+                  <a href="https://github.com/alamir06" target="_blank" data-tooltip='GitHub'><FaGithub /></a>
+                  <a href="https://www.youtube.com/@Akal_Tech" target="_blank" data-tooltip='Youtube'><FaYoutube /></a> 
                   </div>
-        </div>
+               </div>
       </section>
     </div>
   );

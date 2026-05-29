@@ -8,14 +8,14 @@ import myImage3 from "../../../assets/alamir3.jpg"
 import myImage4 from "../../../assets/alamir4.jpg"
 import myImage5 from "../../../assets/alamir5.jpg"
 import myImage7 from "../../../assets/alamir7.jpg"
+import myImage8 from "../../../assets/INSEApanle.jpg"
 import { skills, groupedTechSkills, favorites } from '../../../Data/AboutDetails';
 import {motion} from "framer-motion"
 
-const images = [myImage1, myImage2, myImage3, myImage4,myImage5,myImage6,myImage7];
+const images = [myImage1, myImage2, myImage3, myImage4,myImage5,myImage6,myImage7,myImage8];
 
 const AboutMe = () => {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
-
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImgIndex((prev) => (prev + 1) % images.length);
@@ -37,7 +37,7 @@ const cardVariants = {
       <div className="hero-sections">
         <div className="hero-contents">
           <h1>Get to Know Me</h1>
-          <p className="tagline">Software Engineer | Team-Leader | Creative Thinker | Problem Solver | Quick Learner | Tech Enthusiast | Hardworking | Adaptable | Disciplined</p>
+          <p className="tagline">Software Engineer | Team-Leader | Creative Thinker | Problem Solver | Quick Learner | Hardworker | Adaptable | Disciplined | Tech Enthusiast</p>
         </div>
       </div>
       <div className="content-wrapper">
@@ -66,17 +66,17 @@ const cardVariants = {
           <div className="profile-text">
             <h2>Hello, I'm <span className="highlight">[Alamirew Wagaw]</span></h2>
             <p>
-             <span className="highlight">A</span> passionate developer with a love for creating beautiful, functional digital experiences.  I've worked on projects ranging from small business websites 
-              to large-scale enterprise applications.
-              I specialize in full-stack development,
-              blending design with functionality to create high-performing digital experiences.
+             <span className="highlight">A</span> Software Engineer with a Strong Passion for Creating Beautiful, Functional Digital Experiences.  I've worked on Projects ranging from Business Websites 
+              to large-scale Systems and Applications.
+              I specialized in Full-Stack Development,
+              blending API, Database, UI/UX design with functionality to create high-performing digital experiences.
               With several completed projects under my experience and strong problem-solving skills, I strive to deliver
               impactful solutions for clients and employers.
              </p>
             <p>
-              My journey in technology has been driven by a desire to learn and grow. 
-              I thrive on challenges and enjoy collaborating with others to bring innovative ideas to life.
-              When I'm not coding, I  find myself exploring new technologies, contributing to open-source projects, 
+              My Journey in technology has been driven by a desire to <span className="highlight">learn, grow and improve</span>. 
+              I thrive on challenges and enjoy collaborating with others to bring innovative ideas to solve Problems in life With Digital Technology. I strongly believe that Collaboration and Good Communication is Key to solve Problems and Success.
+              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
               or enjoying my other passions listed below.
             </p>
           </div>

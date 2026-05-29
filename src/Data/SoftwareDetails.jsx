@@ -23,7 +23,7 @@ import pharmacy3 from "../assets/image/pharmacy3.png";
 import pharmacy4 from "../assets/image/pharmacy4.png";
 import pharmacy5 from "../assets/image/pharmacy5.png";
 import gpiismsMain from "../assets/image/gpiismsMain.jpg";
-import { FaChartPie, FaCreditCard, FaDatabase, FaLock, FaNodeJs, FaReact, FaServer } from 'react-icons/fa';
+import { FaChartPie, FaCheckCircle, FaCreditCard, FaDatabase, FaLaptopCode, FaLock, FaNodeJs, FaPaintBrush, FaReact, FaRocket, FaSearch, FaServer, FaSyncAlt } from 'react-icons/fa';
 
 export const projects = {
   software: [
@@ -130,12 +130,11 @@ export const projects = {
 
 export const methodology = {
   software: [
-    { title: "Planning", icon: <FiCpu />, description: ["Project scoping and requirements", "Stakeholder interviews", "Feasibility analysis"] },
-    { title: "Requirement Gathering", icon: <GiBasket />, description: ["User persona definition", "Use case specifications", "Technical feasibility assessment"] },
-    { title: "Architecture", icon: <FiLayers />, description: ["System design and planning", "Database modeling", "Microservices setup"] },
-    { title: "Development", icon: <FiCode />, description: ["Clean code implementation", "API development", "Frontend integration"] },
-    { title: "Testing", icon: <FiCheckCircle />, description: ["Automated test suites", "Integration testing", "User acceptance testing (UAT)"] },
-    { title: "Deployment", icon: <FiSend />, description: ["CI/CD pipelines", "Cloud infrastructure setup", "Production release"] },
-    { title: "Maintenance", icon: <FiTool />, description: ["Ongoing support and updates", "Performance monitoring", "Security patching"] }
-  ]
+    { title: "Planning & Requirements", icon: <FaSearch />, description: ["Presenting Ideas In Meeting", "Discussion", "Planning The Project With Client & Team ", "Understanding Client Needs","Understanding The Organization Business Rules","Requirement Analysis and Understanding", "Ready To Start The Project"] },
+    { title: "Design & Prototyping", icon: <FaPaintBrush />, description: ["UI/UX Designing of Requirements","Prototyping The Requirements by Designing","Architecture Setup", "Interactive Design"] },
+    { title: "Development & Implementation", icon: <FaLaptopCode />, description: ["Environment Setup","Database Setup,Schema Design","API Development", "Postman Testing","Frontend Development ", "Version Control Using Git,Github,Gitlab"] },
+    { title: "Testing & QA", icon: <FaCheckCircle />, description: ["Unit Testing","Integration Testing","System Testing", "User Acceptance Testing", "Bug Fixing","Ensure The Project is Bug Free"] },
+    { title: "Deployment & Launch", icon: <FaRocket />, description: ["CI/CD Pipeline", "Production Release", "Server Configuration","Ensure The Project is Live"] },
+    { title: "Review & Maintenance", icon: <FaSyncAlt />, description: ["System Review", "Iterative Updates","check with Client Feedback","maintain Client Feedback","Ongoing Support","Ensure The Project is Running Smoothly"] }
+   ]
 };

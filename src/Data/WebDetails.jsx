@@ -22,7 +22,7 @@ import zemzem6 from "../assets/image/zemzem6.jpg";
       {
         id: 1,
         title: "My Portfolio ",
-        description: "Built with React,CSS,Canva with Great Commitment",
+        description: "Built with React,Manual CSS,Stitch Design with Great Vision",
         technologies: [
           <><FaFolderOpen color="#FFCA28" /> Portfolio</>,
           <><FaReact color="#61DAFB" /> React</>,
@@ -31,13 +31,8 @@ import zemzem6 from "../assets/image/zemzem6.jpg";
         ],
         image: portfolio,
         features: [
-           "Shows my projects and skills: ",
-           "Multi-Discipline Project Showcase: ",
-           "Dedicated Data Layer: ",
-           "Interactive Modal Galleries: ",
-           "Methodology Breakdown: ",
-           "Provides an  CV Download: ",
-           "Demonstrates responsive UI/UX principles: "],
+          "An Interactive Personal Portfolio designed to showcase my Projects, Skills, and Experience while demonstrating modern, responsive UI/UX principles. This Portfolio features a Multi-Discipline Project Showcase powered by a Dedicated Section, complete with Interactive Modal Galleries for exploring detailed Description. It also provides a clear methodology breakdown outlining my development process, alongside an easily accessible CV download functionality for recruiters and clients."
+        ],
         images: [portfolio, p_image1, p_image2,p_image3,p_image4],
         github: "https://github.com/alamir06/MyPortfolio",
         live: "https://alamirew.technosophia.net/"
@@ -45,7 +40,7 @@ import zemzem6 from "../assets/image/zemzem6.jpg";
       {
         id: 2,
         title: "Technosophia IT Solutions ",
-        description: "Built with React, NestJs, and Postgress with Great Collaboration",
+        description: "Built with React, Manual CSS, React-Motion, and Collaboration with Team",
         technologies: [
           <><FaFolderOpen color="#FFCA28" /> Corporate</>,
           <><FaReact color="#61DAFB" /> React</>,
@@ -53,7 +48,9 @@ import zemzem6 from "../assets/image/zemzem6.jpg";
           <><FaUser color="#98D8C8" /> Client</>
         ],
         image: Technsophia,
-        features: ["Corporate landing page and service offering display", "Dynamic blog and portfolio content management", "Secure back-office admin dashboard"],
+        features: [
+          "A Professional Corporate Website Providing a Landing Page and Service Offering Display to engage potential clients. The website demonstartes the Organization Servises,Projects,Vision,Mission,Goals,Team,Contact Information,Blog,Portfolio,Testimonials,Client Feedback."
+        ],
         images: [Technsophia,Technsophia1,Technsophia2,Technsophia3,Technsophia4],
         github: "https://github.com/alamir06",
         live: "https://technosophia.net/"
@@ -61,21 +58,16 @@ import zemzem6 from "../assets/image/zemzem6.jpg";
       {
         id: 3,
         title: "Zemzem Food Complex ",
-        description: "Built with React,nestJs, and Mysql with Great Collaboration",
+        description: "Built with React, Manual CSS, Stitch Design, and Collaboration with Team and Client",
         technologies: [
           <><FaFolderOpen color="#FFCA28" /> Enterprise</>,
           <><FaReact color="#61DAFB" /> React</>,
           <><FaCss3 color="#1572B6" /> CSS3</>,
-          <><FaUser color="#98D8C8" /> Admin</>
+          <><FaUser color="#98D8C8" /> Client</>
         ],
         image: zemzem,
         features: [
-          "Modern & Responsive UI seamlessly designed with React 19, Vite, and Tailwind CSS",
-          "Dynamic Hero Carousel displaying high-quality imagery highlighting core values",
-          "Detailed Product Showcase for premium Wheat Flour, Semolina, and Whole Grains",
-          "Interactive Contact forms paired with an integrated Google Maps view",
-          "Fluid SPA Navigation paired with dynamic multi-language switching capabilities",
-          "Interactive 'Grains to Gold' manufacturing process timeline and Testimonials"
+          "An enterprise Website featuring a modern, responsive UI effortlessly designed with React, Vite, and Manual CSS. The frontend engages users via a dynamic hero carousel highlighting the company's core values, leading into a detailed product showcase for items like premium Wheat Flour, Semolina, and Whole Grains. The Website guarantees fluid Single Page Application (SPA) navigation. Additionally, it features an interactive 'Grains to Gold' manufacturing timeline, customer testimonials, and fully integrated contact forms paired with a Google Maps view for accessible customer connectivity."
         ],
         images: [zemzem, zemzem2,zemzem1, zemzem3, zemzem4, zemzem5, zemzem6],
         github: "https://github.com/alamir06",
@@ -86,19 +78,11 @@ import zemzem6 from "../assets/image/zemzem6.jpg";
   
   export const methodology = {
     web: [
-      { title: "Planning & Requirements", icon: <FaSearch />, description: ["Sprint Planning", "Backlog Creation", "User Story Mapping"] },
-      { title: "Design & Prototyping", icon: <FaPaintBrush />, description: ["UI/UX Wireframing", "Architecture Setup", "Interactive Mockups"] },
-      { title: "Agile Development", icon: <FaLaptopCode />, description: ["Sprint Execution", "Frontend & Backend Coding", "Version Control"] },
-      { title: "Testing & QA", icon: <FaCheckCircle />, description: ["Unit Testing", "User Acceptance Testing", "Bug Squashing"] },
-      { title: "Deployment & Launch", icon: <FaRocket />, description: ["CI/CD Pipeline", "Production Release", "Server Configuration"] },
-      { title: "Review & Maintenance", icon: <FaSyncAlt />, description: ["Sprint Review", "Iterative Updates", "Ongoing Support"] }
-    ],
-    mobile: [
-      { title: "Planning & Scoping", icon: <FaSearch />, description: ["Platform Strategy", "Feature Prioritization", "Requirements Analysis"] },
-      { title: "UI/UX Design", icon: <FaPencilRuler />, description: ["Mobile-first Prototyping", "Navigation Flow", "User Experience Validation"] },
-      { title: "Iterative Development", icon: <FaCode />, description: ["Native/Cross-platform Coding", "API Integration", "State Management"] },
-      { title: "Quality Assurance", icon: <FaCheckCircle />, description: ["Device Testing", "Performance Profiling", "Security Audits"] },
-      { title: "App Store Deployment", icon: <FaBoxOpen />, description: ["App Store Optimization", "Beta Distribution", "Final Release"] },
-      { title: "Feedback & Updates", icon: <FaSyncAlt />, description: ["User Feedback Tracking", "Version Upgrades", "Continuous Improvement"] }
+      { title: "Planning & Requirements", icon: <FaSearch />, description: ["Presenting Ideas In Meeting", "Discussion", "Planning The Project With Client & Team ", "Understanding Client Needs","Understanding The Organization Business Rules","Requirement Analysis and Understanding", "Ready To Start The Project"] },
+      { title: "Design & Prototyping", icon: <FaPaintBrush />, description: ["UI/UX Designing of Requirements","Prototyping The Requirements by Designing","Architecture Setup", "Interactive Design"] },
+      { title: "Development & Implementation", icon: <FaLaptopCode />, description: ["Environment Setup", "Frontend Development ", "Version Control Using Git,Github,Gitlab"] },
+      { title: "Testing & QA", icon: <FaCheckCircle />, description: ["Unit Testing","Integration Testing","System Testing", "User Acceptance Testing", "Bug Fixing","Ensure The Project is Bug Free"] },
+      { title: "Deployment & Launch", icon: <FaRocket />, description: ["CI/CD Pipeline", "Production Release", "Server Configuration","Ensure The Project is Live"] },
+      { title: "Review & Maintenance", icon: <FaSyncAlt />, description: ["System Review", "Iterative Updates","check with Client Feedback","maintain Client Feedback","Ongoing Support","Ensure The Project is Running Smoothly"] }
     ]
   };

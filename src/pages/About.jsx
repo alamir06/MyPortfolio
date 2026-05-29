@@ -17,13 +17,13 @@ export default function AboutSection() {
         <div className="about-text">
           <h2>Who Am I!</h2>
           <p>
-            I’m <strong>Alamirew Wagaw</strong>, a passionate software engineer who builds beautiful,
-            fast, and accessible websites and applications. I specialize in full-stack development,
-            blending design with functionality to create high-performing digital experiences.
+           I'm a Passionate software Engineer who builds beautiful,
+            fast, Usable, Secured, Available, Scalable and Reliable websites and Systems. I specialized in full-stack development starting from Requirement Gathering To Maintenance,
+            blending API, Database and UI/UX design with functionality to create high-performing digital experiences.
           </p>
           <p>
-            With several completed projects under my experience and strong problem-solving skills, I strive to deliver
-            impactful solutions for clients and employers.
+          My Journey in technology has been driven by a desire to <span className="highlight">learn, grow and improve</span>. 
+          I thrive on challenges and enjoy collaborating with others to bring innovative ideas to solve Problems in life With Digital Technology.         
           </p>
           <div className='about-btn'>
           <div className="cv-download">

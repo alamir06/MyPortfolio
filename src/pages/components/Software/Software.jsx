@@ -52,7 +52,7 @@ const SoftwareAIShowcase = () => {
 </div>
 {/* Projects */}
       <div className="project-section">
-        <h3>Featured Application/Software Projects</h3>
+        <h3>Completed Projects </h3>
         <div className="project-cards">
           {projects[activeTab].map(project => (
             <div 

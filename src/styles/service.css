@@ -11,7 +11,7 @@
 }
 
 .services-section {
-  padding: 2rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   background: var(--bg-color);
   text-align: center;
   transition: background-color 0.3s ease;
@@ -39,7 +39,7 @@
   flex-direction: column;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 1.5rem;
-  padding: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   width: 308px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
@@ -57,9 +57,18 @@
 
 .service-animation {
   width: 100%;
-  max-height: 200px;
+  height: 200px;
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-animation svg {
+  max-height: 100% !important;
+  max-width: 100% !important;
+  object-fit: contain;
 }
 
 .service-card:hover .service-animation {

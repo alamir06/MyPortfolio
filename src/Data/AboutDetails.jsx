@@ -1,9 +1,9 @@
 import { FaChurch, FaCode, FaReadme, FaTractor, FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaPython, FaGithub, FaAws, FaReact, FaNodeJs, FaDocker, FaGraduationCap, FaCertificate } from "react-icons/fa";
 import { SiDjango, SiMongodb, SiMysql, SiExpress, SiCloudinary, SiMantine, SiTypescript, SiTailwindcss, SiNestjs, SiPostgresql } from "react-icons/si";
-import imgCoding from '../assets/alamir2.jpg';
-import imgReading from '../assets/alamir1.jpg';
-import imgChurch from '../assets/alamir3.jpg';
-import imgTraveling from '../assets/alamir4.jpg';
+import imgCoding from '../assets/coding.png';
+import imgReading from '../assets/reading.png';
+import imgChurch from '../assets/church.jpg';
+import imgTraveling from '../assets/travelling.jpg';
 
   export const skills = [
     { name: 'Frontend Development', percent: 85, color: '#61DAFB' },
@@ -57,8 +57,8 @@ export const favorites = [
     image: imgCoding,
     icon: <FaCode />, 
     title: 'Coding', 
-    qoute: 'Turning ideas into reality through code',
-    description: 'I am passionate about coding and love turning ideas into real-world applications through clean, efficient code. I spend most of my time building modern web systems and Applications, solving problems, and learning new technologies. I enjoy working on both the frontend and backend, especially with React, NestJS, and PostgreSQL. Collaboration is key for me, and I thrive in team environments where innovation and sharing knowledge are encouraged. I’m constantly exploring new frameworks and tools to stay ahead in the tech world. For me, coding isn’t just a skill—it’s a creative outlet and a way to make a meaningful impact.',
+    qoute: 'Turning ideas into Reality through Code',
+    description: 'I am passionate about coding and love turning ideas into real-world applications through clean, efficient code. I spend most of my time building modern web systems and Applications, solving problems, and learning new technologies. I enjoy working on both the frontend and backend. Collaboration is key for me, and I thrive in team environments where innovation and sharing knowledge are encouraged. I’m constantly exploring new frameworks and tools to stay ahead in the tech world. For me, coding isn’t just a skill—it’s a creative channel and a way to make a meaningful impact.',
     color: "#FF6B6B",
     year: "2013 - Present", 
   },
@@ -70,25 +70,25 @@ export const favorites = [
     year: "2007- Present", 
     title: 'Reading',
     qoute: 'Books are My quietest and most constant  friends',
-    description: 'Reading is one of my favorite ways to grow, reflect, and explore new ideas. I enjoy diving into books that expand my knowledge, whether it`s about technology, leadership,Church or personal development. Libraries and quiet corners are my comfort zones, where I can get lost in the pages for hours. Reading helps me stay curious and fuels my imagination and creativity. It also sharpens my focus and deepens my understanding of the world around me. For me, books are not just stories—they’re gateways to growth and lifelong learning.'
+    description: 'Reading is one of my favorite ways to grow, reflect, and explore new ideas. I enjoy diving into books that expand my knowledge, whether it`s about technology, leadership,Church or personal development. Libraries and quiet corners are my comfort zones, where I can get lost in the pages for hours. Reading helps me stay having a strong desire to learn and fuels my imagination and creativity. It also sharpens my focus and deepens my understanding of the world around me. For me, books are not just stories—they’re gateways to growth and lifelong learning.'
   },
    { 
     id:3,
     color: "#B71C1C",
     year: "2010- Present", 
-    qoute: 'Faith is taking the first step even when you don’t see the whole staircase',
+    qoute: 'Faith is taking the first step even when I don’t see the whole staircase',
     image: imgChurch,
     icon: <FaChurch />, 
     title: 'Church', 
-    description: 'I actively participate in church service with a heart full of dedication and faith. All Most all day, I arrive early to pray, to help with preparations. I am involved in various ministries, including youth leadership and technical support during worship sessions. My role allows me to serve others while growing spiritually and deepening my relationship with God. I value teamwork and always encourage unity and respect among fellow members. Serving in church brings me peace, purpose, and a strong sense of community.'
+    description: 'I actively participate in church service with a heart full of dedication and faith. All Most all day, I arrive early to pray, to help with preparations. I am involved in various Church Activities, including youth leadership and technical support during worship sessions. My role allows me to serve others while growing spiritually and deepening my relationship with God. I value teamwork and always encourage unity and respect among fellow members. Serving in church brings me peace, purpose, and a strong sense of community.'
   },
   { id:4,
     color: "#4FC3F7",
     year: "2015- Present", 
-    qoute: 'Life is a journey, not a destination',
+    qoute: 'Life is a Journey, not a Destination',
     image: imgTraveling,
     icon: <FaTractor />, 
     title: 'Traveling',
-    description: 'Traveling is one of my favorite ways to grow, reflect, and explore new ideas. I enjoy diving into books that expand my knowledge, whether it`s about technology, leadership,Church or personal development. Libraries and quiet corners are my comfort zones, where I can get lost in the pages for hours. Reading helps me stay curious and fuels my imagination and creativity. It also sharpens my focus and deepens my understanding of the world around me. For me, books are not just stories—they’re gateways to growth and lifelong learning.'
+    description: 'Traveling is one of my favorite ways to Look Nature, reflect, and explore new ideas. I enjoy to travel and explore new places. It helps me to relax, recharge, and get inspired. I also enjoy learning about different cultures and meeting new people. Traveling has taught me to be more open-minded, adaptable, and confident. It has also helped me to appreciate the beauty of the world and the diversity of its people. For me, traveling is not just a hobby—it’s a way of life.'
   },
  ]

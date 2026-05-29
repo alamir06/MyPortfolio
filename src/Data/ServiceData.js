@@ -1,11 +1,11 @@
 import webAnimation from '../assets/web.json';
 import mobileAnimation from '../assets/mobile.json';
-import consultingAnimation from '../assets/consulting.json';
+import aiAnimation from '../assets/Animation.json';
 
 export const ServiceData = [
   {
     title: 'Website Development',
-    description: 'Building responsive and optimized web applications.',
+    description: 'Building responsive and optimized websites to Boost Business Information.',
     animation: webAnimation,
     link: '/web',
   },
@@ -18,7 +18,7 @@ export const ServiceData = [
   {
     title: 'ML/AI Development',
     description: 'Developing intelligent systems powered by data-driven algorithms.',
-    animation: consultingAnimation,
+    animation: aiAnimation,
     link: '/ai',
   },
 ];

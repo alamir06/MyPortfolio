@@ -54,7 +54,7 @@ const DevelopmentShowcase = () => {
 
       {/* Projects */}
       <div className="project-section">
-        <h3>Featured Projects</h3>
+        <h3>Completed Projects </h3>
         <div className="project-cards">
           {projects[activeTab].map(project => (
             <div 
@@ -130,7 +130,7 @@ const DevelopmentShowcase = () => {
               )}
               {selectedProject.live && selectedProject.live !== "#" && (
                 <a href={selectedProject.live} className="live-btn" target="_blank" rel="noreferrer">
-                  <FiExternalLink /> Live Demo
+                  <FiExternalLink /> Live 
                 </a>
               )}
             </div>
