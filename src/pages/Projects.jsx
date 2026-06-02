@@ -44,7 +44,7 @@ export default function ProjectsSection() {
         viewport={{ once: true }}
       >
         {filteredProjects.map((project, index) => (
-          <div key={index} className="project-cardeach">
+          <div key={index} className="project-card">
             <div className="project-image">
               <img src={project.imgUrl} alt={project.title} />
               <div className="image-overlay"></div>

@@ -165,108 +165,7 @@
     text-align: center !important;
 }
 
-.project-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-}
 
-.project-cardeach {
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}  
-
-.project-cardeach:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.project-image {
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-}
-
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-  border-radius: 10px;
-}
-
-.project-cardeach:hover .project-image img {
-  transform: scale(1);
-}
-
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-}
-
-.project-content {
-  padding: 1.5rem;
-}
-
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-}
-
-.project-header h4 {
-  font-size: 1rem !important;
-  font-weight: 600;
-  color: var(--hero-title-color) !important;
-    font-family: var(--font--family) !important;
-  
-}
-
-.project-links {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.project-links a {
-  color: #718096;
-  font-size: 1.2rem;
-  transition: color 0.2s ease;
-}
-
-.project-links a:hover {
-  color: #4299e1;
-}
-
-.project-content p {
-  color: #4a5568;
-  margin-bottom: 1rem;
-  line-height: 1.5;
-}
-
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.tech-tags span {
-  background: #ebf8ff;
-  color: #3182ce;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 500;
-}
 
 .view-process-btn {
   position: relative;
@@ -611,11 +510,15 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .showcase-header h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   
   .project-section h3 {
-    font-size: 1.4rem !important;
+    font-size: 1.3rem !important;
+  }
+  
+  .project-content p {
+    text-align: justify;
   }
   
   .showcase-header p {
@@ -627,15 +530,7 @@
     font-size: 0.95rem;
   }
   
-  .projects-grid,
-  .project-cards {
-    grid-template-columns: 1fr;
-  }
 
-  .project-cardeach {
-    width: 92%;
-    margin-left: 1rem;
-  }
   
   .modal-image {
     height: 250px;

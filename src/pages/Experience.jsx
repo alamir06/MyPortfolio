@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import '../styles/experience.css';
 import { ExperienceList } from '../Data/ExerienceData';
 
 export default function ExperienceSection() {
+  const [activeTab, setActiveTab] = useState('frontend');
+
   const frontends = ExperienceList.filter(exp => exp.title.includes('Frontend'));
   const backends = ExperienceList.filter(exp => exp.title.includes('Backend'));
 
@@ -40,13 +43,28 @@ export default function ExperienceSection() {
   return (
     <section className="experience-section" id="experience">
       <h2>Experience</h2>
+      <div className="experience-tabs">
+        <button 
+          className={`tab-btn ${activeTab === 'frontend' ? 'active' : ''}`}
+          onClick={() => setActiveTab('frontend')}
+        >
+          Frontend
+        </button>
+        <button 
+          className={`tab-btn ${activeTab === 'backend' ? 'active' : ''}`}
+          onClick={() => setActiveTab('backend')}
+        >
+          Backend 
+        </button>
+      </div>
+
       <div className="experience-layout">
-        <div className="experience-column">
-          <h3 className="column-title">As a Frontend Developer</h3>
+        <div className={`experience-column ${activeTab !== 'frontend' ? 'mobile-hidden' : ''}`}>
+          <h3 className="column-title desktop-only">As a Frontend Developer</h3>
           {renderTimeline(frontends)}
         </div>
-        <div className="experience-column">
-          <h3 className="column-title">As a Backend Developer</h3>
+        <div className={`experience-column ${activeTab !== 'backend' ? 'mobile-hidden' : ''}`}>
+          <h3 className="column-title desktop-only">As a Backend Developer</h3>
           {renderTimeline(backends)}
         </div>
       </div>

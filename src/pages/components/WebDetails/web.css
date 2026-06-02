@@ -607,11 +607,15 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .showcase-header h2 {
-    font-size: 1.8rem !important;
+    font-size: 1.5rem !important;
   }
   
   .methodology-section h3 {
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
+  }
+  
+  .project-content p {
+    text-align: justify;
   }
 
   .methodology-flow {

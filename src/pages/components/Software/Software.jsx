@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiGithub, FiExternalLink, FiX, FiCode } from 'react-icons/fi';
-import './software.css'; 
+import './software.css';
+import '../../../styles/project.css';
 import Footer from '../../components/FooterDetails/FooterDetails';
 import ExperienceNote from '../Consulting/Consulting';
 import { projects, methodology } from '../../../Data/SoftwareDetails';
@@ -57,7 +58,7 @@ const SoftwareAIShowcase = () => {
           {projects[activeTab].map(project => (
             <div 
               key={project.id} 
-              className="project-cardeach"
+              className="project-card"
             >
               <div className="project-image">
                 <img src={project.image} alt={project.title} />

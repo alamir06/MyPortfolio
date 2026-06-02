@@ -23,12 +23,11 @@ const AIDetailsShowcase = () => {
   return (
     <div className="software-ai-showcase">
       <div className="showcase-header">
-        <h2>Machine Learning & AI Development</h2>
+        <h2>Machine Learning & AI Development Approach</h2>
         <p>Intelligent systems powered by data-driven algorithms</p>
       </div>
 
       <div className="methodology-section">
-        <h3>My AI Development Approach</h3>
         <div className="methodology-flow">
           {methodology[activeTab].map((step, index) => (
             <React.Fragment key={index}>

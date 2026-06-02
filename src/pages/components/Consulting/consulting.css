@@ -25,3 +25,20 @@
   line-height: 1.7;
   color: whitesmoke;
 }
+
+@media (max-width: 768px) {
+  .experience-note-container {
+    padding: 40px 10px;
+  }
+  
+  .experience-note {
+    max-width: 100%;
+    width: 100%;
+    padding: 25px 20px;
+    box-sizing: border-box;
+  }
+  
+  .experience-note p {
+    text-align: justify;
+  }
+}

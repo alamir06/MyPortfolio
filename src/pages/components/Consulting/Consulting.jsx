@@ -13,15 +13,14 @@ const ExperienceNote = () => {
       >
         <h3>Tech-Driven, People-Focused🅿️</h3>
         <p>
-          Although I have less than <strong>4 months of professional experience</strong>,
-          I’ve already developed strong skills in <strong>Project Management</strong> and <strong>Technology Consulting</strong>. 
-          I understand how to plan, coordinate, and deliver tech projects effectively while 
-          aligning with real business goals.
+          I have comprehensive experience in <strong>Human Management</strong> and <strong>Team Management</strong>,
+          giving me a strong foundation in coordinating and delivering successful projects while aligning with real business goals. 
+          I am highly motivated to continue building strong skills in these leadership areas.
         </p>
         <p>
           I’ve provided guidance on the right tools, stacks, and architecture choices 
           for startups and teams — ensuring scalability, cost-effectiveness, and future-proofing. 
-          My focus is not only on writing code, but on solving the right problems.
+          My focus is not only on writing code, but on solving the right problems and leading people effectively.
         </p>
       </motion.div>
     </section>

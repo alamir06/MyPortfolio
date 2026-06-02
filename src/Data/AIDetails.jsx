@@ -2,9 +2,9 @@ import React from 'react';
 import { FiDatabase, FiLayers, FiZap, FiSliders, FiTrendingUp, FiSearch } from 'react-icons/fi';
 import { FaBrain, FaChartBar, FaDatabase, FaPython, FaRobot } from 'react-icons/fa';
 import flower from '../assets/image/flower.jpg';
-import p_img2 from '../assets/image/p-image2.png';
-import p_img3 from '../assets/image/p-image3.png';
-import p_img4 from '../assets/image/p-image4.png';
+import p_img2 from '../assets/image/flowe1.png';
+import p_img3 from '../assets/image/flower2.png';
+import p_img4 from '../assets/image/flower3.png';
 import railwayMain from '../assets/image/railwayMain.png';
 import railway1 from '../assets/image/railway1.png';
 import railway2 from '../assets/image/railway2.png';
@@ -29,17 +29,11 @@ export const projects = {
         <><SiFlask color="#000000" /> Flask</>
       ],
       image: flower,
-      images: [flower, p_img2],
+      images: [flower, p_img2,p_img3,p_img4],
       github: "#",
       live: "#",
       features: [
-        "Data collection and preprocessing",
-        "Exploratory data analysis",
-        "Model selection and tuning",
-        "Feature engineering",
-        "Model training and validation",
-        "API development for integration",
-        "Performance monitoring"
+        "This project involves a comprehensive machine learning pipeline that begins with extensive data collection and preprocessing, followed by thorough exploratory data analysis. The core development process includes rigorous feature engineering, model selection, and tuning to ensure optimal results. Finally, the system encompasses complete model training and validation, paired with robust API development for seamless integration and continuous performance monitoring."
       ]
     },
     {
@@ -73,11 +67,7 @@ export const projects = {
       ],
       images: [p_img3, p_img4],
       features: [
-        "Dataset collection and annotation",
-        "Model architecture selection",
-        "Training on GPU cluster",
-        "Edge deployment optimization",
-        "Accuracy benchmarking"
+        "This Computer Vision System utilizes an end-to-end development cycle starting with meticulous dataset collection and annotation to ensure high-quality training inputs. The project focuses on rigorous model architecture selection, followed by intensive training on a high-performance GPU cluster. To guarantee real-world effectiveness, the system undergoes extensive edge deployment optimization and precise accuracy benchmarking."
       ]
     }
   ]
@@ -85,12 +75,13 @@ export const projects = {
 
 export const methodology = {
   ai: [
-    { title: "Define Objective", icon: <FiSearch />, description: ["Identify business goals", "Define success metrics", "Determine ML constraints"] },
-    { title: "Data Preparation", icon: <FiDatabase />, description: ["Dataset acquisition", "Handling missing values", "Exploratory Data Analysis"] },
-    { title: "Feature Engineering", icon: <FiLayers />, description: ["Feature selection", "Data transformations", "Dimensionality reduction"] },
-    { title: "Prototyping", icon: <FaBrain />, description: ["Algorithm benchmarking", "Baseline evaluation", "Model architecture design"] },
-    { title: "Model Training", icon: <FiZap />, description: ["GPU-accelerated learning", "Hyperparameter tuning", "Cross-validation runs"] },
-    { title: "Validation", icon: <FiSliders />, description: ["Performance metrics analysis", "Bias and variance checks", "A/B testing procedures"] },
+    { title: "Define Objective", icon: <FiSearch />, description: ["Identify business goals","Define success metrics", "Determine ML constraints","Dataset acquisition","Identify the problem on which the model will be trained"] },
+    { title: "Data Preparation", icon: <FiDatabase />, description: [ "Handling missing values", "Dimensionality reduction", "Exploratory Data Analysis","Noise Reduction","Data Visualization"] },
+    { title: "Feature Engineering", icon: <FiLayers />, description: ["Feature selection", "Data transformations","Feature Scaling","Feature Creation","Outlier Detection","Feature Importance"] },
+    { title: "Model Selection", icon: <FiLayers />, description: ["Algorithm selection", "Model architecture design","Model Design & Optimization"] },
+    { title: "Prototyping", icon: <FaBrain />, description: ["Showcase Algorithm", "Baseline evaluation", "Detail Model architecture design",] },
+    { title: "Model Training", icon: <FiZap />, description: ["GPU-accelerated learning", "Hyperparameter tuning", "Cross-validation runs","Fit Model with Train Data","Evaluate Model with Train Data"] },
+    { title: "Validation", icon: <FiSliders />, description: ["Performance metrics analysis", "Bias and variance checks", "A/B testing procedures","Evaluate Model with Test Data","Compare Model with Test Data"] },
     { title: "Deployment", icon: <FaRobot />, description: ["Endpoint creation (FastAPI)", "Containerization (Docker)", "Cloud provisioning"] },
     { title: "Monitoring", icon: <FiTrendingUp />, description: ["Concept drift detection", "Automated retraining", "Performance logging"] },
   ]
