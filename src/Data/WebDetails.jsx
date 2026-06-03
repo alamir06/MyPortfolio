@@ -11,12 +11,12 @@ import p_image1 from "../assets/image/p-image1.png";
 import p_image2 from "../assets/image/p-image2.png";
 import p_image3 from "../assets/image/p-image3.png";
 import p_image4 from "../assets/image/p-image4.png";
-import zemzem1 from "../assets/image/zemzem1.jpg";
-import zemzem2 from "../assets/image/zemzem2.jpg";
-import zemzem3 from "../assets/image/zemzem3.jpg";
-import zemzem4 from "../assets/image/zemzem4.jpg";
-import zemzem5 from "../assets/image/zemzem5.jpg";
-import zemzem6 from "../assets/image/zemzem6.jpg";
+import zemzem1 from "../assets/image/Zemzem1.jpg";
+import zemzem2 from "../assets/image/Zemzem2.jpg";
+import zemzem3 from "../assets/image/Zemzem3.jpg";
+import zemzem4 from "../assets/image/Zemzem4.jpg";
+import zemzem5 from "../assets/image/Zemzem5.jpg";
+import zemzem6 from "../assets/image/Zemzem6.jpg";
   export const projects = {
     web: [
       {
