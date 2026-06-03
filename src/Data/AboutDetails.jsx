@@ -1,6 +1,6 @@
 import { FaChurch, FaCode, FaReadme, FaTractor, FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaPython, FaGithub, FaAws, FaReact, FaNodeJs, FaDocker, FaGraduationCap, FaCertificate } from "react-icons/fa";
 import { SiDjango, SiMongodb, SiMysql, SiExpress, SiCloudinary, SiMantine, SiTypescript, SiTailwindcss, SiNestjs, SiPostgresql } from "react-icons/si";
-import imgCoding from '../assets/coding.png';
+import imgCoding from '../assets/Coding.png';
 import imgReading from '../assets/reading.png';
 import imgChurch from '../assets/church.jpg';
 import imgTraveling from '../assets/travelling.jpg';
