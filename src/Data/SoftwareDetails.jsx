@@ -30,7 +30,7 @@ export const projects = {
     {
       id: 1,
       title: "Hotel StreamLine Management System",
-      description: "An integrated platform for managing accounts, agents, incidents, reports, and Dual Interface.",
+      description: "An integrated platform for managing accounts, agents, incidents, reports, and Dual Interface for Addis Ababa Peace and Security Bureau.",
       technologies: [
         <><FaReact color="#61DAFB" /> Next.js</>,
         <><FaNodeJs color="#339933" /> NestJS</>,
@@ -51,7 +51,7 @@ export const projects = {
     {
       id: 2,
       title: "Customer Feedback monitoring System",
-      description: "A comprehensive platform designed to gather, track, and analyze customer feedback and satisfaction metrics across various departments.",
+      description: "A comprehensive platform designed to gather, track, and analyze customer feedback and satisfaction metrics across various department for Bole sub-city.",
       technologies: [
         <><FaReact color="#61DAFB" /> React</>,
         <><SiNestjs color="#E0234E" /> NestJs</>,
@@ -69,7 +69,7 @@ export const projects = {
     {
     id: 3,
     title: "Human Resource Management System for Injibara University",
-    description: "Enterprise-grade Full-stack HRMS built with React, Node.js/Express, and MySQL for Injibara University.",
+    description: "Enterprise-Level Full-stack HRMS built with React, NodeJS,Express, and MySQL for Injibara University.",
     technologies: [
       <><FaReact color="#61DAFB" /> React</>,
       <><FaNodeJs color="#339933" /> NodeJs</>,
@@ -79,7 +79,7 @@ export const projects = {
     ],
     image: hrmsMain, 
     features: [
-      "The HRMS is a full-stack, enterprise-grade system that ensures robust security through Role-Based Access Control and features seamless SMTP email integration. It offers comprehensive employee lifecycle management, effortlessly handling department, designation, and directory maintenance. The platform simplifies daily operations with automated attendance tracking, timesheets, and strict policy-driven leave management that includes rollover support. Additionally, it streamlines financial operations through robust payroll processing, managing complex salary calculations, tax deductions, and provident funds. To support organizational growth, the system incorporates a dedicated recruitment module for applicant tracking, evaluation, and third-party outsourcing management. All of these powerful capabilities are tied together by an interactive analytics dashboard utilizing Recharts, complemented by system-wide broadcast and notification features to keep the entire organization informed and connected."
+      "The HRMS is a full-stack, enterprise-level system that ensures robust security through Role-Based Access Control and features seamless SMTP email integration. It offers comprehensive employee lifecycle management, effortlessly handling department, designation, and directory maintenance. The platform simplifies daily operations with automated attendance tracking, timesheets, and strict policy-driven leave management that includes rollover support. Additionally, it streamlines financial operations through robust payroll processing, managing complex salary calculations, tax deductions, and provident funds. To support organizational growth, the system incorporates a dedicated recruitment module for applicant tracking, evaluation, and third-party outsourcing management. All of these powerful capabilities are tied together by an interactive analytics dashboard utilizing Recharts, complemented by system-wide broadcast and notification features to keep the entire organization informed and connected."
     ],
     images: [hrmsMain, hrms1,hrms2,hrms3,hrms4,hrms5,hrms6], 
     github: "https://github.com/alamir06/HRMS",
@@ -88,7 +88,7 @@ export const projects = {
    {
     id: 4,
     title: "Community Fortune Platform",
-    description: "Enterprise-grade competition and Game Management platform built with React, Node.js/Express, and MySQL, fully compliant with UK regulations.",
+    description: "Enterprise Level competition and Game Management platform built with React, Node.js/Express, and MySQL, fully compliant with UK regulations .",
     technologies: [
       <><FaReact color="#61DAFB" /> React</>,
       <><FaNodeJs color="#339933" /> NodeJs</>,
@@ -123,7 +123,7 @@ export const projects = {
     ],
     images: [pharmacyMain, pharmacy1, pharmacy2, pharmacy3, pharmacy4, pharmacy5], 
     github: "https://github.com/alamir06",
-    live: "https://github.com/alamir06" 
+    live: "https://pharmacy-management-system-4g5g.onrender.com" 
   }
 ]
 };

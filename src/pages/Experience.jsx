@@ -45,13 +45,13 @@ export default function ExperienceSection() {
       <h2>Experience</h2>
       <div className="experience-tabs">
         <button 
-          className={`tab-btn ${activeTab === 'frontend' ? 'active' : ''}`}
+          className={`tab-button ${activeTab === 'frontend' ? 'active' : ''}`}
           onClick={() => setActiveTab('frontend')}
         >
           Frontend
         </button>
         <button 
-          className={`tab-btn ${activeTab === 'backend' ? 'active' : ''}`}
+          className={`tab-button ${activeTab === 'backend' ? 'active' : ''}`}
           onClick={() => setActiveTab('backend')}
         >
           Backend 

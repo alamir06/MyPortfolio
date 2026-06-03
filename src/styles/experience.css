@@ -183,7 +183,7 @@ body.dark-mode .timeline-content p {
   margin-bottom: 2rem;
 }
 
-.tab-btn {
+.tab-button {
   border: 2px solid transparent;
   font-size: 1rem;
   cursor: pointer;
@@ -208,7 +208,7 @@ body.dark-mode .timeline-content p {
   z-index: 1;
 }
 
-.tab-btn::before, .tab-btn::after {
+.tab-button::before, .tab-button::after {
   content: "";
   position: absolute;
   top: 0;
@@ -221,14 +221,14 @@ body.dark-mode .timeline-content p {
   transform: scaleX(0);
 }
 
-.tab-btn::before { left: 0; transform-origin: left; }
-.tab-btn::after { right: 0; transform-origin: right; }
+.tab-button::before { left: 0; transform-origin: left; }
+.tab-button::after { right: 0; transform-origin: right; }
 
-.tab-btn:hover::before, .tab-btn.active::before, .tab-btn:hover::after, .tab-btn.active::after {
+.tab-button:hover::before, .tab-button.active::before, .tab-button:hover::after, .tab-button.active::after {
   transform: scaleX(1);
 }
 
-.tab-btn:hover, .tab-btn.active {
+.tab-button:hover, .tab-button.active {
   color: var(--cta-text-color);
   border-color: transparent;
 }

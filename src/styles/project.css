@@ -346,7 +346,7 @@ body.dark-mode .project-card {
 }
 
 body.dark-mode .project-header h4 {
-  color: #f8fafc !important;
+  color: var(--hero-title-color) !important;
 }
 
 body.dark-mode .project-content p {
