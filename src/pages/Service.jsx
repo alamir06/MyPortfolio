@@ -31,6 +31,7 @@ export default function Services() {
               loop
               src={service.animation}
               className="service-animation"
+              style={{ width: "100%", height: "200px" }}
             />
             <h3>{service.title}</h3>
             <p>{service.description}</p>
