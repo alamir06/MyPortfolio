@@ -36,11 +36,15 @@ export default function AboutSection() {
                 About Me
               </Link>
             </div>
-            <div className="cv-download" style={{ position: 'relative' }}>
-              <button
+            <div 
+              className="cv-download" 
+              style={{ position: 'relative' }}
+              onMouseEnter={() => setShowResumeOptions(true)}
+              onMouseLeave={() => setShowResumeOptions(false)}
+            >
+              <button 
                 type="button"
-                className="download-btn"
-                onClick={() => setShowResumeOptions(!showResumeOptions)}
+                className="download-btn" 
               >
                 <FaDownload className="download-icon" />
                 My Resume
