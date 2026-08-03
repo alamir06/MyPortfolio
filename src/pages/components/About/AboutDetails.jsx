@@ -212,7 +212,7 @@ const cardVariants = {
             <a href="https://github.com/alamir06" target="_blank" rel="noopener noreferrer" className="social-link github">
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
+            <a href="https://www.linkedin.com/in/alamirew-wagaw/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
               <FaLinkedin />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link twitter">
@@ -227,7 +227,7 @@ const cardVariants = {
               <a href="https://www.youtube.com/@Akal_Tech" target="_blank" rel="noopener noreferrer" className="social-link youtube">
               <FaYoutube />
             </a>
-            <a href="https://www.instagram.com/alamir06/" target="_blank" rel="noopener noreferrer" className="social-link instagram">
+            <a href="https://www.instagram.com/alamire06/" target="_blank" rel="noopener noreferrer" className="social-link instagram">
               <FaInstagram />
             </a>
           </div>

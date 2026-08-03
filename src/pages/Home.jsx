@@ -56,7 +56,7 @@ export default function Home() {
               <a href="https://github.com/alamir06" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/alamirew-wagaw/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
             </div>
@@ -109,7 +109,7 @@ export default function Home() {
                <div className='nav-social'>
                   <a href='https://t.me/alamir_tel' target="_blank" data-tooltip='Telegram'><FaTelegram /></a>  
                   <a href='https://www.instagram.com/alamire06/' target="_blank" data-tooltip='Instagram'><FaInstagram /></a>
-                  <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank" data-tooltip='LinkedIn'><FaLinkedin /></a>
+                  <a href="https://www.linkedin.com/in/alamirew-wagaw/" target="_blank" data-tooltip='LinkedIn'><FaLinkedin /></a>
                   <a href="https://github.com/alamir06" target="_blank" data-tooltip='GitHub'><FaGithub /></a>
                   <a href="https://www.youtube.com/@Akal_Tech" target="_blank" data-tooltip='Youtube'><FaYoutube /></a> 
                   </div>

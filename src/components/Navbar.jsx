@@ -52,7 +52,7 @@ export default function Navbar() {
         <a href="https://github.com/alamir06" target="_blank" rel="noreferrer">
             <FaGithub className="icon" />
           </a>
-          <a href="https://www.linkedin.com/in/alamirewwagaw/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/alamirew-wagaw/" target="_blank" rel="noreferrer">
             <FaLinkedin className="icon" />
           </a>
           <button 
